@@ -23,7 +23,7 @@
       "$content/*": ["./src/lib/content/*"],
       "$persist/*": ["./src/lib/persistence/*"]
     },
-    "types": ["svelte", "vite/client", "vite-plugin-pwa/svelte", "vite-plugin-pwa/info"]
+    "types": ["node", "svelte", "vite/client", "vite-plugin-pwa/svelte", "vite-plugin-pwa/info"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.svelte"],
   "references": [{ "path": "./tsconfig.node.json" }]

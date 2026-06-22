@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.06.22-a1.0-sample",
+  "generatedAt": "2026-06-22",
+  "defaultLocale": "en",
+  "levels": [
+    {
+      "id": "a1",
+      "cefr": "A1",
+      "title": "German A1",
+      "examBenchmark": "Goethe Start Deutsch 1",
+      "file": "levels/a1.json",
+      "vocabFile": "vocab/a1.vocab.json",
+      "grammarFile": "levels/a1.grammar.json",
+      "moduleCount": 1,
+      "lessonCount": 3,
+      "vocabCount": 16,
+      "estMinutesTotal": 40,
+      "status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "a1.v.hallo", "lemma": "Hallo", "pos": "other", "gloss": ["hello", "hi"],
+    "example": { "de": "Hallo! Wie heißt du?", "en": "Hello! What's your name?" },
+    "audioText": "Hallo", "frequencyRank": 30, "tags": ["greetings"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.guten-morgen", "lemma": "Guten Morgen", "pos": "phrase", "gloss": ["good morning"],
+    "example": { "de": "Guten Morgen! Wie geht es dir?", "en": "Good morning! How are you?" },
+    "audioText": "Guten Morgen", "frequencyRank": 120, "tags": ["greetings"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.tschuess", "lemma": "Tschüss", "pos": "other", "gloss": ["bye", "see you"],
+    "example": { "de": "Tschüss, bis morgen!", "en": "Bye, see you tomorrow!" },
+    "audioText": "Tschüss", "frequencyRank": 210, "tags": ["greetings"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.danke", "lemma": "danke", "pos": "other", "gloss": ["thanks", "thank you"],
+    "example": { "de": "Danke schön!", "en": "Thank you very much!" },
+    "audioText": "danke", "frequencyRank": 95, "tags": ["politeness"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.bitte", "lemma": "bitte", "pos": "other", "gloss": ["please", "you're welcome"],
+    "example": { "de": "Einen Kaffee, bitte.", "en": "A coffee, please." },
+    "audioText": "bitte", "frequencyRank": 80, "tags": ["politeness"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.ja", "lemma": "ja", "pos": "other", "gloss": ["yes"],
+    "example": { "de": "Ja, gern!", "en": "Yes, gladly!" },
+    "audioText": "ja", "frequencyRank": 40, "tags": ["basics"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.nein", "lemma": "nein", "pos": "other", "gloss": ["no"],
+    "example": { "de": "Nein, danke.", "en": "No, thanks." },
+    "audioText": "nein", "frequencyRank": 60, "tags": ["basics"],
+    "introducedIn": "a1.m00-erste-schritte.l00-begruessung", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.name", "lemma": "Name", "pos": "noun", "gender": "m", "article": "der", "plural": "Namen",
+    "gloss": ["name"], "example": { "de": "Mein Name ist Anna.", "en": "My name is Anna." },
+    "audioText": "der Name, die Namen", "frequencyRank": 150, "tags": ["personal"],
+    "introducedIn": "a1.m00-erste-schritte.l01-name", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.heissen", "lemma": "heißen", "pos": "verb", "gloss": ["to be called"],
+    "verbMeta": {
+      "type": "regular", "separable": false, "auxiliary": "haben",
+      "present": { "ich": "heiße", "du": "heißt", "er": "heißt", "wir": "heißen", "ihr": "heißt", "sie": "heißen" },
+      "partizip2": "geheißen"
+    },
+    "example": { "de": "Ich heiße Tom.", "en": "My name is Tom." },
+    "frequencyRank": 140, "tags": ["core-verbs", "personal"],
+    "introducedIn": "a1.m00-erste-schritte.l01-name", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.sein", "lemma": "sein", "pos": "verb", "gloss": ["to be"],
+    "verbMeta": {
+      "type": "irregular", "separable": false, "auxiliary": "sein",
+      "present": { "ich": "bin", "du": "bist", "er": "ist", "wir": "sind", "ihr": "seid", "sie": "sind" },
+      "imperative": { "du": "sei", "ihr": "seid", "Sie": "seien Sie" },
+      "partizip2": "gewesen"
+    },
+    "example": { "de": "Wer bist du?", "en": "Who are you?" },
+    "frequencyRank": 2, "tags": ["core-verbs"],
+    "introducedIn": "a1.m00-erste-schritte.l01-name", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.kommen", "lemma": "kommen", "pos": "verb", "gloss": ["to come"],
+    "verbMeta": {
+      "type": "regular", "separable": false, "auxiliary": "sein",
+      "present": { "ich": "komme", "du": "kommst", "er": "kommt", "wir": "kommen", "ihr": "kommt", "sie": "kommen" },
+      "imperative": { "du": "komm", "ihr": "kommt", "Sie": "kommen Sie" },
+      "partizip2": "gekommen"
+    },
+    "example": { "de": "Ich komme aus Indien.", "en": "I come from India." },
+    "frequencyRank": 41, "tags": ["core-verbs", "movement"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.wohnen", "lemma": "wohnen", "pos": "verb", "gloss": ["to live", "to reside"],
+    "verbMeta": {
+      "type": "regular", "separable": false, "auxiliary": "haben",
+      "present": { "ich": "wohne", "du": "wohnst", "er": "wohnt", "wir": "wohnen", "ihr": "wohnt", "sie": "wohnen" },
+      "imperative": { "du": "wohn", "ihr": "wohnt", "Sie": "wohnen Sie" },
+      "partizip2": "gewohnt"
+    },
+    "example": { "de": "Ich wohne in Berlin.", "en": "I live in Berlin." },
+    "frequencyRank": 240, "tags": ["core-verbs", "home"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.land", "lemma": "Land", "pos": "noun", "gender": "n", "article": "das", "plural": "Länder",
+    "gloss": ["country"], "example": { "de": "Welches Land ist das?", "en": "Which country is that?" },
+    "audioText": "das Land, die Länder", "frequencyRank": 300, "tags": ["places"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.sprache", "lemma": "Sprache", "pos": "noun", "gender": "f", "article": "die", "plural": "Sprachen",
+    "gloss": ["language"], "example": { "de": "Deutsch ist eine schöne Sprache.", "en": "German is a beautiful language." },
+    "audioText": "die Sprache, die Sprachen", "frequencyRank": 320, "tags": ["language"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.deutschland", "lemma": "Deutschland", "pos": "other", "gloss": ["Germany"],
+    "example": { "de": "Ich wohne in Deutschland.", "en": "I live in Germany." },
+    "audioText": "Deutschland", "frequencyRank": 260, "tags": ["places", "countries"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  },
+  {
+    "id": "a1.v.deutsch", "lemma": "Deutsch", "pos": "other", "gloss": ["German (language)"],
+    "example": { "de": "Ich lerne Deutsch.", "en": "I'm learning German." },
+    "audioText": "Deutsch", "frequencyRank": 230, "tags": ["language"],
+    "introducedIn": "a1.m00-erste-schritte.l02-herkunft", "cefr": "a1", "status": "active"
+  }
+]

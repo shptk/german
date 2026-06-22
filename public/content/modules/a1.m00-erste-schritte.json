@@ -1,0 +1,192 @@
+{
+  "id": "a1.m00-erste-schritte",
+  "level": "a1",
+  "title": "Erste Schritte",
+  "order": 0,
+  "icon": "wave",
+  "estMinutes": 40,
+  "grammarTopics": ["g.present-tense", "g.sein"],
+  "vocabIds": [
+    "a1.v.hallo", "a1.v.guten-morgen", "a1.v.tschuess", "a1.v.danke", "a1.v.bitte",
+    "a1.v.ja", "a1.v.nein", "a1.v.name", "a1.v.heissen", "a1.v.sein",
+    "a1.v.kommen", "a1.v.wohnen", "a1.v.land", "a1.v.sprache", "a1.v.deutschland", "a1.v.deutsch"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m00-erste-schritte.l00-begruessung",
+      "title": "Begrüßung",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": ["Greet people and say goodbye", "Use danke / bitte / ja / nein"],
+      "prereqs": [],
+      "grammarNotes": [],
+      "introducesVocab": ["a1.v.hallo", "a1.v.guten-morgen", "a1.v.tschuess", "a1.v.danke", "a1.v.bitte", "a1.v.ja", "a1.v.nein"],
+      "exercises": [
+        {
+          "id": "a1.m00-erste-schritte.l00-begruessung.e01", "type": "match", "source": "auto",
+          "skill": "reading", "estSeconds": 40, "left": "word-de", "right": "gloss",
+          "vocabRefs": ["a1.v.hallo", "a1.v.tschuess", "a1.v.danke", "a1.v.bitte"],
+          "pairRefs": ["a1.v.hallo", "a1.v.tschuess", "a1.v.danke", "a1.v.bitte"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l00-begruessung.e02", "type": "mcq", "subtype": "translation",
+          "source": "hand", "skill": "reading", "estSeconds": 20,
+          "prompt": { "en": "Which word means \"thank you\"?" },
+          "vocabRefs": ["a1.v.danke"],
+          "choices": [
+            { "id": "a", "text": { "de": "danke" } },
+            { "id": "b", "text": { "de": "bitte" } },
+            { "id": "c", "text": { "de": "tschüss" } }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m00-erste-schritte.l00-begruessung.e03", "type": "dictation", "source": "hand",
+          "skill": "listening", "estSeconds": 45, "audioText": "Guten Morgen!",
+          "vocabRefs": ["a1.v.guten-morgen"], "answers": ["Guten Morgen!", "Guten Morgen"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l00-begruessung.e04", "type": "mcq", "subtype": "reading",
+          "source": "hand", "skill": "reading", "estSeconds": 20,
+          "prompt": { "en": "You want to say goodbye. Which word do you use?" },
+          "vocabRefs": ["a1.v.tschuess"],
+          "choices": [
+            { "id": "a", "text": { "de": "Hallo" } },
+            { "id": "b", "text": { "de": "Tschüss" } },
+            { "id": "c", "text": { "de": "Danke" } }
+          ],
+          "correctChoiceId": "b"
+        }
+      ]
+    },
+    {
+      "id": "a1.m00-erste-schritte.l01-name",
+      "title": "Wie heißt du?",
+      "order": 1,
+      "estMinutes": 14,
+      "objectives": ["Say your name", "Use heißen and sein in the present"],
+      "prereqs": ["a1.m00-erste-schritte.l00-begruessung"],
+      "grammarNotes": ["gn.sein-present"],
+      "introducesVocab": ["a1.v.name", "a1.v.heissen", "a1.v.sein"],
+      "exercises": [
+        {
+          "id": "a1.m00-erste-schritte.l01-name.e01", "type": "cloze", "source": "template",
+          "skill": "output", "estSeconds": 25, "inputMode": "type",
+          "prompt": { "en": "My name is Anna. (Ich ___ Anna.)" },
+          "vocabRefs": ["a1.v.heissen"],
+          "segments": [
+            { "kind": "text", "value": "Ich " },
+            { "kind": "blank", "id": 1, "answers": ["heiße"], "caseInsensitive": true, "reject": ["heißt", "heisst"] },
+            { "kind": "text", "value": " Anna." }
+          ]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l01-name.e02", "type": "conjugate", "source": "auto",
+          "skill": "output", "estSeconds": 15, "inputMode": "type",
+          "prompt": { "en": "Conjugate heißen for \"du\"." },
+          "verbRef": "a1.v.heissen", "tense": "praesens", "person": "du",
+          "vocabRefs": ["a1.v.heissen"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l01-name.e03", "type": "drag-tile", "source": "hand",
+          "skill": "output", "estSeconds": 30, "translationEn": "My name is Anna.",
+          "audioText": "Mein Name ist Anna.", "vocabRefs": ["a1.v.name"],
+          "tiles": ["Mein", "Name", "ist", "Anna"],
+          "accepted": [["Mein", "Name", "ist", "Anna"]],
+          "distractorTiles": ["bin"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l01-name.e04", "type": "conjugate", "source": "auto",
+          "skill": "output", "estSeconds": 15, "inputMode": "type",
+          "prompt": { "en": "Conjugate sein for \"du\"." },
+          "verbRef": "a1.v.sein", "tense": "praesens", "person": "du",
+          "vocabRefs": ["a1.v.sein"], "explainRef": "gn.sein-present"
+        },
+        {
+          "id": "a1.m00-erste-schritte.l01-name.e05", "type": "mcq", "subtype": "translation",
+          "source": "hand", "skill": "reading", "estSeconds": 25,
+          "passage": { "de": "Ich heiße Tom." }, "prompt": { "en": "What does this mean?" },
+          "vocabRefs": ["a1.v.heissen"],
+          "choices": [
+            { "id": "a", "text": { "en": "My name is Tom." } },
+            { "id": "b", "text": { "en": "I live in Tom." } },
+            { "id": "c", "text": { "en": "I come from Tom." } }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m00-erste-schritte.l02-herkunft",
+      "title": "Woher kommst du?",
+      "order": 2,
+      "estMinutes": 14,
+      "objectives": ["Say where you come from and live", "Name a country and a language"],
+      "prereqs": ["a1.m00-erste-schritte.l01-name"],
+      "grammarNotes": ["gn.present-regular"],
+      "introducesVocab": ["a1.v.kommen", "a1.v.wohnen", "a1.v.land", "a1.v.sprache", "a1.v.deutschland", "a1.v.deutsch"],
+      "exercises": [
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e01", "type": "conjugate", "source": "auto",
+          "skill": "output", "estSeconds": 15, "inputMode": "type",
+          "prompt": { "en": "Conjugate kommen for \"du\"." },
+          "verbRef": "a1.v.kommen", "tense": "praesens", "person": "du",
+          "vocabRefs": ["a1.v.kommen"], "explainRef": "gn.present-regular"
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e02", "type": "cloze", "source": "template",
+          "skill": "output", "estSeconds": 25, "inputMode": "type",
+          "prompt": { "en": "I come from Germany. (Ich ___ aus Deutschland.)" },
+          "vocabRefs": ["a1.v.kommen"],
+          "segments": [
+            { "kind": "text", "value": "Ich " },
+            { "kind": "blank", "id": 1, "answers": ["komme"], "caseInsensitive": true, "reject": ["kommt", "kommst"] },
+            { "kind": "text", "value": " aus Deutschland." }
+          ]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e03", "type": "gender-tap", "source": "auto",
+          "skill": "reading", "estSeconds": 20, "vocabRefs": ["a1.v.land"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e04", "type": "gender-tap", "source": "auto",
+          "skill": "reading", "estSeconds": 20, "vocabRefs": ["a1.v.sprache"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e05", "type": "drag-tile", "source": "hand",
+          "skill": "output", "estSeconds": 30, "translationEn": "I live in Berlin.",
+          "audioText": "Ich wohne in Berlin.", "vocabRefs": ["a1.v.wohnen"],
+          "tiles": ["Ich", "wohne", "in", "Berlin"],
+          "accepted": [["Ich", "wohne", "in", "Berlin"]],
+          "distractorTiles": ["wohnt"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e06", "type": "dictation", "source": "hand",
+          "skill": "listening", "estSeconds": 45, "audioText": "Ich komme aus Deutschland.",
+          "vocabRefs": ["a1.v.kommen", "a1.v.deutschland"],
+          "answers": ["Ich komme aus Deutschland.", "Ich komme aus Deutschland"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e07", "type": "conjugate", "source": "auto",
+          "skill": "output", "estSeconds": 15, "inputMode": "type",
+          "prompt": { "en": "Tell a friend to come: imperative of kommen (du)." },
+          "verbRef": "a1.v.kommen", "tense": "imperativ", "person": "du",
+          "vocabRefs": ["a1.v.kommen"]
+        },
+        {
+          "id": "a1.m00-erste-schritte.l02-herkunft.e08", "type": "mcq", "subtype": "reading",
+          "source": "hand", "skill": "reading", "estSeconds": 30,
+          "passage": { "de": "Anna kommt aus Deutschland. Sie spricht Deutsch." },
+          "prompt": { "en": "Where is Anna from?" },
+          "vocabRefs": ["a1.v.kommen", "a1.v.deutschland"],
+          "choices": [
+            { "id": "a", "text": { "en": "Germany" } },
+            { "id": "b", "text": { "en": "India" } },
+            { "id": "c", "text": { "en": "Austria" } }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ]
+}

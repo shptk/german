@@ -1,0 +1,23 @@
+{
+  "id": "a1",
+  "cefr": "A1",
+  "title": "German A1",
+  "moduleOrder": ["a1.m00-erste-schritte"],
+  "modules": [
+    {
+      "id": "a1.m00-erste-schritte",
+      "file": "modules/a1.m00-erste-schritte.json",
+      "title": "Erste Schritte",
+      "order": 0,
+      "icon": "wave",
+      "lessonCount": 3,
+      "estMinutes": 40,
+      "vocabCount": 16,
+      "grammarTopics": ["g.present-tense", "g.sein"]
+    }
+  ],
+  "grammarTopics": [
+    { "id": "g.present-tense", "title": "Present tense (regular verbs)" },
+    { "id": "g.sein", "title": "sein (to be)" }
+  ]
+}

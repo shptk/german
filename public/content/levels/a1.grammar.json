@@ -1,0 +1,51 @@
+[
+  {
+    "id": "gn.present-regular",
+    "topic": "g.present-tense",
+    "level": "a1",
+    "title": "Present tense — regular verbs",
+    "summary": "Drop the -en from the infinitive and add an ending that matches the subject.",
+    "body": [
+      { "kind": "paragraph", "text": "German verbs change their ending depending on who does the action. For a regular verb like **wohnen** (to live), take the stem **wohn-** and add the ending." },
+      {
+        "kind": "table",
+        "headers": ["person", "ending", "wohnen"],
+        "rows": [
+          ["ich", "-e", "wohne"],
+          ["du", "-st", "wohnst"],
+          ["er/sie/es", "-t", "wohnt"],
+          ["wir", "-en", "wohnen"],
+          ["ihr", "-t", "wohnt"],
+          ["sie/Sie", "-en", "wohnen"]
+        ]
+      },
+      { "kind": "examples", "items": [{ "de": "Ich wohne in Berlin.", "en": "I live in Berlin." }] },
+      { "kind": "tip", "text": "heißen and kommen follow the same pattern: ich heiße, du kommst." }
+    ],
+    "relatedNotes": ["gn.sein-present"],
+    "relatedVocab": ["a1.v.wohnen", "a1.v.kommen", "a1.v.heissen"]
+  },
+  {
+    "id": "gn.sein-present",
+    "topic": "g.sein",
+    "level": "a1",
+    "title": "sein (to be)",
+    "summary": "sein is irregular and extremely common — learn all six forms by heart.",
+    "body": [
+      {
+        "kind": "table",
+        "headers": ["person", "sein"],
+        "rows": [
+          ["ich", "bin"],
+          ["du", "bist"],
+          ["er/sie/es", "ist"],
+          ["wir", "sind"],
+          ["ihr", "seid"],
+          ["sie/Sie", "sind"]
+        ]
+      },
+      { "kind": "examples", "items": [{ "de": "Wer bist du? — Ich bin Anna.", "en": "Who are you? — I am Anna." }] }
+    ],
+    "relatedVocab": ["a1.v.sein"]
+  }
+]
