@@ -13,6 +13,7 @@
 const CLIENT_ID: string = '154320784701-fh1mvscaqdvttp1a0kk091uisa5m83eb.apps.googleusercontent.com';
 const SCOPES = 'openid email profile https://www.googleapis.com/auth/drive.file';
 const PROFILE_KEY = 'german-a1:auth-profile';
+const TOKEN_KEY = 'german-a1:auth-token';
 
 export interface Profile {
   email: string;
@@ -24,8 +25,9 @@ export interface Profile {
 const gsi = () => (window as unknown as { google?: any }).google;
 
 let profile: Profile | null = loadProfile();
-let accessToken: string | null = null;
-let tokenExpiry = 0;
+const restoredToken = loadToken();
+let accessToken: string | null = restoredToken.accessToken;
+let tokenExpiry = restoredToken.tokenExpiry;
 let tokenClient: any = null;
 let gisReady: Promise<void> | null = null;
 const listeners = new Set<(p: Profile | null) => void>();
@@ -44,6 +46,42 @@ function setProfile(p: Profile | null) {
   if (p) localStorage.setItem(PROFILE_KEY, JSON.stringify(p));
   else localStorage.removeItem(PROFILE_KEY);
   for (const cb of listeners) cb(p);
+}
+
+/* Persist the access token so a reload within its ~1h life keeps auto-syncing
+ * with no popup. Only a still-valid token is worth restoring. The scope is
+ * drive.file (per-file, low-sensitivity) and the token is short-lived. */
+function loadToken(): { accessToken: string | null; tokenExpiry: number } {
+  try {
+    const raw = localStorage.getItem(TOKEN_KEY);
+    if (raw) {
+      const t = JSON.parse(raw) as { accessToken?: string; tokenExpiry?: number };
+      if (t.accessToken && typeof t.tokenExpiry === 'number' && Date.now() < t.tokenExpiry) {
+        return { accessToken: t.accessToken, tokenExpiry: t.tokenExpiry };
+      }
+    }
+  } catch {
+    /* ignore */
+  }
+  return { accessToken: null, tokenExpiry: 0 };
+}
+function setToken(token: string, expiry: number) {
+  accessToken = token;
+  tokenExpiry = expiry;
+  try {
+    localStorage.setItem(TOKEN_KEY, JSON.stringify({ accessToken: token, tokenExpiry: expiry }));
+  } catch {
+    /* ignore */
+  }
+}
+function clearToken() {
+  accessToken = null;
+  tokenExpiry = 0;
+  try {
+    localStorage.removeItem(TOKEN_KEY);
+  } catch {
+    /* ignore */
+  }
 }
 
 export function isConfigured(): boolean {
@@ -82,19 +120,21 @@ async function ensureClient(): Promise<void> {
   }
 }
 
-function requestToken(prompt?: string): Promise<string> {
+/* Interactive token request — ALWAYS shows the GIS popup, so only ever call it
+ * from an explicit user gesture (sign in / Sync now / Reset). There is no truly
+ * silent variant: requestAccessToken opens a window even with prompt:'none'. */
+function requestToken(): Promise<string> {
   return ensureClient().then(
     () =>
       new Promise<string>((resolve, reject) => {
         tokenClient.callback = (resp: any) => {
           if (resp?.access_token) {
-            accessToken = resp.access_token;
-            tokenExpiry = Date.now() + (resp.expires_in ?? 3600) * 1000 - 60_000;
+            setToken(resp.access_token, Date.now() + (resp.expires_in ?? 3600) * 1000 - 60_000);
             resolve(resp.access_token);
           } else reject(new Error(resp?.error ?? 'Authorization failed.'));
         };
         tokenClient.error_callback = (err: any) => reject(new Error(err?.message ?? 'Sign-in was cancelled.'));
-        tokenClient.requestAccessToken(prompt === undefined ? {} : { prompt });
+        tokenClient.requestAccessToken();
       }),
   );
 }
@@ -122,17 +162,24 @@ export function disconnect(): void {
       /* ignore */
     }
   }
-  accessToken = null;
-  tokenExpiry = 0;
+  clearToken();
   setProfile(null);
 }
 
-/** Access token for Drive calls; silent refresh by default (no surprise popup). */
+/**
+ * Access token for Drive calls.
+ * - non-interactive (default): return a cached, still-valid token or null —
+ *   NEVER opens a popup. (GIS requestAccessToken always flashes a window, even
+ *   with prompt:'none', so there is no silent refresh; background syncs must
+ *   tolerate a null and wait for an explicit Sync instead of popping.)
+ * - interactive (user gesture only): mint a fresh token via the GIS popup.
+ */
 export async function getToken(interactive = false): Promise<string | null> {
   if (!isConfigured()) return null;
   if (accessToken && Date.now() < tokenExpiry) return accessToken;
+  if (!interactive) return null;
   try {
-    return await requestToken(interactive ? undefined : 'none');
+    return await requestToken();
   } catch {
     return null;
   }

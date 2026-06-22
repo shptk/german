@@ -87,7 +87,9 @@ export class DriveSyncStore implements PersistencePort {
   }
   async clearCloud(): Promise<void> {
     if (!isConnected()) return; // nothing remote to clear when signed out
-    const token = await getToken();
+    // Reset is an explicit user action and deleting the remote copy genuinely
+    // needs a token, so an interactive (re)auth here is acceptable.
+    const token = await getToken(true);
     if (!token) return;
     const id = this.fileId ?? (await findFileId(token));
     if (id) await deleteFile(token, id);
@@ -100,8 +102,13 @@ export class DriveSyncStore implements PersistencePort {
     this.pushTimer = setTimeout(() => void this.sync(), PUSH_DEBOUNCE_MS);
   }
 
-  /** Pull → merge (best-of) → push. Safe to call repeatedly. */
-  async sync(): Promise<SyncResult> {
+  /**
+   * Pull → merge (best-of) → push. Safe to call repeatedly.
+   * `interactive` is true only for a user-tapped "Sync now" — that's the one
+   * path allowed to pop the Google auth window to mint a fresh token. Automatic
+   * syncs (load, post-edit push, sign-in) stay non-interactive and never pop.
+   */
+  async sync(interactive = false): Promise<SyncResult> {
     if (!isConfigured() || !isConnected()) {
       this.set({ kind: 'local-only' });
       return { kind: 'local-only' };
@@ -112,9 +119,11 @@ export class DriveSyncStore implements PersistencePort {
     }
     try {
       this.set({ kind: 'syncing' });
-      const token = await getToken();
+      const token = await getToken(interactive);
       if (!token) {
-        this.set({ kind: 'offline' });
+        // Signed in but no usable token (expired, or a fresh load past its 1h
+        // life). Don't flash a popup — pause until the next explicit Sync.
+        this.set({ kind: 'paused' });
         return { kind: 'noop' };
       }
       const local = await this.local.load();

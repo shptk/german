@@ -33,7 +33,8 @@
   const cloudEmail = $derived(app.cloudEmail);
   const SYNC_LABEL: Record<string, string> = {
     'local-only': 'Not signed in', idle: 'Synced', syncing: 'Syncing…',
-    offline: 'Offline — will sync later', conflict: 'Needs attention', error: 'Sync error',
+    offline: 'Offline — will sync later', paused: 'Tap Sync now to update',
+    conflict: 'Needs attention', error: 'Sync error',
   };
 
   let message = $state('');

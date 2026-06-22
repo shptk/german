@@ -130,7 +130,7 @@ export async function disconnectCloud(): Promise<void> {
   app.syncStatus = persistence.getSyncStatus();
 }
 export async function syncNow(): Promise<void> {
-  await persistence.sync();
+  await persistence.sync(true); // user-tapped — allowed to re-auth via the popup
   app.syncStatus = persistence.getSyncStatus();
 }
 export function cloudProfile(): { email: string; name: string } | null {

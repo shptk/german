@@ -96,6 +96,9 @@ export type SyncStatus =
   | { kind: 'idle'; lastSyncedAt: number }
   | { kind: 'syncing' }
   | { kind: 'offline' }
+  // signed in, but auto-sync is waiting on an explicit "Sync now" to re-auth
+  // (the token expired and we won't pop a window in the background)
+  | { kind: 'paused' }
   | { kind: 'conflict'; resolvable: boolean }
   | { kind: 'error'; message: string };
 
@@ -110,7 +113,7 @@ export interface PersistencePort {
   patch(mutate: (draft: AppState) => void): Promise<AppState>;
   exportBackup(): Promise<BackupFile>;
   importBackup(file: unknown, opts?: { strategy: 'replace' | 'merge' }): Promise<ImportResult>;
-  sync(): Promise<SyncResult>;
+  sync(interactive?: boolean): Promise<SyncResult>;
   getSyncStatus(): SyncStatus;
   onSyncStatusChange(cb: (s: SyncStatus) => void): () => void;
   connectCloud?(): Promise<void>;
