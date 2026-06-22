@@ -179,14 +179,8 @@
   {#if resetStep === 0}
     <p class="muted">Erase all your progress and start over.</p>
     <button class="btn warn-btn" onclick={() => (resetStep = 1)}>Reset all progress</button>
-  {:else if resetStep === 1}
-    <p class="muted">This erases all your progress on this device. Continue?</p>
-    <div class="actions">
-      <button class="btn warn-btn" onclick={() => (resetStep = 2)}>Continue</button>
-      <button class="btn ghost" onclick={() => (resetStep = 0)}>Cancel</button>
-    </div>
   {:else}
-    <p class="muted"><strong>Final check.</strong> This also deletes your synced Google Drive copy{cloudEmail ? '' : ' (when signed in)'} and cannot be undone.</p>
+    <p class="muted">This erases all your progress on this device{cloudEmail ? ' and your synced Google Drive copy' : ''} and cannot be undone.</p>
     <div class="actions">
       <button class="btn warn-btn" onclick={doReset}>Delete everything</button>
       <button class="btn ghost" onclick={() => (resetStep = 0)}>Cancel</button>
