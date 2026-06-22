@@ -1,31 +1,40 @@
 /*
- * Google Drive sync as a DROP-IN decorator over IndexedDbStore (M8). IndexedDB
- * stays the offline source of truth + read cache; Drive is a remote replica of
- * the same backup envelope. Every load/patch/export reads local, so the app is
- * fully offline-capable and identical with or without cloud — cloud only adds a
- * background pull/merge/push. Deleting this file + the create.ts branch leaves a
- * working local-first app.
+ * Google Drive sync as a DROP-IN decorator over IndexedDbStore. IndexedDB stays
+ * the offline source of truth + read cache; Drive (drive.file, one app-owned
+ * file) is a remote replica of the backup envelope. Every load/patch/export
+ * reads local, so the app is fully offline-capable and identical with or without
+ * cloud. Mirrors the todo-tracker sync model (reuses its client id); merge is
+ * best-of/never-downgrade (mergeStates).
  */
 
 import { parseBackup, toBackup } from '../backup';
 import { mergeStates } from '../merge';
 import type { AppState, ImportResult, PersistencePort, SyncResult, SyncStatus } from '../types';
 import type { IndexedDbStore } from '../idb-store';
-import { connect, disconnect, getToken, isConfigured, isConnected } from './auth';
-import { createState, findStateFile, readState, updateState } from './driveRest';
+import { connect, disconnect, getProfile, getToken, isConfigured, isConnected, subscribeAuth } from './auth';
+import { createFile, deleteFile, findFileId, readFile, writeFile } from './driveRest';
 
-const PUSH_DEBOUNCE_MS = 8000;
+const PUSH_DEBOUNCE_MS = 4000;
 
 export class DriveSyncStore implements PersistencePort {
-  private status: SyncStatus = { kind: 'local-only' };
+  private status: SyncStatus;
   private listeners = new Set<(s: SyncStatus) => void>();
   private pushTimer: ReturnType<typeof setTimeout> | null = null;
+  private fileId: string | null = null;
 
-  constructor(private local: IndexedDbStore) {}
+  constructor(private local: IndexedDbStore) {
+    this.status = isConnected() ? { kind: 'idle', lastSyncedAt: 0 } : { kind: 'local-only' };
+    // React to sign-in/out from anywhere.
+    subscribeAuth((p) => {
+      if (p) void this.sync();
+      else this.set({ kind: 'local-only' });
+    });
+  }
 
-  // ---- delegate the local-first surface ----
-  init() {
-    return this.local.init();
+  // ---- local-first surface ----
+  async init() {
+    await this.local.init();
+    if (isConnected()) void this.sync(); // pull-on-load (silent)
   }
   load() {
     return this.local.load();
@@ -49,7 +58,7 @@ export class DriveSyncStore implements PersistencePort {
     return s;
   }
 
-  // ---- sync status ----
+  // ---- status ----
   getSyncStatus(): SyncStatus {
     return this.status;
   }
@@ -57,30 +66,41 @@ export class DriveSyncStore implements PersistencePort {
     this.listeners.add(cb);
     return () => this.listeners.delete(cb);
   }
+  cloudProfile() {
+    const p = getProfile();
+    return p ? { email: p.email, name: p.name } : null;
+  }
   private set(s: SyncStatus) {
     this.status = s;
     for (const l of this.listeners) l(s);
   }
 
-  // ---- cloud connect / disconnect ----
+  // ---- connect / disconnect / clear ----
   async connectCloud(): Promise<void> {
     await connect();
     await this.sync();
   }
   async disconnectCloud(): Promise<void> {
     disconnect();
+    this.fileId = null;
     this.set({ kind: 'local-only' });
+  }
+  async clearCloud(): Promise<void> {
+    if (!isConnected()) return; // nothing remote to clear when signed out
+    const token = await getToken();
+    if (!token) return;
+    const id = this.fileId ?? (await findFileId(token));
+    if (id) await deleteFile(token, id);
+    this.fileId = null;
   }
 
   private schedulePush() {
     if (!isConnected()) return;
     if (this.pushTimer) clearTimeout(this.pushTimer);
-    this.pushTimer = setTimeout(() => {
-      void this.sync();
-    }, PUSH_DEBOUNCE_MS);
+    this.pushTimer = setTimeout(() => void this.sync(), PUSH_DEBOUNCE_MS);
   }
 
-  /** Pull + merge (best-of, never-downgrade) + push. Safe to call repeatedly. */
+  /** Pull → merge (best-of) → push. Safe to call repeatedly. */
   async sync(): Promise<SyncResult> {
     if (!isConfigured() || !isConnected()) {
       this.set({ kind: 'local-only' });
@@ -93,22 +113,29 @@ export class DriveSyncStore implements PersistencePort {
     try {
       this.set({ kind: 'syncing' });
       const token = await getToken();
+      if (!token) {
+        this.set({ kind: 'offline' });
+        return { kind: 'noop' };
+      }
       const local = await this.local.load();
-      const remote = await findStateFile(token);
+      if (!this.fileId) this.fileId = await findFileId(token);
 
-      if (!remote) {
-        await createState(token, toBackup(local, new Date().toISOString()), local.updatedAt);
+      if (!this.fileId) {
+        this.fileId = await createFile(token, toBackup(local, new Date().toISOString()));
         this.set({ kind: 'idle', lastSyncedAt: Date.now() });
         return { kind: 'pushed' };
       }
 
-      const remoteState = parseBackup(await readState(token, remote.id)).state;
+      const raw = await readFile(token, this.fileId);
+      if (raw == null) {
+        await writeFile(token, this.fileId, toBackup(local, new Date().toISOString()));
+        this.set({ kind: 'idle', lastSyncedAt: Date.now() });
+        return { kind: 'pushed' };
+      }
+      const remoteState = parseBackup(raw).state;
       const merged = mergeStates(local, remoteState);
-
-      // Write the merged result locally (idempotent best-of) and remotely.
       await this.local.importBackup(toBackup(merged, new Date().toISOString()), { strategy: 'replace' });
-      await updateState(token, remote.id, toBackup(merged, new Date().toISOString()), merged.updatedAt);
-
+      await writeFile(token, this.fileId, toBackup(merged, new Date().toISOString()));
       this.set({ kind: 'idle', lastSyncedAt: Date.now() });
       return { kind: 'merged' };
     } catch (e) {

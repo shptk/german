@@ -115,5 +115,9 @@ export interface PersistencePort {
   onSyncStatusChange(cb: (s: SyncStatus) => void): () => void;
   connectCloud?(): Promise<void>;
   disconnectCloud?(): Promise<void>;
+  /** Delete the remote synced copy (used by Reset progress). */
+  clearCloud?(): Promise<void>;
+  /** Identity of the signed-in cloud account, if any. */
+  cloudProfile?(): { email: string; name: string } | null;
   clearLocal(): Promise<void>;
 }

@@ -70,8 +70,9 @@
   color-scheme: light;
 }
 
+/* Dark values, shared by the system-preference default and the explicit override. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #0f1115;
     --surface: #181b22;
     --surface-2: #21252e;
@@ -83,6 +84,32 @@
     --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
   }
+}
+
+/* Manual override (Settings → Theme). data-theme on <html> beats the media query. */
+:root[data-theme='dark'] {
+  --bg: #0f1115;
+  --surface: #181b22;
+  --surface-2: #21252e;
+  --text: #eceef3;
+  --text-muted: #9aa1af;
+  --border: #2a2f3a;
+  --accent-weak: #1c2540;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
+}
+:root[data-theme='light'] {
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --surface-2: #f2f3f7;
+  --text: #1a1c22;
+  --text-muted: #6b7180;
+  --border: #e6e8ee;
+  --accent-weak: #e8edff;
+  --shadow-1: 0 1px 2px rgba(16, 18, 27, 0.06);
+  --shadow-2: 0 6px 20px rgba(16, 18, 27, 0.1);
+  color-scheme: light;
 }
 
 @media (prefers-reduced-motion: reduce) {

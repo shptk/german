@@ -45,6 +45,7 @@ export const app = $state({
   state: null as AppState | null,
   content: null as AssembledContent | null,
   syncStatus: { kind: 'local-only' } as SyncStatus,
+  cloudEmail: null as string | null,
 });
 
 /** Local calendar day, 'YYYY-MM-DD'. (Store layer may read the clock; the engine may not.) */
@@ -65,6 +66,7 @@ export async function boot(): Promise<void> {
     app.state = state;
     app.content = content;
     app.syncStatus = persistence.getSyncStatus();
+    app.cloudEmail = persistence.cloudProfile?.()?.email ?? null;
     persistence.onSyncStatusChange((s) => (app.syncStatus = s));
     warmVoices();
     app.ready = true;
@@ -119,14 +121,31 @@ export function cloudAvailable(): boolean {
 }
 export async function connectCloud(): Promise<void> {
   await persistence.connectCloud?.();
+  app.cloudEmail = persistence.cloudProfile?.()?.email ?? null;
   app.syncStatus = persistence.getSyncStatus();
 }
 export async function disconnectCloud(): Promise<void> {
   await persistence.disconnectCloud?.();
+  app.cloudEmail = null;
   app.syncStatus = persistence.getSyncStatus();
 }
 export async function syncNow(): Promise<void> {
   await persistence.sync();
+  app.syncStatus = persistence.getSyncStatus();
+}
+export function cloudProfile(): { email: string; name: string } | null {
+  return persistence.cloudProfile?.() ?? null;
+}
+
+/** Wipe ALL progress — local IndexedDB and (if connected) the Drive copy. */
+export async function resetProgress(): Promise<void> {
+  try {
+    await persistence.clearCloud?.();
+  } catch {
+    /* cloud delete best-effort */
+  }
+  await persistence.clearLocal();
+  app.state = await persistence.load();
   app.syncStatus = persistence.getSyncStatus();
 }
 

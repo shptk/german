@@ -36,6 +36,14 @@
 
   // The bottom bar hides during focused play (the Check bar owns the thumb zone).
   const showTabbar = $derived(!['session', 'lesson', 'exam'].includes(segment(route.path)));
+
+  // Apply the chosen theme to <html> (system => follow OS via the media query).
+  $effect(() => {
+    const t = app.state?.settings.theme ?? 'system';
+    const el = document.documentElement;
+    if (t === 'system') delete el.dataset.theme;
+    else el.dataset.theme = t;
+  });
 </script>
 
 {#if app.loading}

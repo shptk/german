@@ -1,66 +1,56 @@
 /*
- * Minimal Google Drive REST calls against the hidden per-app appDataFolder
- * (M8). One fixed file `state.json` holding the backup envelope; updatedAt is
- * mirrored into appProperties so we can compare remote-vs-local without
- * downloading. No SDK — plain fetch with a bearer token.
+ * Minimal Google Drive REST against a single app-owned file (drive.file scope).
+ * The app only ever sees files it created, so we find ours by name. The file
+ * holds the backup envelope; merge/LWW uses the updatedAt inside it.
  */
 
-const API = 'https://www.googleapis.com/drive/v3';
+const DRIVE = 'https://www.googleapis.com/drive/v3';
 const UPLOAD = 'https://www.googleapis.com/upload/drive/v3';
-const FILE = 'state.json';
-const BOUNDARY = 'germanA1boundary';
-
-export interface RemoteMeta {
-  id: string;
-  updatedAt: number;
-}
+const FILE_NAME = 'german-a1.json'; // distinct per app → safe to share one client id
 
 const auth = (token: string) => ({ Authorization: `Bearer ${token}` });
 
-export async function findStateFile(token: string): Promise<RemoteMeta | null> {
-  const url = `${API}/files?spaces=appDataFolder&q=${encodeURIComponent(`name='${FILE}'`)}&fields=files(id,appProperties)`;
-  const r = await fetch(url, { headers: auth(token) });
-  if (!r.ok) throw new Error(`drive list failed (${r.status})`);
-  const j = (await r.json()) as { files?: { id: string; appProperties?: { updatedAt?: string } }[] };
-  const f = j.files?.[0];
-  return f ? { id: f.id, updatedAt: Number(f.appProperties?.updatedAt ?? 0) } : null;
+export async function findFileId(token: string): Promise<string | null> {
+  const q = encodeURIComponent(`name='${FILE_NAME}' and trashed=false`);
+  const r = await fetch(`${DRIVE}/files?q=${q}&spaces=drive&fields=files(id)`, { headers: auth(token) });
+  if (!r.ok) throw new Error(`Drive list failed (${r.status})`);
+  const j = (await r.json()) as { files?: { id: string }[] };
+  return j.files?.[0]?.id ?? null;
 }
 
-export async function readState(token: string, id: string): Promise<unknown> {
-  const r = await fetch(`${API}/files/${id}?alt=media`, { headers: auth(token) });
-  if (!r.ok) throw new Error(`drive read failed (${r.status})`);
+export async function readFile(token: string, id: string): Promise<unknown | null> {
+  const r = await fetch(`${DRIVE}/files/${id}?alt=media`, { headers: auth(token) });
+  if (!r.ok) return null;
   return r.json();
 }
 
-function multipart(metadata: unknown, content: unknown): string {
-  return (
-    `--${BOUNDARY}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify(metadata)}\r\n` +
-    `--${BOUNDARY}\r\nContent-Type: application/json\r\n\r\n${JSON.stringify(content)}\r\n` +
-    `--${BOUNDARY}--`
-  );
-}
-
-export async function createState(token: string, content: unknown, updatedAt: number): Promise<string> {
-  const metadata = { name: FILE, parents: ['appDataFolder'], appProperties: { updatedAt: String(updatedAt) } };
+export async function createFile(token: string, content: unknown): Promise<string> {
+  const boundary = 'germanA1boundary';
+  const body =
+    `--${boundary}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n` +
+    JSON.stringify({ name: FILE_NAME, mimeType: 'application/json' }) +
+    `\r\n--${boundary}\r\nContent-Type: application/json\r\n\r\n` +
+    JSON.stringify(content) +
+    `\r\n--${boundary}--`;
   const r = await fetch(`${UPLOAD}/files?uploadType=multipart&fields=id`, {
     method: 'POST',
-    headers: { ...auth(token), 'Content-Type': `multipart/related; boundary=${BOUNDARY}` },
-    body: multipart(metadata, content),
+    headers: { ...auth(token), 'Content-Type': `multipart/related; boundary=${boundary}` },
+    body,
   });
-  if (!r.ok) throw new Error(`drive create failed (${r.status})`);
+  if (!r.ok) throw new Error(`Drive create failed (${r.status})`);
   return ((await r.json()) as { id: string }).id;
 }
 
-export async function updateState(token: string, id: string, content: unknown, updatedAt: number): Promise<void> {
-  const c = await fetch(`${UPLOAD}/files/${id}?uploadType=media`, {
+export async function writeFile(token: string, id: string, content: unknown): Promise<void> {
+  const r = await fetch(`${UPLOAD}/files/${id}?uploadType=media`, {
     method: 'PATCH',
     headers: { ...auth(token), 'Content-Type': 'application/json' },
     body: JSON.stringify(content),
   });
-  if (!c.ok) throw new Error(`drive update failed (${c.status})`);
-  await fetch(`${API}/files/${id}`, {
-    method: 'PATCH',
-    headers: { ...auth(token), 'Content-Type': 'application/json' },
-    body: JSON.stringify({ appProperties: { updatedAt: String(updatedAt) } }),
-  });
+  if (!r.ok) throw new Error(`Drive update failed (${r.status})`);
+}
+
+export async function deleteFile(token: string, id: string): Promise<void> {
+  const r = await fetch(`${DRIVE}/files/${id}`, { method: 'DELETE', headers: auth(token) });
+  if (!r.ok && r.status !== 404) throw new Error(`Drive delete failed (${r.status})`);
 }
