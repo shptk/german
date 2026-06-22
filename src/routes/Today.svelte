@@ -1,12 +1,14 @@
 <script lang="ts">
   import { daysBetween, type PaceStatusKind, type PresetId } from '$engine/index';
   import { app, getPace, getTodayQueue, hasPlan, setPlan, todayKey } from '$lib/stores/store.svelte';
+  import { navigate } from '$lib/router/router.svelte';
 
   const planned = $derived(hasPlan());
   const queue = $derived(getTodayQueue());
   const pace = $derived(getPace());
   const target = $derived(app.state?.plan?.targetDayKey ?? null);
   const daysLeft = $derived(target ? Math.max(0, daysBetween(todayKey(), target)) : 0);
+  const hasWork = $derived(!!queue && queue.newLessons.length + queue.reviews.length > 0);
 
   const PRESETS: { id: PresetId; label: string; mins: number; blurb: string }[] = [
     { id: 'relaxed', label: 'Relaxed', mins: 10, blurb: 'Gentle — about 10 min/day' },
@@ -66,8 +68,9 @@
         <p class="muted">All done for today. Nice work! 🎉</p>
       {/if}
     {/if}
-    <button class="primary" disabled>Start session</button>
-    <p class="note">Playable lessons arrive in the next update — your plan and progress are live now.</p>
+    <button class="primary" disabled={!hasWork} onclick={() => navigate('/session')}>
+      {hasWork ? 'Start session' : 'Done for today'}
+    </button>
   </section>
 {/if}
 

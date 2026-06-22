@@ -11,6 +11,13 @@
     needRefresh.set(false);
     offlineReady.set(false);
   }
+
+  // The "ready offline" notice is informational — auto-dismiss it so it never lingers.
+  $effect(() => {
+    if (!$offlineReady) return;
+    const t = setTimeout(() => offlineReady.set(false), 5000);
+    return () => clearTimeout(t);
+  });
 </script>
 
 {#if $offlineReady || $needRefresh}
@@ -48,6 +55,11 @@
     border-radius: var(--r-pill);
     box-shadow: var(--shadow-2);
     font: var(--t-small);
+    /* informational — never intercept clicks on the controls beneath it */
+    pointer-events: none;
+  }
+  .toast button {
+    pointer-events: auto;
   }
 
   .action {

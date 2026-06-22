@@ -6,6 +6,7 @@
   import Today from './routes/Today.svelte';
   import MapView from './routes/Map.svelte';
   import You from './routes/You.svelte';
+  import Session from './routes/Session.svelte';
   import NotFound from './routes/NotFound.svelte';
 
   // Route table (the only place routes are mapped). Capitalized => renders as a component.
@@ -17,10 +18,15 @@
         return MapView;
       case 'you':
         return You;
+      case 'session':
+        return Session;
       default:
         return NotFound;
     }
   });
+
+  // The bottom bar hides during a focused session (the Check bar owns the thumb zone).
+  const showTabbar = $derived(segment(route.path) !== 'session');
 </script>
 
 {#if app.loading}
@@ -40,7 +46,7 @@
         <Current />
       {/key}
     </main>
-    <Tabbar />
+    {#if showTabbar}<Tabbar />{/if}
   </div>
   <UpdateToast />
 {/if}
