@@ -10,7 +10,13 @@ import {
   paceStatus,
   smartCatchup,
   buildRecap,
+  addDays,
+  compareDayKeys,
+  lessonsNotDone,
+  validateCustomDate,
   type CatchupDecision,
+  type CustomDateCheck,
+  type DayKey,
   type DayQueue,
   type Grade,
   type PaceIntent,
@@ -18,7 +24,8 @@ import {
   type Recap,
 } from '$engine/index';
 import { loadContent, type AssembledContent } from '$content/index';
-import { createPersistence, type AppState, type PersistencePort, type SyncStatus } from '$persist/index';
+import { warmVoices } from '$lib/audio/tts';
+import { createPersistence, type AppState, type PersistencePort, type Settings, type SyncStatus } from '$persist/index';
 import {
   applyLessonCompletion,
   applyPause,
@@ -58,6 +65,7 @@ export async function boot(): Promise<void> {
     app.state = state;
     app.content = content;
     app.syncStatus = persistence.getSyncStatus();
+    warmVoices();
     app.ready = true;
   } catch (e) {
     app.error = e instanceof Error ? e.message : String(e);
@@ -86,6 +94,12 @@ export async function completeLesson(lessonId: string, scorePct: number): Promis
 
 export async function submitReview(cardId: string, grade: Grade): Promise<void> {
   await commit((d) => applyReview(d, cardId, grade, todayKey(), nowMs()));
+}
+
+export async function updateSettings(patch: Partial<Settings>): Promise<void> {
+  await commit((d) => {
+    d.settings = { ...d.settings, ...patch };
+  });
 }
 
 export async function pausePlan(): Promise<void> {
@@ -144,3 +158,45 @@ export function getRecap(): Recap | null {
 export function hasPlan(): boolean {
   return !!app.state?.plan;
 }
+
+/* ---- M5 selectors: progress lookups + custom-date check + catch-up trigger ---- */
+
+export function lessonStatus(id: string): 'done' | 'in_progress' | 'unseen' {
+  return app.state?.progress.lessons[id]?.status ?? 'unseen';
+}
+
+export function moduleStats(moduleId: string): { done: number; total: number } {
+  const mod = app.content?.modules.get(moduleId);
+  const lessons = mod?.lessons ?? [];
+  const done = lessons.filter((l) => lessonStatus(l.id) === 'done').length;
+  return { done, total: lessons.length };
+}
+
+/** First not-done lesson in prereq order (the guided "next" node), or null if complete. */
+export function nextRecommendedLessonId(): string | null {
+  const s = app.state;
+  if (!app.content || !s) return null;
+  return lessonsNotDone(app.content.course, doneSet(s))[0]?.id ?? null;
+}
+
+export function checkCustomDate(targetDayKey: DayKey): CustomDateCheck | null {
+  const s = app.state;
+  if (!s || !app.content) return null;
+  const hardCap = s.plan?.hardCapMin ?? 60;
+  return validateCustomDate(app.content.course, Object.values(s.srs.cards), doneSet(s), targetDayKey, todayKey(), hardCap);
+}
+
+/** True when the learner returns after missing at least one full day and isn't paused. */
+export function needsCatchup(): boolean {
+  const s = app.state;
+  if (!s?.plan || s.plan.pausedAt) return false;
+  const last = s.streak.lastActiveDayKey;
+  if (!last) return false;
+  return compareDayKeys(last, addDays(todayKey(), -1)) < 0; // last is before yesterday
+}
+
+export function setCustomDate(targetDayKey: DayKey): Promise<void> {
+  return setPlan({ kind: 'customDate', targetDayKey });
+}
+
+export const isDeprecatedVocab = isDeprecated;

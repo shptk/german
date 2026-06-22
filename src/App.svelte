@@ -5,8 +5,11 @@
   import UpdateToast from '$lib/components/ui/UpdateToast.svelte';
   import Today from './routes/Today.svelte';
   import MapView from './routes/Map.svelte';
+  import Module from './routes/Module.svelte';
+  import Lesson from './routes/Lesson.svelte';
   import You from './routes/You.svelte';
   import Session from './routes/Session.svelte';
+  import Exam from './routes/Exam.svelte';
   import NotFound from './routes/NotFound.svelte';
 
   // Route table (the only place routes are mapped). Capitalized => renders as a component.
@@ -16,17 +19,23 @@
         return Today;
       case 'map':
         return MapView;
+      case 'module':
+        return Module;
+      case 'lesson':
+        return Lesson;
       case 'you':
         return You;
       case 'session':
         return Session;
+      case 'exam':
+        return Exam;
       default:
         return NotFound;
     }
   });
 
-  // The bottom bar hides during a focused session (the Check bar owns the thumb zone).
-  const showTabbar = $derived(segment(route.path) !== 'session');
+  // The bottom bar hides during focused play (the Check bar owns the thumb zone).
+  const showTabbar = $derived(!['session', 'lesson'].includes(segment(route.path)));
 </script>
 
 {#if app.loading}

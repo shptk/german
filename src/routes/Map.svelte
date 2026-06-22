@@ -1,18 +1,18 @@
 <script lang="ts">
-  // Placeholder for the free-roam module map (the always-visible "finish line").
-  // Real serpentine map + always-unlocked nodes land in M5.
-  const modules = [
-    'Erste Schritte',
-    'Ich & du',
-    'Familie & Freunde',
-    'Essen & Trinken',
-    'Einkaufen',
-    'Wohnen',
-    'Tagesablauf & Zeit',
-    'Freizeit & Hobbys',
-    'Unterwegs',
-    'Arbeit, Gesundheit & Alltag',
-  ];
+  import { app, moduleStats, nextRecommendedLessonId } from '$lib/stores/store.svelte';
+  import { navigate } from '$lib/router/router.svelte';
+
+  const order = $derived(app.content?.level.moduleOrder ?? []);
+  const nextLesson = $derived(nextRecommendedLessonId());
+
+  function moduleOfLesson(lessonId: string): string | null {
+    for (const m of app.content?.modules.values() ?? []) {
+      if (m.lessons.some((l) => l.id === lessonId)) return m.id;
+    }
+    return null;
+  }
+  const nextModule = $derived(nextLesson ? moduleOfLesson(nextLesson) : null);
+  const complete = $derived(!nextLesson);
 </script>
 
 <header>
@@ -21,15 +21,32 @@
 </header>
 
 <ol class="path" aria-label="A1 modules">
-  {#each modules as name, i (name)}
-    <li class="node">
-      <span class="dot" aria-hidden="true">{i + 1}</span>
-      <span class="name">{name}</span>
+  {#each order as id, i (id)}
+    {@const m = app.content?.modules.get(id)}
+    {@const st = moduleStats(id)}
+    {@const isDone = st.total > 0 && st.done === st.total}
+    <li>
+      <button
+        class="node"
+        class:done={isDone}
+        class:started={st.done > 0 && !isDone}
+        class:next={id === nextModule}
+        onclick={() => navigate('/module/' + id)}
+      >
+        <span class="dot">{isDone ? '✓' : i + 1}</span>
+        <span class="name">{m?.title}</span>
+        <span class="meta">
+          {#if id === nextModule}▸ {/if}{st.done}/{st.total}
+        </span>
+      </button>
     </li>
   {/each}
-  <li class="node finish">
-    <span class="dot" aria-hidden="true">🏁</span>
-    <span class="name">Start Deutsch 1 — mock exam</span>
+  <li>
+    <button class="node finish" class:ready={complete} onclick={() => navigate('/exam')}>
+      <span class="dot">🏁</span>
+      <span class="name">Start Deutsch 1 — mock exam</span>
+      <span class="meta">{complete ? 'ready' : 'preview'}</span>
+    </button>
   </li>
 </ol>
 
@@ -43,6 +60,7 @@
     gap: var(--s-2);
   }
   .node {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: var(--s-3);
@@ -51,6 +69,8 @@
     border-radius: var(--r-md);
     padding: var(--s-3) var(--s-4);
     min-height: var(--tap-min);
+    color: var(--text);
+    text-align: left;
   }
   .dot {
     display: grid;
@@ -63,11 +83,25 @@
     color: var(--text-muted);
     font: var(--t-small);
   }
+  .name {
+    flex: 1;
+  }
+  .meta {
+    color: var(--text-muted);
+    font: var(--t-small);
+  }
+  .node.done .dot {
+    background: color-mix(in srgb, var(--success) 18%, transparent);
+    color: var(--success);
+  }
+  .node.next {
+    border-color: var(--accent);
+  }
+  .node.next .meta {
+    color: var(--accent);
+  }
   .finish {
     border-color: var(--accent);
     background: var(--accent-weak);
-  }
-  .name {
-    color: var(--text);
   }
 </style>

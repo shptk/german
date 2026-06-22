@@ -34,6 +34,13 @@ function moduleOfLesson(content: AssembledContent, lessonId: string) {
   return undefined;
 }
 
+/** Free-roam: play a single lesson's exercises (no reviews). */
+export function buildLessonSession(lessonId: string, content: AssembledContent): SessionItem[] {
+  const mod = moduleOfLesson(content, lessonId);
+  const exs = (mod?.lessons.find((l) => l.id === lessonId)?.exercises ?? []) as unknown as Exercise[];
+  return exs.map((ex, i) => ({ kind: 'lesson', lessonId, exercise: ex, lastOfLesson: i === exs.length - 1 }));
+}
+
 export function buildSession(queue: DayQueue, content: AssembledContent): SessionItem[] {
   const items: SessionItem[] = [];
 

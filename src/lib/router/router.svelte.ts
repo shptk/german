@@ -36,3 +36,8 @@ export function navigate(to: string): void {
 export function segment(path: string = route.path): string {
   return path.replace(/^\//, '').split('/')[0] ?? '';
 }
+
+/** The i-th path segment, e.g. pathParam(1) of "/module/a1.m00" -> "a1.m00". */
+export function pathParam(i: number, path: string = route.path): string {
+  return decodeURIComponent(path.replace(/^\//, '').split('/')[i] ?? '');
+}
