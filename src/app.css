@@ -21,6 +21,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font: var(--t-body);
+  /* native controls (range slider, checkbox, date picker) follow the app accent */
+  accent-color: var(--accent);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   /* lock the page; scrolling happens inside the app frame */

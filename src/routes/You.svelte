@@ -195,7 +195,7 @@
   dd { margin: 0; color: var(--accent); font-weight: 600; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: var(--s-5); box-shadow: var(--shadow-1); margin-bottom: var(--s-4); }
   .card.danger { border-color: color-mix(in srgb, var(--warn) 45%, var(--border)); }
-  .eyebrow { margin: 0 0 var(--s-2); color: var(--text-muted); font: var(--t-small); text-transform: uppercase; }
+  .eyebrow { margin: 0 0 var(--s-2); color: var(--text-muted); font: var(--t-small); font-family: var(--font-mono); letter-spacing: 0.02em; text-transform: uppercase; }
   .eyebrow.sub { margin-top: var(--s-4); }
   .muted { margin: 0 0 var(--s-3); color: var(--text-muted); }
   .actions { display: flex; gap: var(--s-3); flex-wrap: wrap; }

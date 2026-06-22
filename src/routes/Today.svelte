@@ -142,6 +142,7 @@
     margin: 0 0 var(--s-2);
     color: var(--text-muted);
     font: var(--t-small);
+    font-family: var(--font-mono);
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }

@@ -44,7 +44,7 @@ export default defineConfig({
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#FBFBFD',
-        theme_color: '#2E5BFF',
+        theme_color: '#2f9e44',
         categories: ['education'],
       },
 

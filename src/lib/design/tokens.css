@@ -2,6 +2,10 @@
  * Design tokens — the single source of truth for color, spacing, type, motion.
  * Clean & minimal, mobile-first. Light + dark via a token swap (no component changes).
  * Rule: components reference these vars; no hard-coded hex/px in component styles.
+ *
+ * Palette aligns with the shared pathak.uk learning family (see vim-game THEME.md):
+ * learn-hub GREEN accent, shared mono stack for labels. App keeps its own calm
+ * language-app character (no terminal motif) and its own light/dark toggle.
  */
 
 :root {
@@ -10,12 +14,13 @@
   --surface: #ffffff;
   --surface-2: #f2f3f7;
   --text: #1a1c22;
-  --text-muted: #6b7180;
+  --text-muted: #5c6573;
   --border: #e6e8ee;
 
-  --accent: #2e5bff; /* one brand blue: CTAs, progress, active nav */
-  --accent-weak: #e8edff;
-  --on-accent: #ffffff;
+  --accent: #2f9e44; /* learn-hub GREEN: CTAs, progress, active nav (family accent) */
+  --accent-dim: #9fd4a6; /* muted/lighter accent — borders, hovers */
+  --accent-weak: #e4f5ea; /* soft green tint — selected/info backgrounds */
+  --on-accent: #0c1208; /* dark text on the green accent — legible per family spec */
 
   --success: #1fa36b; /* correct */
   --warn: #e0922f; /* incorrect — calm AMBER, never red (no-punish ethos in color) */
@@ -38,6 +43,7 @@
 
   /* ---- type (system stack; no web-font fetch) ---- */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', ui-monospace, Menlo, Consolas, monospace; /* eyebrow/brand labels only — keep body on --font-sans */
   --t-display: 700 2rem/2.375rem var(--font-sans);
   --t-h1: 700 1.5rem/1.875rem var(--font-sans);
   --t-h2: 600 1.25rem/1.625rem var(--font-sans);
@@ -77,9 +83,11 @@
     --surface: #181b22;
     --surface-2: #21252e;
     --text: #eceef3;
-    --text-muted: #9aa1af;
+    --text-muted: #8b93a7;
     --border: #2a2f3a;
-    --accent-weak: #1c2540;
+    --accent: #7fd962;
+    --accent-dim: #3f6b34;
+    --accent-weak: #1b2c1f;
     --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
@@ -92,9 +100,11 @@
   --surface: #181b22;
   --surface-2: #21252e;
   --text: #eceef3;
-  --text-muted: #9aa1af;
+  --text-muted: #8b93a7;
   --border: #2a2f3a;
-  --accent-weak: #1c2540;
+  --accent: #7fd962;
+  --accent-dim: #3f6b34;
+  --accent-weak: #1b2c1f;
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -104,9 +114,11 @@
   --surface: #ffffff;
   --surface-2: #f2f3f7;
   --text: #1a1c22;
-  --text-muted: #6b7180;
+  --text-muted: #5c6573;
   --border: #e6e8ee;
-  --accent-weak: #e8edff;
+  --accent: #2f9e44;
+  --accent-dim: #9fd4a6;
+  --accent-weak: #e4f5ea;
   --shadow-1: 0 1px 2px rgba(16, 18, 27, 0.06);
   --shadow-2: 0 6px 20px rgba(16, 18, 27, 0.1);
   color-scheme: light;
