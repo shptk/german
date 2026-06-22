@@ -122,6 +122,7 @@ export const exerciseSchema = z.discriminatedUnion('type', [
     type: z.literal('mcq'),
     subtype: z.enum(['reading', 'translation', 'listening', 'truefalse']).optional(),
     passage: loc.optional(),
+    audioText: z.string().optional(),
     choices: z.array(z.object({ id: z.string(), text: loc })).min(2),
     correctChoiceId: z.string(),
   }),
@@ -232,3 +233,29 @@ export const parseLevel = (raw: unknown): LevelFile => levelFileSchema.parse(raw
 export const parseModuleFile = (raw: unknown): ModuleFile => moduleFileSchema.parse(raw);
 export const parseVocab = (raw: unknown) => vocabFileSchema.parse(raw);
 export const parseGrammar = (raw: unknown) => grammarFileSchema.parse(raw);
+
+/* ---- mock exam ---- */
+
+const speakingTaskSchema = z.object({ cue: z.string(), modelDe: z.string(), en: z.string().optional() });
+
+export const examSectionSchema = z.object({
+  id: z.string(),
+  skill: z.enum(['hoeren', 'lesen', 'schreiben', 'sprechen']),
+  title: z.string(),
+  instructions: z.string().optional(),
+  graded: z.boolean(),
+  items: z.array(exerciseSchema).optional(),
+  speakingTasks: z.array(speakingTaskSchema).optional(),
+});
+
+export const examFileSchema = z.object({
+  id: z.string(),
+  level: z.string(),
+  title: z.string(),
+  passPct: z.number(),
+  sections: z.array(examSectionSchema).min(1),
+});
+
+export type ExamFile = z.infer<typeof examFileSchema>;
+export type ExamSection = z.infer<typeof examSectionSchema>;
+export const parseExam = (raw: unknown): ExamFile => examFileSchema.parse(raw);

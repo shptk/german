@@ -124,6 +124,7 @@ export interface Mcq extends ExerciseBase {
   type: 'mcq';
   subtype?: 'reading' | 'translation' | 'listening' | 'truefalse';
   passage?: { de?: string; en?: string };
+  audioText?: string; // listening items: spoken, not shown
   choices: McqChoice[];
   correctChoiceId: string;
 }

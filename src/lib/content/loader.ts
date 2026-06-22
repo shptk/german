@@ -8,11 +8,13 @@
 
 import type { Course, ContentDb, Lesson, VocabEntry } from '$engine/index';
 import {
+  parseExam,
   parseGrammar,
   parseLevel,
   parseManifest,
   parseModuleFile,
   parseVocab,
+  type ExamFile,
   type GrammarNote,
   type LevelFile,
   type ManifestFile,
@@ -26,6 +28,7 @@ export interface AssembledContent {
   db: ContentDb; // the vocab pool, for grading
   modules: Map<string, ModuleFile>; // by module id (exercise bodies)
   grammar: Map<string, GrammarNote>; // by note id
+  exam: ExamFile | null; // the mock exam (loaded if present)
 }
 
 /** Pure assembler: validated raw files -> engine-facing content. */
@@ -35,6 +38,7 @@ export function assembleContent(
   vocab: VocabEntry[],
   moduleFiles: ModuleFile[],
   grammarNotes: GrammarNote[],
+  exam: ExamFile | null = null,
 ): AssembledContent {
   const modules = new Map(moduleFiles.map((m) => [m.id, m]));
   const grammar = new Map(grammarNotes.map((g) => [g.id, g]));
@@ -57,7 +61,7 @@ export function assembleContent(
     }
   }
 
-  return { manifest, level, course: { lessons }, db, modules, grammar };
+  return { manifest, level, course: { lessons }, db, modules, grammar, exam };
 }
 
 /* ---- fetch layer (browser) ---- */
@@ -86,8 +90,9 @@ export async function loadContent(levelId = 'a1'): Promise<AssembledContent> {
   const moduleFiles = await Promise.all(
     level.modules.map(async (m) => parseModuleFile(await getJson(m.file))),
   );
+  const exam = levelMeta.examFile ? parseExam(await getJson(levelMeta.examFile)) : null;
 
-  return assembleContent(manifest, level, vocab, moduleFiles, grammar);
+  return assembleContent(manifest, level, vocab, moduleFiles, grammar, exam);
 }
 
 /** Clear the fetch cache (used when a content update is accepted). */

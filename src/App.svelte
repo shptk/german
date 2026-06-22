@@ -35,7 +35,7 @@
   });
 
   // The bottom bar hides during focused play (the Check bar owns the thumb zone).
-  const showTabbar = $derived(!['session', 'lesson'].includes(segment(route.path)));
+  const showTabbar = $derived(!['session', 'lesson', 'exam'].includes(segment(route.path)));
 </script>
 
 {#if app.loading}

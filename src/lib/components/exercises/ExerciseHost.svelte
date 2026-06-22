@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { ContentDb, Exercise, Grade, Response, Verdict } from '$engine/index';
   import { checkExercise, deriveGrade } from '$engine/index';
+  import { speak } from '$lib/audio/tts';
+  import { app } from '$lib/stores/store.svelte';
   import SpeakChip from '$lib/components/ui/SpeakChip.svelte';
   import GenderTap from './GenderTap.svelte';
   import MultipleChoice from './MultipleChoice.svelte';
@@ -22,6 +24,13 @@
   let startedAt = $state(0);
 
   const locked = $derived(verdict !== null);
+
+  // Listening items (e.g. Hören MCQ): play audio instead of showing the German text.
+  const audioText = $derived((exercise as { audioText?: string }).audioText);
+  const isListening = $derived(exercise.skill === 'listening' && !!audioText && exercise.type !== 'dictation');
+  function playAudio(rate = 0.9) {
+    if (audioText) speak(audioText, { rate, voiceURI: app.state?.settings.ttsVoiceURI });
+  }
 
   function onResponse(r: Response) {
     if (!startedAt) startedAt = performance.now();
@@ -107,6 +116,12 @@
     {#if exercise.prompt?.de}
       <p class="de"><span class="lang-de">{exercise.prompt.de}</span> <SpeakChip text={exercise.prompt.de} size="sm" /></p>
     {/if}
+    {#if isListening}
+      <div class="listen">
+        <button class="play" type="button" onclick={() => playAudio(0.9)}>▶ Play</button>
+        <button class="play slow" type="button" onclick={() => playAudio(0.6)}>🐢 Slower</button>
+      </div>
+    {/if}
   </div>
 
   <div class="answer">
@@ -171,6 +186,20 @@
   }
   .answer {
     flex: 1;
+  }
+  .listen {
+    display: flex;
+    gap: var(--s-3);
+    margin: var(--s-3) 0;
+  }
+  .play {
+    min-height: 44px;
+    padding: 0 var(--s-4);
+    border: 1px solid var(--border);
+    border-radius: var(--r-pill);
+    background: var(--accent-weak);
+    color: var(--accent);
+    font: var(--t-body);
   }
   .feedback {
     display: flex;
