@@ -1,0 +1,1477 @@
+{
+  "id": "a1.m07-freizeit-hobbys",
+  "level": "a1",
+  "title": "Freizeit & Hobbys",
+  "order": 7,
+  "icon": "hobby",
+  "estMinutes": 94,
+  "grammarTopics": [
+    "g.modal-verbs",
+    "g.conjunctions"
+  ],
+  "vocabIds": [
+    "a1.v.hobby",
+    "a1.v.freizeit",
+    "a1.v.spiel",
+    "a1.v.buch",
+    "a1.v.film",
+    "a1.v.musik",
+    "a1.v.party",
+    "a1.v.spielen",
+    "a1.v.hoeren",
+    "a1.v.lesen",
+    "a1.v.gern",
+    "a1.v.sport",
+    "a1.v.fussball",
+    "a1.v.ball",
+    "a1.v.mannschaft",
+    "a1.v.fahrrad",
+    "a1.v.schwimmbad",
+    "a1.v.tanz",
+    "a1.v.schwimmen",
+    "a1.v.laufen",
+    "a1.v.tanzen",
+    "a1.v.wandern",
+    "a1.v.singen",
+    "a1.v.gehen",
+    "a1.v.fahren",
+    "a1.v.koennen",
+    "a1.v.gitarre",
+    "a1.v.klavier",
+    "a1.v.lied",
+    "a1.v.malen",
+    "a1.v.du",
+    "a1.v.wollen",
+    "a1.v.kino",
+    "a1.v.theater",
+    "a1.v.konzert",
+    "a1.v.museum",
+    "a1.v.park",
+    "a1.v.treffen",
+    "a1.v.vielleicht",
+    "a1.v.idee",
+    "a1.v.lust",
+    "a1.v.freund",
+    "a1.v.gut",
+    "a1.v.duerfen",
+    "a1.v.sollen",
+    "a1.v.bleiben",
+    "a1.v.spass",
+    "a1.v.hier",
+    "a1.v.essen",
+    "a1.v.trinken",
+    "a1.v.machen",
+    "a1.v.wetter",
+    "a1.v.sonne",
+    "a1.v.regen",
+    "a1.v.schnee",
+    "a1.v.wind",
+    "a1.v.wolke",
+    "a1.v.jahreszeit",
+    "a1.v.sommer",
+    "a1.v.winter",
+    "a1.v.fruehling",
+    "a1.v.herbst",
+    "a1.v.sonnig",
+    "a1.v.windig",
+    "a1.v.warm",
+    "a1.v.heute",
+    "a1.v.und",
+    "a1.v.kalt",
+    "a1.v.plan",
+    "a1.v.urlaub",
+    "a1.v.reise",
+    "a1.v.reisen",
+    "a1.v.langweilig",
+    "a1.v.interessant",
+    "a1.v.aber",
+    "a1.v.oder",
+    "a1.v.denn",
+    "a1.v.schlecht",
+    "a1.v.haben",
+    "a1.v.geld",
+    "a1.v.schoen"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m07-freizeit-hobbys.l00-hobbys",
+      "title": "Hobbys und Freizeit",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Über Hobbys und Freizeit sprechen",
+        "Sagen, was man gern macht (gern + Verb)",
+        "Die Verben spielen, hören und lesen benutzen"
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.hobby",
+        "a1.v.freizeit",
+        "a1.v.spiel",
+        "a1.v.buch",
+        "a1.v.film",
+        "a1.v.musik",
+        "a1.v.party",
+        "a1.v.spielen",
+        "a1.v.hoeren",
+        "a1.v.lesen",
+        "a1.v.gern"
+      ],
+      "reviewsVocab": [],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.hobby"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.musik",
+            "a1.v.buch",
+            "a1.v.film",
+            "a1.v.party"
+          ],
+          "pairRefs": [
+            "a1.v.musik",
+            "a1.v.buch",
+            "a1.v.film",
+            "a1.v.party"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "to play (you, informal)"
+          },
+          "verbRef": "a1.v.spielen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.spielen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I read a book."
+          },
+          "vocabRefs": [
+            "a1.v.lesen",
+            "a1.v.buch"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "lese"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "liest",
+                "lest",
+                "lesen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ein Buch."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I gladly listen to music.",
+          "audioText": "Ich höre gern Musik.",
+          "vocabRefs": [
+            "a1.v.hoeren",
+            "a1.v.gern",
+            "a1.v.musik"
+          ],
+          "tiles": [
+            "Ich",
+            "höre",
+            "gern",
+            "Musik"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "höre",
+              "gern",
+              "Musik"
+            ]
+          ],
+          "distractorTiles": [
+            "hörst",
+            "spiele"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l00-hobbys.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "In meiner Freizeit spiele ich gern Fußball. Am Abend lese ich ein Buch."
+          },
+          "prompt": {
+            "en": "What does the person do in the evening?"
+          },
+          "vocabRefs": [
+            "a1.v.freizeit",
+            "a1.v.spiel",
+            "a1.v.buch"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Reads a book"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Plays football"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Listens to music"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l01-sport",
+      "title": "Sport und Bewegung",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Sportarten und Sportorte benennen",
+        "Über Bewegung sprechen (schwimmen, laufen, tanzen)",
+        "Sagen, welchen Sport man macht"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l00-hobbys"
+      ],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.sport",
+        "a1.v.fussball",
+        "a1.v.ball",
+        "a1.v.mannschaft",
+        "a1.v.fahrrad",
+        "a1.v.schwimmbad",
+        "a1.v.tanz",
+        "a1.v.schwimmen",
+        "a1.v.laufen",
+        "a1.v.tanzen",
+        "a1.v.wandern",
+        "a1.v.singen"
+      ],
+      "reviewsVocab": [
+        "a1.v.spielen",
+        "a1.v.gern"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.fussball"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.schwimmen",
+            "a1.v.laufen",
+            "a1.v.tanzen",
+            "a1.v.wandern",
+            "a1.v.singen"
+          ],
+          "pairRefs": [
+            "a1.v.schwimmen",
+            "a1.v.laufen",
+            "a1.v.tanzen",
+            "a1.v.wandern",
+            "a1.v.singen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "to swim (he/she)"
+          },
+          "verbRef": "a1.v.schwimmen",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.schwimmen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "We play football in the team."
+          },
+          "vocabRefs": [
+            "a1.v.spielen",
+            "a1.v.fussball",
+            "a1.v.mannschaft"
+          ],
+          "bank": [
+            "spielen",
+            "spielt",
+            "spiele"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Wir "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "spielen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "spielt",
+                "spiele",
+                "spielst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Fußball in der Mannschaft."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I gladly go to the swimming pool.",
+          "audioText": "Ich gehe gern ins Schwimmbad.",
+          "vocabRefs": [
+            "a1.v.gehen",
+            "a1.v.gern",
+            "a1.v.schwimmbad"
+          ],
+          "tiles": [
+            "Ich",
+            "gehe",
+            "gern",
+            "ins",
+            "Schwimmbad"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "gehe",
+              "gern",
+              "ins",
+              "Schwimmbad"
+            ]
+          ],
+          "distractorTiles": [
+            "gehst",
+            "in"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l01-sport.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.fahrrad",
+            "a1.v.fahren"
+          ],
+          "audioText": "Ich fahre Fahrrad.",
+          "answers": [
+            "Ich fahre Fahrrad.",
+            "Ich fahre Fahrrad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l02-koennen",
+      "title": "Ich kann das! (können)",
+      "order": 2,
+      "estMinutes": 14,
+      "objectives": [
+        "Das Modalverb können benutzen",
+        "Über Fähigkeiten sprechen (Was kannst du?)",
+        "Die Satzstellung mit Modalverb (Verb am Ende) üben"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l01-sport"
+      ],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.koennen",
+        "a1.v.gitarre",
+        "a1.v.klavier",
+        "a1.v.lied",
+        "a1.v.malen"
+      ],
+      "reviewsVocab": [
+        "a1.v.spielen",
+        "a1.v.singen",
+        "a1.v.schwimmen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.klavier"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "can / to be able to (you, informal)"
+          },
+          "verbRef": "a1.v.koennen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.koennen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "can / to be able to (I)"
+          },
+          "verbRef": "a1.v.koennen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.koennen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I can play guitar."
+          },
+          "vocabRefs": [
+            "a1.v.koennen",
+            "a1.v.gitarre",
+            "a1.v.spielen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kann"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kannst",
+                "können",
+                "könnt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Gitarre spielen."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "Can you sing?",
+          "audioText": "Kannst du singen?",
+          "vocabRefs": [
+            "a1.v.koennen",
+            "a1.v.singen",
+            "a1.v.du"
+          ],
+          "tiles": [
+            "Kannst",
+            "du",
+            "singen"
+          ],
+          "accepted": [
+            [
+              "Kannst",
+              "du",
+              "singen"
+            ]
+          ],
+          "distractorTiles": [
+            "Willst",
+            "tanzen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l02-koennen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Anna kann gut malen und singen. Aber sie kann nicht Klavier spielen."
+          },
+          "prompt": {
+            "en": "What can Anna NOT do?"
+          },
+          "vocabRefs": [
+            "a1.v.koennen",
+            "a1.v.malen",
+            "a1.v.singen",
+            "a1.v.klavier"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Paint"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Sing"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Play the piano"
+              }
+            }
+          ],
+          "correctChoiceId": "c"
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l03-wollen",
+      "title": "Was willst du machen? (wollen)",
+      "order": 3,
+      "estMinutes": 14,
+      "objectives": [
+        "Das Modalverb wollen benutzen",
+        "Wünsche und Absichten ausdrücken",
+        "Über Freizeitorte sprechen (Kino, Theater, Park)"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l02-koennen"
+      ],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.wollen",
+        "a1.v.kino",
+        "a1.v.theater",
+        "a1.v.konzert",
+        "a1.v.museum",
+        "a1.v.park",
+        "a1.v.treffen",
+        "a1.v.vielleicht",
+        "a1.v.idee",
+        "a1.v.lust"
+      ],
+      "reviewsVocab": [
+        "a1.v.koennen",
+        "a1.v.gehen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.park"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.kino",
+            "a1.v.theater",
+            "a1.v.konzert",
+            "a1.v.museum"
+          ],
+          "pairRefs": [
+            "a1.v.kino",
+            "a1.v.theater",
+            "a1.v.konzert",
+            "a1.v.museum"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "to want (I)"
+          },
+          "verbRef": "a1.v.wollen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.wollen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "We want to go to the cinema."
+          },
+          "vocabRefs": [
+            "a1.v.wollen",
+            "a1.v.kino",
+            "a1.v.gehen"
+          ],
+          "bank": [
+            "wollen",
+            "will",
+            "willst"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Wir "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "wollen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "will",
+                "willst",
+                "wollt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ins Kino gehen."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "I want to meet a friend.",
+          "audioText": "Ich will einen Freund treffen.",
+          "vocabRefs": [
+            "a1.v.wollen",
+            "a1.v.treffen",
+            "a1.v.freund"
+          ],
+          "tiles": [
+            "Ich",
+            "will",
+            "einen",
+            "Freund",
+            "treffen"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "will",
+              "einen",
+              "Freund",
+              "treffen"
+            ]
+          ],
+          "distractorTiles": [
+            "willst",
+            "ein"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l03-wollen.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.idee",
+            "a1.v.gut"
+          ],
+          "audioText": "Das ist eine gute Idee.",
+          "answers": [
+            "Das ist eine gute Idee.",
+            "Das ist eine gute Idee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l04-duerfen",
+      "title": "Darf ich? (dürfen)",
+      "order": 4,
+      "estMinutes": 13,
+      "objectives": [
+        "Das Modalverb dürfen für Erlaubnis benutzen",
+        "Das Modalverb sollen kennenlernen",
+        "Um Erlaubnis bitten (Darf ich ...?)"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l03-wollen"
+      ],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.duerfen",
+        "a1.v.sollen",
+        "a1.v.bleiben",
+        "a1.v.spass"
+      ],
+      "reviewsVocab": [
+        "a1.v.koennen",
+        "a1.v.wollen",
+        "a1.v.spielen",
+        "a1.v.hier"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e01",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "may / to be allowed to (I)"
+          },
+          "verbRef": "a1.v.duerfen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.duerfen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "may / to be allowed to (you, informal)"
+          },
+          "verbRef": "a1.v.duerfen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.duerfen"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e03",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "May I stay here?",
+          "audioText": "Darf ich hier bleiben?",
+          "vocabRefs": [
+            "a1.v.duerfen",
+            "a1.v.bleiben",
+            "a1.v.hier"
+          ],
+          "tiles": [
+            "Darf",
+            "ich",
+            "hier",
+            "bleiben"
+          ],
+          "accepted": [
+            [
+              "Darf",
+              "ich",
+              "hier",
+              "bleiben"
+            ]
+          ],
+          "distractorTiles": [
+            "Kann",
+            "dort"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "You are allowed to play here."
+          },
+          "vocabRefs": [
+            "a1.v.duerfen",
+            "a1.v.spielen",
+            "a1.v.hier"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Du "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "darfst"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "darf",
+                "dürfen",
+                "dürft"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " hier spielen."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Im Museum darf man nicht essen und nicht trinken. Aber man darf Fotos machen."
+          },
+          "prompt": {
+            "en": "What is allowed in the museum?"
+          },
+          "vocabRefs": [
+            "a1.v.duerfen",
+            "a1.v.museum",
+            "a1.v.essen",
+            "a1.v.trinken"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Eating"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Drinking"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Taking photos"
+              }
+            }
+          ],
+          "correctChoiceId": "c"
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l04-duerfen.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.spass",
+            "a1.v.machen"
+          ],
+          "audioText": "Das macht Spaß.",
+          "answers": [
+            "Das macht Spaß.",
+            "Das macht Spaß",
+            "Das macht Spass.",
+            "Das macht Spass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l05-wetter",
+      "title": "Das Wetter und die Jahreszeiten",
+      "order": 5,
+      "estMinutes": 13,
+      "objectives": [
+        "Über das Wetter sprechen",
+        "Die Jahreszeiten benennen",
+        "Wetter mit es ist beschreiben (warm, sonnig, windig)"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l04-duerfen"
+      ],
+      "grammarNotes": [
+        "gn.conjunctions"
+      ],
+      "introducesVocab": [
+        "a1.v.wetter",
+        "a1.v.sonne",
+        "a1.v.regen",
+        "a1.v.schnee",
+        "a1.v.wind",
+        "a1.v.wolke",
+        "a1.v.jahreszeit",
+        "a1.v.sommer",
+        "a1.v.winter",
+        "a1.v.fruehling",
+        "a1.v.herbst",
+        "a1.v.sonnig",
+        "a1.v.windig",
+        "a1.v.warm"
+      ],
+      "reviewsVocab": [
+        "a1.v.kalt",
+        "a1.v.schoen",
+        "a1.v.heiss"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.sonne"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.sommer",
+            "a1.v.winter",
+            "a1.v.fruehling",
+            "a1.v.herbst"
+          ],
+          "pairRefs": [
+            "a1.v.sommer",
+            "a1.v.winter",
+            "a1.v.fruehling",
+            "a1.v.herbst"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.regen",
+            "a1.v.schnee",
+            "a1.v.wind",
+            "a1.v.wolke"
+          ],
+          "pairRefs": [
+            "a1.v.regen",
+            "a1.v.schnee",
+            "a1.v.wind",
+            "a1.v.wolke"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "The weather is good today."
+          },
+          "vocabRefs": [
+            "a1.v.wetter",
+            "a1.v.heute",
+            "a1.v.gut"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Das Wetter "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "ist"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "sind",
+                "bist",
+                "bin"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " heute gut."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "In summer it is warm and sunny.",
+          "audioText": "Im Sommer ist es warm und sonnig.",
+          "vocabRefs": [
+            "a1.v.sommer",
+            "a1.v.warm",
+            "a1.v.sonnig",
+            "a1.v.und"
+          ],
+          "tiles": [
+            "Im",
+            "Sommer",
+            "ist",
+            "es",
+            "warm",
+            "und",
+            "sonnig"
+          ],
+          "accepted": [
+            [
+              "Im",
+              "Sommer",
+              "ist",
+              "es",
+              "warm",
+              "und",
+              "sonnig"
+            ]
+          ],
+          "distractorTiles": [
+            "kalt",
+            "oder"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l05-wetter.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Im Winter ist es kalt und es schneit oft. Im Sommer ist es warm und die Sonne scheint."
+          },
+          "prompt": {
+            "en": "What is the weather like in winter?"
+          },
+          "vocabRefs": [
+            "a1.v.winter",
+            "a1.v.kalt",
+            "a1.v.schnee",
+            "a1.v.sommer"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Cold, with snow"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Warm and sunny"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Windy and rainy"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys.l06-plaene",
+      "title": "Pläne machen: und, aber, oder, denn",
+      "order": 6,
+      "estMinutes": 15,
+      "objectives": [
+        "Pläne für die Freizeit machen",
+        "Sätze mit und, aber, oder, denn verbinden",
+        "Über Urlaub und Reisen sprechen"
+      ],
+      "prereqs": [
+        "a1.m07-freizeit-hobbys.l05-wetter"
+      ],
+      "grammarNotes": [
+        "gn.conjunctions"
+      ],
+      "introducesVocab": [
+        "a1.v.plan",
+        "a1.v.urlaub",
+        "a1.v.reise",
+        "a1.v.reisen",
+        "a1.v.langweilig",
+        "a1.v.interessant"
+      ],
+      "reviewsVocab": [
+        "a1.v.und",
+        "a1.v.aber",
+        "a1.v.oder",
+        "a1.v.denn",
+        "a1.v.wollen",
+        "a1.v.bleiben"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.reise"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.und",
+            "a1.v.aber",
+            "a1.v.oder",
+            "a1.v.denn"
+          ],
+          "pairRefs": [
+            "a1.v.und",
+            "a1.v.aber",
+            "a1.v.oder",
+            "a1.v.denn"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 30,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I am staying home because the weather is bad."
+          },
+          "vocabRefs": [
+            "a1.v.bleiben",
+            "a1.v.denn",
+            "a1.v.wetter",
+            "a1.v.schlecht"
+          ],
+          "bank": [
+            "denn",
+            "und",
+            "aber",
+            "oder"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich bleibe zu Hause, "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "denn"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "und",
+                "aber",
+                "oder"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " das Wetter ist schlecht."
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 30,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Do we go to the cinema or to the theater?"
+          },
+          "vocabRefs": [
+            "a1.v.kino",
+            "a1.v.theater",
+            "a1.v.oder",
+            "a1.v.gehen"
+          ],
+          "bank": [
+            "oder",
+            "und",
+            "aber",
+            "denn"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Gehen wir ins Kino "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "oder"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "und",
+                "aber",
+                "denn"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ins Theater?"
+            }
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 40,
+          "translationEn": "I want to travel, but I have no money.",
+          "audioText": "Ich will reisen, aber ich habe kein Geld.",
+          "vocabRefs": [
+            "a1.v.wollen",
+            "a1.v.reisen",
+            "a1.v.aber",
+            "a1.v.haben",
+            "a1.v.geld"
+          ],
+          "tiles": [
+            "Ich",
+            "will",
+            "reisen",
+            "aber",
+            "ich",
+            "habe",
+            "kein",
+            "Geld"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "will",
+              "reisen",
+              "aber",
+              "ich",
+              "habe",
+              "kein",
+              "Geld"
+            ]
+          ],
+          "distractorTiles": [
+            "und",
+            "willst"
+          ]
+        },
+        {
+          "id": "a1.m07-freizeit-hobbys.l06-plaene.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 35,
+          "passage": {
+            "de": "Im Urlaub will Tom nach Italien reisen, denn das Wetter ist dort schön. Der Film im Kino ist langweilig, aber das Konzert ist interessant."
+          },
+          "prompt": {
+            "en": "Why does Tom want to travel to Italy?"
+          },
+          "vocabRefs": [
+            "a1.v.urlaub",
+            "a1.v.reisen",
+            "a1.v.denn",
+            "a1.v.wetter",
+            "a1.v.schoen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Because the weather is nice there"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Because the film is boring"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Because the concert is interesting"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ]
+}

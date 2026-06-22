@@ -2,7 +2,18 @@
   "id": "a1",
   "cefr": "A1",
   "title": "German A1",
-  "moduleOrder": ["a1.m00-erste-schritte"],
+  "moduleOrder": [
+    "a1.m00-erste-schritte",
+    "a1.m01-ich-du",
+    "a1.m02-familie",
+    "a1.m03-essen-trinken",
+    "a1.m04-einkaufen",
+    "a1.m05-wohnen",
+    "a1.m06-tagesablauf-zeit",
+    "a1.m07-freizeit-hobbys",
+    "a1.m08-unterwegs",
+    "a1.m09-arbeit-gesundheit-alltag"
+  ],
   "modules": [
     {
       "id": "a1.m00-erste-schritte",
@@ -13,11 +24,205 @@
       "lessonCount": 3,
       "estMinutes": 40,
       "vocabCount": 16,
-      "grammarTopics": ["g.present-tense", "g.sein"]
+      "grammarTopics": [
+        "g.present-tense",
+        "g.sein"
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du",
+      "file": "modules/a1.m01-ich-du.json",
+      "title": "Ich & du",
+      "order": 1,
+      "icon": "person",
+      "lessonCount": 7,
+      "estMinutes": 98,
+      "vocabCount": 55,
+      "grammarTopics": []
+    },
+    {
+      "id": "a1.m02-familie",
+      "file": "modules/a1.m02-familie.json",
+      "title": "Familie & Freunde",
+      "order": 2,
+      "icon": "family",
+      "lessonCount": 6,
+      "estMinutes": 80,
+      "vocabCount": 45,
+      "grammarTopics": []
+    },
+    {
+      "id": "a1.m03-essen-trinken",
+      "file": "modules/a1.m03-essen-trinken.json",
+      "title": "Essen & Trinken",
+      "order": 3,
+      "icon": "food",
+      "lessonCount": 8,
+      "estMinutes": 111,
+      "vocabCount": 88,
+      "grammarTopics": [
+        "g.artikel-bestimmt",
+        "g.plural",
+        "g.moechten",
+        "g.akkusativ",
+        "g.artikel-indefinit",
+        "g.gern"
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen",
+      "file": "modules/a1.m04-einkaufen.json",
+      "title": "Einkaufen",
+      "order": 4,
+      "icon": "cart",
+      "lessonCount": 7,
+      "estMinutes": 91,
+      "vocabCount": 57,
+      "grammarTopics": [
+        "g.accusative-verbs",
+        "g.negation",
+        "g.modal-moechten"
+      ]
+    },
+    {
+      "id": "a1.m05-wohnen",
+      "file": "modules/a1.m05-wohnen.json",
+      "title": "Wohnen",
+      "order": 5,
+      "icon": "home",
+      "lessonCount": 5,
+      "estMinutes": 72,
+      "vocabCount": 8,
+      "grammarTopics": []
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit",
+      "file": "modules/a1.m06-tagesablauf-zeit.json",
+      "title": "Tagesablauf & Zeit",
+      "order": 6,
+      "icon": "clock",
+      "lessonCount": 8,
+      "estMinutes": 109,
+      "vocabCount": 61,
+      "grammarTopics": [
+        "g.time",
+        "g.separable-verbs",
+        "g.modal-verbs",
+        "g.word-order"
+      ]
+    },
+    {
+      "id": "a1.m07-freizeit-hobbys",
+      "file": "modules/a1.m07-freizeit-hobbys.json",
+      "title": "Freizeit & Hobbys",
+      "order": 7,
+      "icon": "hobby",
+      "lessonCount": 7,
+      "estMinutes": 94,
+      "vocabCount": 81,
+      "grammarTopics": [
+        "g.modal-verbs",
+        "g.conjunctions"
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs",
+      "file": "modules/a1.m08-unterwegs.json",
+      "title": "Unterwegs",
+      "order": 8,
+      "icon": "bus",
+      "lessonCount": 7,
+      "estMinutes": 95,
+      "vocabCount": 61,
+      "grammarTopics": [
+        "g.praepositionen",
+        "g.imperativ"
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag",
+      "file": "modules/a1.m09-arbeit-gesundheit-alltag.json",
+      "title": "Arbeit, Gesundheit & Alltag",
+      "order": 9,
+      "icon": "health",
+      "lessonCount": 7,
+      "estMinutes": 98,
+      "vocabCount": 69,
+      "grammarTopics": []
     }
   ],
   "grammarTopics": [
-    { "id": "g.present-tense", "title": "Present tense (regular verbs)" },
-    { "id": "g.sein", "title": "sein (to be)" }
+    {
+      "id": "g.present-tense",
+      "title": "g.present-tense"
+    },
+    {
+      "id": "g.sein",
+      "title": "g.sein"
+    },
+    {
+      "id": "g.artikel-bestimmt",
+      "title": "g.artikel-bestimmt"
+    },
+    {
+      "id": "g.plural",
+      "title": "g.plural"
+    },
+    {
+      "id": "g.moechten",
+      "title": "g.moechten"
+    },
+    {
+      "id": "g.akkusativ",
+      "title": "g.akkusativ"
+    },
+    {
+      "id": "g.artikel-indefinit",
+      "title": "g.artikel-indefinit"
+    },
+    {
+      "id": "g.gern",
+      "title": "g.gern"
+    },
+    {
+      "id": "g.accusative-verbs",
+      "title": "g.accusative-verbs"
+    },
+    {
+      "id": "g.negation",
+      "title": "g.negation"
+    },
+    {
+      "id": "g.modal-moechten",
+      "title": "g.modal-moechten"
+    },
+    {
+      "id": "g.time",
+      "title": "g.time"
+    },
+    {
+      "id": "g.separable-verbs",
+      "title": "g.separable-verbs"
+    },
+    {
+      "id": "g.modal-verbs",
+      "title": "g.modal-verbs"
+    },
+    {
+      "id": "g.word-order",
+      "title": "g.word-order"
+    },
+    {
+      "id": "g.conjunctions",
+      "title": "g.conjunctions"
+    },
+    {
+      "id": "g.praepositionen",
+      "title": "g.praepositionen"
+    },
+    {
+      "id": "g.imperativ",
+      "title": "g.imperativ"
+    }
   ]
 }

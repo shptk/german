@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.06.22-a1.0-sample",
+  "contentVersion": "2026.06.22-a1.1-full",
   "generatedAt": "2026-06-22",
   "defaultLocale": "en",
   "levels": [
@@ -12,10 +12,11 @@
       "file": "levels/a1.json",
       "vocabFile": "vocab/a1.vocab.json",
       "grammarFile": "levels/a1.grammar.json",
-      "moduleCount": 1,
-      "lessonCount": 3,
-      "vocabCount": 16,
-      "estMinutesTotal": 40,
+      "examFile": "exam/a1.mock.json",
+      "moduleCount": 10,
+      "lessonCount": 65,
+      "vocabCount": 649,
+      "estMinutesTotal": 888,
       "status": "draft"
     }
   ]

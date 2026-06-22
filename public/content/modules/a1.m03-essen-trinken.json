@@ -1,0 +1,1625 @@
+{
+  "id": "a1.m03-essen-trinken",
+  "level": "a1",
+  "title": "Essen & Trinken",
+  "order": 3,
+  "icon": "food",
+  "estMinutes": 111,
+  "grammarTopics": [
+    "g.artikel-bestimmt",
+    "g.plural",
+    "g.moechten",
+    "g.akkusativ",
+    "g.artikel-indefinit",
+    "g.gern"
+  ],
+  "vocabIds": [
+    "a1.v.wasser",
+    "a1.v.kaffee",
+    "a1.v.tee",
+    "a1.v.milch",
+    "a1.v.saft",
+    "a1.v.bier",
+    "a1.v.wein",
+    "a1.v.cola",
+    "a1.v.getraenk",
+    "a1.v.durst",
+    "a1.v.trinken",
+    "a1.v.brot",
+    "a1.v.broetchen",
+    "a1.v.butter",
+    "a1.v.kaese",
+    "a1.v.ei",
+    "a1.v.wurst",
+    "a1.v.fleisch",
+    "a1.v.fisch",
+    "a1.v.essen",
+    "a1.v.essen-n",
+    "a1.v.hunger",
+    "a1.v.heute",
+    "a1.v.obst",
+    "a1.v.gemuese",
+    "a1.v.apfel",
+    "a1.v.banane",
+    "a1.v.orange",
+    "a1.v.tomate",
+    "a1.v.kartoffel",
+    "a1.v.salat",
+    "a1.v.suppe",
+    "a1.v.nudeln",
+    "a1.v.reis",
+    "a1.v.und",
+    "a1.v.fruehstueck",
+    "a1.v.mittagessen",
+    "a1.v.abendessen",
+    "a1.v.marmelade",
+    "a1.v.honig",
+    "a1.v.joghurt",
+    "a1.v.muesli",
+    "a1.v.kuchen",
+    "a1.v.eis",
+    "a1.v.guten-appetit",
+    "a1.v.zusammen",
+    "a1.v.abend",
+    "a1.v.familie",
+    "a1.v.cafe",
+    "a1.v.speisekarte",
+    "a1.v.kellner",
+    "a1.v.kellnerin",
+    "a1.v.bestellen",
+    "a1.v.moechten",
+    "a1.v.ich-haette-gern",
+    "a1.v.was-darf-es-sein",
+    "a1.v.noch-etwas",
+    "a1.v.tasse",
+    "a1.v.stueck",
+    "a1.v.gast",
+    "a1.v.nehmen",
+    "a1.v.pizza",
+    "a1.v.pommes",
+    "a1.v.menue",
+    "a1.v.portion",
+    "a1.v.glas",
+    "a1.v.flasche",
+    "a1.v.schinken",
+    "a1.v.huhn",
+    "a1.v.gern",
+    "a1.v.lieber",
+    "a1.v.moegen",
+    "a1.v.schmecken",
+    "a1.v.lecker",
+    "a1.v.suess",
+    "a1.v.scharf",
+    "a1.v.schokolade",
+    "a1.v.aber",
+    "a1.v.rechnung",
+    "a1.v.bezahlen",
+    "a1.v.kosten",
+    "a1.v.preis",
+    "a1.v.euro",
+    "a1.v.trinkgeld",
+    "a1.v.zusammen-oder-getrennt",
+    "a1.v.restaurant",
+    "a1.v.teuer",
+    "a1.v.bitte"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m03-essen-trinken.l01-getraenke",
+      "title": "Getränke",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Namen für Getränke lernen",
+        "der/die/das bei Getränken erkennen",
+        "das Verb trinken im Präsens benutzen"
+      ],
+      "prereqs": [],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.wasser",
+        "a1.v.kaffee",
+        "a1.v.tee",
+        "a1.v.milch",
+        "a1.v.saft",
+        "a1.v.bier",
+        "a1.v.wein",
+        "a1.v.cola",
+        "a1.v.getraenk",
+        "a1.v.durst",
+        "a1.v.trinken"
+      ],
+      "reviewsVocab": [],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.wasser",
+            "a1.v.kaffee",
+            "a1.v.tee",
+            "a1.v.saft"
+          ],
+          "pairRefs": [
+            "a1.v.wasser",
+            "a1.v.kaffee",
+            "a1.v.tee",
+            "a1.v.saft"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.milch"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e03",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bier"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e04",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) drink"
+          },
+          "verbRef": "a1.v.trinken",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.trinken"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e05",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I drink water."
+          },
+          "vocabRefs": [
+            "a1.v.trinken",
+            "a1.v.wasser"
+          ],
+          "bank": [
+            "trinke",
+            "esse",
+            "trinkt"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "trinke"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "trinkt",
+                "trinkst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Wasser."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l01-getraenke.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.kaffee",
+            "a1.v.trinken"
+          ],
+          "audioText": "Ich trinke Kaffee.",
+          "answers": [
+            "Ich trinke Kaffee.",
+            "Ich trinke Kaffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l02-essen-grundlagen",
+      "title": "Essen – Grundlagen",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Grundnahrungsmittel benennen",
+        "der/die/das bei Lebensmitteln üben",
+        "das Verb essen im Präsens benutzen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l01-getraenke"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.brot",
+        "a1.v.broetchen",
+        "a1.v.butter",
+        "a1.v.kaese",
+        "a1.v.ei",
+        "a1.v.wurst",
+        "a1.v.fleisch",
+        "a1.v.fisch",
+        "a1.v.essen",
+        "a1.v.essen-n",
+        "a1.v.hunger"
+      ],
+      "reviewsVocab": [
+        "a1.v.trinken",
+        "a1.v.wasser"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.brot",
+            "a1.v.kaese",
+            "a1.v.ei",
+            "a1.v.fisch"
+          ],
+          "pairRefs": [
+            "a1.v.brot",
+            "a1.v.kaese",
+            "a1.v.ei",
+            "a1.v.fisch"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.wurst"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "he eats"
+          },
+          "verbRef": "a1.v.essen",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.essen"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I eat bread and cheese."
+          },
+          "vocabRefs": [
+            "a1.v.essen",
+            "a1.v.brot",
+            "a1.v.kaese"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "esse"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "isst",
+                "esst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Brot und Käse."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I am eating fish today.",
+          "audioText": "Ich esse heute Fisch.",
+          "vocabRefs": [
+            "a1.v.essen",
+            "a1.v.fisch",
+            "a1.v.heute"
+          ],
+          "tiles": [
+            "Ich",
+            "esse",
+            "heute",
+            "Fisch"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "esse",
+              "heute",
+              "Fisch"
+            ]
+          ],
+          "distractorTiles": [
+            "isst",
+            "trinke"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l02-essen-grundlagen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom hat Hunger. Er isst Brot mit Butter und Käse."
+          },
+          "prompt": {
+            "en": "What does Tom eat?"
+          },
+          "vocabRefs": [
+            "a1.v.hunger",
+            "a1.v.brot",
+            "a1.v.butter",
+            "a1.v.kaese"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Bread with butter and cheese"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Fish and rice"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Soup and salad"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l03-obst-gemuese",
+      "title": "Obst & Gemüse – Plural",
+      "order": 2,
+      "estMinutes": 14,
+      "objectives": [
+        "Obst und Gemüse benennen",
+        "Pluralformen von Lebensmitteln bilden",
+        "Singular und Plural unterscheiden"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l02-essen-grundlagen"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.obst",
+        "a1.v.gemuese",
+        "a1.v.apfel",
+        "a1.v.banane",
+        "a1.v.orange",
+        "a1.v.tomate",
+        "a1.v.kartoffel",
+        "a1.v.salat",
+        "a1.v.suppe",
+        "a1.v.nudeln",
+        "a1.v.reis"
+      ],
+      "reviewsVocab": [
+        "a1.v.essen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.apfel",
+            "a1.v.banane",
+            "a1.v.tomate",
+            "a1.v.kartoffel"
+          ],
+          "pairRefs": [
+            "a1.v.apfel",
+            "a1.v.banane",
+            "a1.v.tomate",
+            "a1.v.kartoffel"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.apfel"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "One apple, two apples."
+          },
+          "vocabRefs": [
+            "a1.v.apfel"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "ein Apfel, zwei "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Äpfel"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Apfels",
+                "Apfeln",
+                "Apfel"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "One tomato, three tomatoes."
+          },
+          "vocabRefs": [
+            "a1.v.tomate"
+          ],
+          "bank": [
+            "Tomaten",
+            "Tomate",
+            "Tomates"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "eine Tomate, drei "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Tomaten"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Tomate",
+                "Tomates"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I eat fruit and vegetables.",
+          "audioText": "Ich esse Obst und Gemüse.",
+          "vocabRefs": [
+            "a1.v.essen",
+            "a1.v.obst",
+            "a1.v.gemuese",
+            "a1.v.und"
+          ],
+          "tiles": [
+            "Ich",
+            "esse",
+            "Obst",
+            "und",
+            "Gemüse"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "esse",
+              "Obst",
+              "und",
+              "Gemüse"
+            ]
+          ],
+          "distractorTiles": [
+            "trinke",
+            "Tomaten"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l03-obst-gemuese.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.suppe",
+            "a1.v.salat"
+          ],
+          "audioText": "Ich esse Suppe und Salat.",
+          "answers": [
+            "Ich esse Suppe und Salat.",
+            "Ich esse Suppe und Salat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l04-mahlzeiten",
+      "title": "Mahlzeiten",
+      "order": 3,
+      "estMinutes": 13,
+      "objectives": [
+        "Die Mahlzeiten des Tages benennen",
+        "über das Frühstück sprechen",
+        "das Verb frühstücken benutzen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l03-obst-gemuese"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.fruehstueck",
+        "a1.v.mittagessen",
+        "a1.v.abendessen",
+        "a1.v.marmelade",
+        "a1.v.honig",
+        "a1.v.joghurt",
+        "a1.v.muesli",
+        "a1.v.kuchen",
+        "a1.v.eis",
+        "a1.v.guten-appetit"
+      ],
+      "reviewsVocab": [
+        "a1.v.brot",
+        "a1.v.broetchen",
+        "a1.v.essen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l04-mahlzeiten.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.fruehstueck",
+            "a1.v.mittagessen",
+            "a1.v.abendessen",
+            "a1.v.kuchen"
+          ],
+          "pairRefs": [
+            "a1.v.fruehstueck",
+            "a1.v.mittagessen",
+            "a1.v.abendessen",
+            "a1.v.kuchen"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l04-mahlzeiten.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.fruehstueck"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l04-mahlzeiten.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "At breakfast I eat a roll with jam."
+          },
+          "vocabRefs": [
+            "a1.v.fruehstueck",
+            "a1.v.broetchen",
+            "a1.v.marmelade"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Zum Frühstück esse ich ein Brötchen mit "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Marmelade"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "marmelade",
+                "Honig"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l04-mahlzeiten.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "We have breakfast together.",
+          "audioText": "Wir frühstücken zusammen.",
+          "vocabRefs": [
+            "a1.v.zusammen"
+          ],
+          "tiles": [
+            "Wir",
+            "frühstücken",
+            "zusammen"
+          ],
+          "accepted": [
+            [
+              "Wir",
+              "frühstücken",
+              "zusammen"
+            ]
+          ],
+          "distractorTiles": [
+            "frühstückt",
+            "esse"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l04-mahlzeiten.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Am Abend isst die Familie zusammen. Das Abendessen ist um sieben Uhr."
+          },
+          "prompt": {
+            "en": "When is dinner?"
+          },
+          "vocabRefs": [
+            "a1.v.abendessen",
+            "a1.v.abend",
+            "a1.v.familie"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "At seven o'clock"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "At noon"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "In the morning"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l05-im-cafe",
+      "title": "Im Café",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "im Café etwas bestellen",
+        "\"Ich hätte gern\" und \"ich möchte\" benutzen",
+        "höfliche Fragen der Bedienung verstehen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l04-mahlzeiten"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.cafe",
+        "a1.v.speisekarte",
+        "a1.v.kellner",
+        "a1.v.kellnerin",
+        "a1.v.bestellen",
+        "a1.v.moechten",
+        "a1.v.ich-haette-gern",
+        "a1.v.was-darf-es-sein",
+        "a1.v.noch-etwas",
+        "a1.v.tasse",
+        "a1.v.stueck"
+      ],
+      "reviewsVocab": [
+        "a1.v.kaffee",
+        "a1.v.kuchen",
+        "a1.v.tee"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.cafe",
+            "a1.v.speisekarte",
+            "a1.v.kellner",
+            "a1.v.bestellen"
+          ],
+          "pairRefs": [
+            "a1.v.cafe",
+            "a1.v.speisekarte",
+            "a1.v.kellner",
+            "a1.v.bestellen"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.speisekarte"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I would like"
+          },
+          "verbRef": "a1.v.moechten",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.moechten"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I would like a cup of coffee, please."
+          },
+          "vocabRefs": [
+            "a1.v.ich-haette-gern",
+            "a1.v.tasse",
+            "a1.v.kaffee"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich hätte "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "gern"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "gerne",
+                "lieber"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " eine Tasse Kaffee, bitte."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I would like a piece of cake.",
+          "audioText": "Ich möchte ein Stück Kuchen.",
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.stueck",
+            "a1.v.kuchen"
+          ],
+          "tiles": [
+            "Ich",
+            "möchte",
+            "ein",
+            "Stück",
+            "Kuchen"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "möchte",
+              "ein",
+              "Stück",
+              "Kuchen"
+            ]
+          ],
+          "distractorTiles": [
+            "möchtest",
+            "eine"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l05-im-cafe.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Kellner: Was darf es sein? Gast: Ich hätte gern einen Tee, bitte."
+          },
+          "prompt": {
+            "en": "What does the guest order?"
+          },
+          "vocabRefs": [
+            "a1.v.was-darf-es-sein",
+            "a1.v.ich-haette-gern",
+            "a1.v.tee",
+            "a1.v.gast"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A tea"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A coffee"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A beer"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l06-akkusativ",
+      "title": "Akkusativ: Ich nehme einen Salat",
+      "order": 5,
+      "estMinutes": 15,
+      "objectives": [
+        "den unbestimmten Artikel im Akkusativ bilden",
+        "ein/eine/einen unterscheiden",
+        "mit nehmen und essen bestellen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l05-im-cafe"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.nehmen",
+        "a1.v.pizza",
+        "a1.v.pommes",
+        "a1.v.menue",
+        "a1.v.portion",
+        "a1.v.glas",
+        "a1.v.flasche",
+        "a1.v.schinken",
+        "a1.v.huhn"
+      ],
+      "reviewsVocab": [
+        "a1.v.salat",
+        "a1.v.suppe",
+        "a1.v.saft",
+        "a1.v.essen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.salat"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I take"
+          },
+          "verbRef": "a1.v.nehmen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.nehmen"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I take a salad. (der Salat -> einen)"
+          },
+          "vocabRefs": [
+            "a1.v.nehmen",
+            "a1.v.salat"
+          ],
+          "bank": [
+            "einen",
+            "eine",
+            "ein"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich nehme "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "einen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "ein",
+                "eine"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Salat."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I take a soup. (die Suppe -> eine)"
+          },
+          "vocabRefs": [
+            "a1.v.nehmen",
+            "a1.v.suppe"
+          ],
+          "bank": [
+            "eine",
+            "einen",
+            "ein"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich nehme "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "eine"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "ein",
+                "einen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Suppe."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I take a glass of juice.",
+          "audioText": "Ich nehme ein Glas Saft.",
+          "vocabRefs": [
+            "a1.v.nehmen",
+            "a1.v.glas",
+            "a1.v.saft"
+          ],
+          "tiles": [
+            "Ich",
+            "nehme",
+            "ein",
+            "Glas",
+            "Saft"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "nehme",
+              "ein",
+              "Glas",
+              "Saft"
+            ]
+          ],
+          "distractorTiles": [
+            "einen",
+            "eine"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l06-akkusativ.e06",
+          "type": "mcq",
+          "subtype": "grammar",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "prompt": {
+            "en": "Which is correct: 'I'm eating a pizza.' (die Pizza)"
+          },
+          "vocabRefs": [
+            "a1.v.essen",
+            "a1.v.pizza"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Ich esse eine Pizza."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Ich esse einen Pizza."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Ich esse ein Pizza."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l07-gern-moegen",
+      "title": "Vorlieben: gern, lieber & mögen",
+      "order": 6,
+      "estMinutes": 15,
+      "objectives": [
+        "Vorlieben mit gern ausdrücken",
+        "lieber für Präferenzen benutzen",
+        "das Verb mögen im Präsens benutzen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l06-akkusativ"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.gern",
+        "a1.v.lieber",
+        "a1.v.moegen",
+        "a1.v.schmecken",
+        "a1.v.lecker",
+        "a1.v.suess",
+        "a1.v.scharf",
+        "a1.v.schokolade",
+        "a1.v.banane"
+      ],
+      "reviewsVocab": [
+        "a1.v.essen",
+        "a1.v.trinken",
+        "a1.v.kaffee",
+        "a1.v.tee"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.lecker",
+            "a1.v.suess",
+            "a1.v.scharf",
+            "a1.v.schokolade"
+          ],
+          "pairRefs": [
+            "a1.v.lecker",
+            "a1.v.suess",
+            "a1.v.scharf",
+            "a1.v.schokolade"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I like (mögen)"
+          },
+          "verbRef": "a1.v.moegen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.moegen"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I like to drink coffee. (gladly)"
+          },
+          "vocabRefs": [
+            "a1.v.trinken",
+            "a1.v.gern",
+            "a1.v.kaffee"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich trinke "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "gern"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "lieber",
+                "gut"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Kaffee."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I drink coffee, but I prefer tea."
+          },
+          "vocabRefs": [
+            "a1.v.trinken",
+            "a1.v.lieber",
+            "a1.v.tee",
+            "a1.v.aber"
+          ],
+          "bank": [
+            "lieber",
+            "gern",
+            "aber"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich trinke Kaffee, aber ich trinke "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "lieber"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "gern",
+                "aber"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Tee."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I like chocolate.",
+          "audioText": "Ich mag Schokolade.",
+          "vocabRefs": [
+            "a1.v.moegen",
+            "a1.v.schokolade"
+          ],
+          "tiles": [
+            "Ich",
+            "mag",
+            "Schokolade"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "mag",
+              "Schokolade"
+            ]
+          ],
+          "distractorTiles": [
+            "magst",
+            "möge"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l07-gern-moegen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Lena isst gern Obst. Sie mag Bananen sehr. Schokolade isst sie nicht gern."
+          },
+          "prompt": {
+            "en": "What does Lena like a lot?"
+          },
+          "vocabRefs": [
+            "a1.v.moegen",
+            "a1.v.banane",
+            "a1.v.obst",
+            "a1.v.schokolade"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Bananas"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Chocolate"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Sausage"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m03-essen-trinken.l08-bezahlen",
+      "title": "Bezahlen im Restaurant",
+      "order": 7,
+      "estMinutes": 15,
+      "objectives": [
+        "die Rechnung verlangen",
+        "\"zusammen oder getrennt\" verstehen",
+        "über Preise und Trinkgeld sprechen"
+      ],
+      "prereqs": [
+        "a1.m03-essen-trinken.l07-gern-moegen"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.rechnung",
+        "a1.v.bezahlen",
+        "a1.v.kosten",
+        "a1.v.preis",
+        "a1.v.euro",
+        "a1.v.trinkgeld",
+        "a1.v.zusammen-oder-getrennt",
+        "a1.v.restaurant",
+        "a1.v.teuer"
+      ],
+      "reviewsVocab": [
+        "a1.v.bestellen",
+        "a1.v.kellner",
+        "a1.v.menue"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.rechnung",
+            "a1.v.preis",
+            "a1.v.trinkgeld",
+            "a1.v.restaurant"
+          ],
+          "pairRefs": [
+            "a1.v.rechnung",
+            "a1.v.preis",
+            "a1.v.trinkgeld",
+            "a1.v.restaurant"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.rechnung"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "it costs (kosten)"
+          },
+          "verbRef": "a1.v.kosten",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.kosten"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I would like to pay, please."
+          },
+          "vocabRefs": [
+            "a1.v.bezahlen",
+            "a1.v.moechten"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich möchte "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bezahlen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "bezahle",
+                "bezahlt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": ", bitte."
+            }
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "The bill, please.",
+          "audioText": "Die Rechnung, bitte.",
+          "vocabRefs": [
+            "a1.v.rechnung",
+            "a1.v.bitte"
+          ],
+          "tiles": [
+            "Die",
+            "Rechnung",
+            "bitte"
+          ],
+          "accepted": [
+            [
+              "Die",
+              "Rechnung",
+              "bitte"
+            ]
+          ],
+          "distractorTiles": [
+            "Der",
+            "Preis"
+          ]
+        },
+        {
+          "id": "a1.m03-essen-trinken.l08-bezahlen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Die Kellnerin fragt: Zusammen oder getrennt? Anna und Tim bezahlen zusammen. Das Essen kostet 24 Euro."
+          },
+          "prompt": {
+            "en": "How much does the meal cost?"
+          },
+          "vocabRefs": [
+            "a1.v.kellnerin",
+            "a1.v.zusammen-oder-getrennt",
+            "a1.v.kosten",
+            "a1.v.euro"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "24 euros"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "14 euros"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "42 euros"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ]
+}

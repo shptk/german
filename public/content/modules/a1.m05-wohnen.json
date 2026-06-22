@@ -1,0 +1,169 @@
+{
+  "id": "a1.m05-wohnen",
+  "level": "a1",
+  "title": "Wohnen",
+  "order": 5,
+  "lessons": [
+    {
+      "id": "a1.m05-wohnen.l00-meine-wohnung",
+      "title": "Meine Wohnung",
+      "order": 0,
+      "estMinutes": 12,
+      "exercises": [
+        {
+          "id": "a1.m05-wohnen.l00-meine-wohnung.e02",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.wohnung"
+          ],
+          "source": "hand"
+        },
+        {
+          "id": "a1.m05-wohnen.l00-meine-wohnung.e03",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.haus"
+          ],
+          "source": "hand"
+        }
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [],
+      "prereqs": [],
+      "grammarNotes": []
+    },
+    {
+      "id": "a1.m05-wohnen.l01-die-zimmer",
+      "title": "Die Zimmer",
+      "order": 1,
+      "estMinutes": 14,
+      "exercises": [
+        {
+          "id": "a1.m05-wohnen.l01-die-zimmer.e02",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.kueche"
+          ],
+          "source": "hand"
+        },
+        {
+          "id": "a1.m05-wohnen.l01-die-zimmer.e03",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bad"
+          ],
+          "source": "hand"
+        }
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [],
+      "prereqs": [
+        "a1.m05-wohnen.l00-meine-wohnung"
+      ],
+      "grammarNotes": []
+    },
+    {
+      "id": "a1.m05-wohnen.l02-moebel",
+      "title": "Möbel",
+      "order": 2,
+      "estMinutes": 14,
+      "exercises": [
+        {
+          "id": "a1.m05-wohnen.l02-moebel.e02",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bett"
+          ],
+          "source": "hand"
+        },
+        {
+          "id": "a1.m05-wohnen.l02-moebel.e03",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.schrank"
+          ],
+          "source": "hand"
+        }
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [],
+      "prereqs": [
+        "a1.m05-wohnen.l01-die-zimmer"
+      ],
+      "grammarNotes": []
+    },
+    {
+      "id": "a1.m05-wohnen.l03-es-gibt",
+      "title": "Es gibt ...",
+      "order": 3,
+      "estMinutes": 14,
+      "exercises": [
+        {
+          "id": "a1.m05-wohnen.l03-es-gibt.e02",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.fenster"
+          ],
+          "source": "hand"
+        }
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [],
+      "prereqs": [
+        "a1.m05-wohnen.l02-moebel"
+      ],
+      "grammarNotes": []
+    },
+    {
+      "id": "a1.m05-wohnen.l06-im-haus",
+      "title": "Im Haus",
+      "order": 4,
+      "estMinutes": 18,
+      "exercises": [
+        {
+          "id": "a1.m05-wohnen.l06-im-haus.e02",
+          "type": "gender-tap",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.treppe"
+          ],
+          "source": "hand"
+        }
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [],
+      "prereqs": [
+        "a1.m05-wohnen.l03-es-gibt"
+      ],
+      "grammarNotes": []
+    }
+  ],
+  "icon": "home",
+  "grammarTopics": [],
+  "vocabIds": [
+    "a1.v.wohnung",
+    "a1.v.haus",
+    "a1.v.kueche",
+    "a1.v.bad",
+    "a1.v.bett",
+    "a1.v.schrank",
+    "a1.v.fenster",
+    "a1.v.treppe"
+  ],
+  "estMinutes": 72
+}

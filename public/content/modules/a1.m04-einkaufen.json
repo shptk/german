@@ -1,0 +1,1467 @@
+{
+  "id": "a1.m04-einkaufen",
+  "level": "a1",
+  "title": "Einkaufen",
+  "order": 4,
+  "icon": "cart",
+  "estMinutes": 91,
+  "grammarTopics": [
+    "g.accusative-verbs",
+    "g.negation",
+    "g.modal-moechten"
+  ],
+  "vocabIds": [
+    "a1.v.einkaufen",
+    "a1.v.supermarkt",
+    "a1.v.markt",
+    "a1.v.geschaeft",
+    "a1.v.laden",
+    "a1.v.kasse",
+    "a1.v.einkaufswagen",
+    "a1.v.baeckerei",
+    "a1.v.gross",
+    "a1.v.kaufen",
+    "a1.v.brauchen",
+    "a1.v.suchen",
+    "a1.v.einkaufsliste",
+    "a1.v.tuete",
+    "a1.v.verkaufen",
+    "a1.v.brot",
+    "a1.v.milch",
+    "a1.v.kaese",
+    "a1.v.kilo",
+    "a1.v.gramm",
+    "a1.v.liter",
+    "a1.v.packung",
+    "a1.v.dose",
+    "a1.v.stueck",
+    "a1.v.apfel",
+    "a1.v.flasche",
+    "a1.v.cola",
+    "a1.v.kosten",
+    "a1.v.bezahlen",
+    "a1.v.preis",
+    "a1.v.euro",
+    "a1.v.cent",
+    "a1.v.geld",
+    "a1.v.guenstig",
+    "a1.v.wie-viel",
+    "a1.v.teuer",
+    "a1.v.hose",
+    "a1.v.kein",
+    "a1.v.viel",
+    "a1.v.wenig",
+    "a1.v.haben",
+    "a1.v.zucker",
+    "a1.v.tomate",
+    "a1.v.zeit",
+    "a1.v.kleidung",
+    "a1.v.hemd",
+    "a1.v.jacke",
+    "a1.v.schuh",
+    "a1.v.groesse",
+    "a1.v.farbe",
+    "a1.v.anprobieren",
+    "a1.v.tragen",
+    "a1.v.welcher",
+    "a1.v.moechten",
+    "a1.v.kaffee",
+    "a1.v.tee",
+    "a1.v.kuchen"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m04-einkaufen.l01-im-supermarkt",
+      "title": "Im Supermarkt",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Name shops and places for shopping",
+        "Recognize articles of shopping nouns",
+        "Say where you go shopping"
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.accusative-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.einkaufen",
+        "a1.v.supermarkt",
+        "a1.v.markt",
+        "a1.v.geschaeft",
+        "a1.v.laden",
+        "a1.v.kasse",
+        "a1.v.einkaufswagen",
+        "a1.v.baeckerei"
+      ],
+      "reviewsVocab": [],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.supermarkt",
+            "a1.v.markt",
+            "a1.v.geschaeft",
+            "a1.v.baeckerei"
+          ],
+          "pairRefs": [
+            "a1.v.supermarkt",
+            "a1.v.markt",
+            "a1.v.geschaeft",
+            "a1.v.baeckerei"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.supermarkt"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e03",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.baeckerei"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I am shopping in the supermarket."
+          },
+          "vocabRefs": [
+            "a1.v.einkaufen",
+            "a1.v.supermarkt"
+          ],
+          "bank": [
+            "kaufe",
+            "im"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kaufe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kaufen",
+                "kaufst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "im"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "in",
+                "in dem"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Supermarkt ein."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "The shop is big.",
+          "audioText": "Das Geschäft ist groß.",
+          "vocabRefs": [
+            "a1.v.geschaeft",
+            "a1.v.gross"
+          ],
+          "tiles": [
+            "Das",
+            "Geschäft",
+            "ist",
+            "groß"
+          ],
+          "accepted": [
+            [
+              "Das",
+              "Geschäft",
+              "ist",
+              "groß"
+            ]
+          ],
+          "distractorTiles": [
+            "sind",
+            "klein"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l01-im-supermarkt.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Anna geht in den Supermarkt. Sie nimmt einen Einkaufswagen."
+          },
+          "prompt": {
+            "en": "What does Anna take?"
+          },
+          "vocabRefs": [
+            "a1.v.supermarkt",
+            "a1.v.einkaufswagen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "a shopping cart"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "a bag"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "a basket"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen",
+      "title": "Lebensmittel kaufen",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Say what you buy and need (accusative)",
+        "Use accusative verbs kaufen and brauchen",
+        "Talk about a shopping list"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l01-im-supermarkt"
+      ],
+      "grammarNotes": [
+        "gn.accusative-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.kaufen",
+        "a1.v.brauchen",
+        "a1.v.suchen",
+        "a1.v.einkaufsliste",
+        "a1.v.tuete",
+        "a1.v.verkaufen"
+      ],
+      "reviewsVocab": [
+        "a1.v.brot",
+        "a1.v.milch",
+        "a1.v.kaese"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.kaufen",
+            "a1.v.brauchen",
+            "a1.v.suchen",
+            "a1.v.verkaufen"
+          ],
+          "pairRefs": [
+            "a1.v.kaufen",
+            "a1.v.brauchen",
+            "a1.v.suchen",
+            "a1.v.verkaufen"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) buy"
+          },
+          "verbRef": "a1.v.kaufen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.kaufen"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "we need"
+          },
+          "verbRef": "a1.v.brauchen",
+          "tense": "praesens",
+          "person": "wir",
+          "vocabRefs": [
+            "a1.v.brauchen"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I buy bread and milk."
+          },
+          "vocabRefs": [
+            "a1.v.kaufen",
+            "a1.v.brot",
+            "a1.v.milch"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kaufe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kaufst",
+                "kaufen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Brot und Milch."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I need cheese.",
+          "audioText": "Ich brauche Käse.",
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.kaese"
+          ],
+          "tiles": [
+            "Ich",
+            "brauche",
+            "Käse"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "brauche",
+              "Käse"
+            ]
+          ],
+          "distractorTiles": [
+            "brauchst",
+            "suche"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l02-lebensmittel-kaufen.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.tuete"
+          ],
+          "audioText": "Ich brauche eine Tüte.",
+          "answers": [
+            "Ich brauche eine Tüte.",
+            "Ich brauche eine Tüte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen",
+      "title": "Mengen und Verpackungen",
+      "order": 2,
+      "estMinutes": 13,
+      "objectives": [
+        "Use quantities and packaging words",
+        "Combine numbers with units",
+        "Ask for amounts at the shop"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l02-lebensmittel-kaufen"
+      ],
+      "grammarNotes": [
+        "gn.accusative-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.kilo",
+        "a1.v.gramm",
+        "a1.v.liter",
+        "a1.v.packung",
+        "a1.v.dose",
+        "a1.v.stueck"
+      ],
+      "reviewsVocab": [
+        "a1.v.flasche",
+        "a1.v.brauchen",
+        "a1.v.wasser"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.kilo",
+            "a1.v.liter",
+            "a1.v.packung",
+            "a1.v.dose"
+          ],
+          "pairRefs": [
+            "a1.v.kilo",
+            "a1.v.liter",
+            "a1.v.packung",
+            "a1.v.dose"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.packung"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e03",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.stueck"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I need a liter of milk."
+          },
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.liter",
+            "a1.v.milch"
+          ],
+          "bank": [
+            "brauche",
+            "Liter"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "brauche"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "brauchst",
+                "brauchen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " einen "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Liter"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "liter",
+                "Kilo"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Milch."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I need a kilo of apples.",
+          "audioText": "Ich brauche ein Kilo Äpfel.",
+          "vocabRefs": [
+            "a1.v.kilo",
+            "a1.v.apfel",
+            "a1.v.brauchen"
+          ],
+          "tiles": [
+            "Ich",
+            "brauche",
+            "ein",
+            "Kilo",
+            "Äpfel"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "brauche",
+              "ein",
+              "Kilo",
+              "Äpfel"
+            ]
+          ],
+          "distractorTiles": [
+            "eine",
+            "Liter"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l03-mengen-und-verpackungen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom kauft eine Flasche Wasser und eine Dose Cola."
+          },
+          "prompt": {
+            "en": "How does Tom buy the cola?"
+          },
+          "vocabRefs": [
+            "a1.v.flasche",
+            "a1.v.dose",
+            "a1.v.cola"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "in a can"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "in a bottle"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "in a pack"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l04-was-kostet-das",
+      "title": "Was kostet das?",
+      "order": 3,
+      "estMinutes": 13,
+      "objectives": [
+        "Ask and say prices",
+        "Use kosten and bezahlen",
+        "Describe things as cheap or expensive"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l03-mengen-und-verpackungen"
+      ],
+      "grammarNotes": [
+        "gn.accusative-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.kosten",
+        "a1.v.bezahlen",
+        "a1.v.preis",
+        "a1.v.euro",
+        "a1.v.cent",
+        "a1.v.geld",
+        "a1.v.guenstig"
+      ],
+      "reviewsVocab": [
+        "a1.v.teuer",
+        "a1.v.billig",
+        "a1.v.wie-viel"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.preis",
+            "a1.v.euro",
+            "a1.v.geld",
+            "a1.v.cent"
+          ],
+          "pairRefs": [
+            "a1.v.preis",
+            "a1.v.euro",
+            "a1.v.geld",
+            "a1.v.cent"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "it costs"
+          },
+          "verbRef": "a1.v.kosten",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.kosten"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "How much does the bread cost?"
+          },
+          "vocabRefs": [
+            "a1.v.kosten",
+            "a1.v.brot",
+            "a1.v.wie-viel"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Wie viel "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kostet"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kosten",
+                "koste"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " das Brot?"
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "The apple costs one euro.",
+          "audioText": "Der Apfel kostet einen Euro.",
+          "vocabRefs": [
+            "a1.v.kosten",
+            "a1.v.apfel",
+            "a1.v.euro"
+          ],
+          "tiles": [
+            "Der",
+            "Apfel",
+            "kostet",
+            "einen",
+            "Euro"
+          ],
+          "accepted": [
+            [
+              "Der",
+              "Apfel",
+              "kostet",
+              "einen",
+              "Euro"
+            ]
+          ],
+          "distractorTiles": [
+            "kosten",
+            "ein"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Die Hose kostet 80 Euro. Das ist sehr teuer."
+          },
+          "prompt": {
+            "en": "What does the text say about the trousers?"
+          },
+          "vocabRefs": [
+            "a1.v.kosten",
+            "a1.v.teuer",
+            "a1.v.hose"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "They are very expensive."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "They are very cheap."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "They are free."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m04-einkaufen.l04-was-kostet-das.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.bezahlen",
+            "a1.v.kasse"
+          ],
+          "audioText": "Ich bezahle an der Kasse.",
+          "answers": [
+            "Ich bezahle an der Kasse.",
+            "Ich bezahle an der Kasse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l05-kein-negation",
+      "title": "Negation mit kein",
+      "order": 4,
+      "estMinutes": 12,
+      "objectives": [
+        "Negate nouns with kein",
+        "Say what you do not have or need",
+        "Contrast kein with the indefinite article"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l04-was-kostet-das"
+      ],
+      "grammarNotes": [
+        "gn.negation"
+      ],
+      "introducesVocab": [
+        "a1.v.kein",
+        "a1.v.viel",
+        "a1.v.wenig"
+      ],
+      "reviewsVocab": [
+        "a1.v.haben",
+        "a1.v.geld",
+        "a1.v.brauchen",
+        "a1.v.zucker"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l05-kein-negation.e01",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I have no money."
+          },
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.kein",
+            "a1.v.geld"
+          ],
+          "bank": [
+            "habe",
+            "kein"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hast",
+                "haben"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "kein"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "keine",
+                "keinen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Geld."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l05-kein-negation.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I need no milk."
+          },
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.kein",
+            "a1.v.milch"
+          ],
+          "bank": [
+            "brauche",
+            "keine"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "brauche"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "brauchst",
+                "brauchen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "keine"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kein",
+                "keinen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Milch."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l05-kein-negation.e03",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I need no sugar.",
+          "audioText": "Ich brauche keinen Zucker.",
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.kein",
+            "a1.v.zucker"
+          ],
+          "tiles": [
+            "Ich",
+            "brauche",
+            "keinen",
+            "Zucker"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "brauche",
+              "keinen",
+              "Zucker"
+            ]
+          ],
+          "distractorTiles": [
+            "kein",
+            "keine"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l05-kein-negation.e04",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Wir haben keine Tomaten und kein Brot. Wir gehen einkaufen."
+          },
+          "prompt": {
+            "en": "Why do they go shopping?"
+          },
+          "vocabRefs": [
+            "a1.v.kein",
+            "a1.v.tomate",
+            "a1.v.brot",
+            "a1.v.einkaufen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "They have no tomatoes and no bread."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "They have too many tomatoes."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "They have a lot of bread."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m04-einkaufen.l05-kein-negation.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.kein",
+            "a1.v.zeit"
+          ],
+          "audioText": "Ich habe keine Zeit.",
+          "answers": [
+            "Ich habe keine Zeit.",
+            "Ich habe keine Zeit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l06-kleidung-kaufen",
+      "title": "Kleidung kaufen",
+      "order": 5,
+      "estMinutes": 14,
+      "objectives": [
+        "Name clothes and accessories",
+        "Ask about size and color",
+        "Try on and buy clothes"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l05-kein-negation"
+      ],
+      "grammarNotes": [
+        "gn.accusative-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.kleidung",
+        "a1.v.hemd",
+        "a1.v.hose",
+        "a1.v.jacke",
+        "a1.v.schuh",
+        "a1.v.groesse",
+        "a1.v.farbe",
+        "a1.v.anprobieren",
+        "a1.v.tragen"
+      ],
+      "reviewsVocab": [
+        "a1.v.kaufen",
+        "a1.v.teuer"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.hemd",
+            "a1.v.hose",
+            "a1.v.jacke",
+            "a1.v.schuh"
+          ],
+          "pairRefs": [
+            "a1.v.hemd",
+            "a1.v.hose",
+            "a1.v.jacke",
+            "a1.v.schuh"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.hose"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e03",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.hemd"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e04",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "he wears / carries"
+          },
+          "verbRef": "a1.v.tragen",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.tragen"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e05",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I am buying a jacket."
+          },
+          "vocabRefs": [
+            "a1.v.kaufen",
+            "a1.v.jacke"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kaufe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kaufst",
+                "kaufen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " eine "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Jacke"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "jacke",
+                "Hose"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l06-kleidung-kaufen.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "What size do you need?",
+          "audioText": "Welche Größe brauchst du?",
+          "vocabRefs": [
+            "a1.v.groesse",
+            "a1.v.brauchen",
+            "a1.v.welcher"
+          ],
+          "tiles": [
+            "Welche",
+            "Größe",
+            "brauchst",
+            "du"
+          ],
+          "accepted": [
+            [
+              "Welche",
+              "Größe",
+              "brauchst",
+              "du"
+            ]
+          ],
+          "distractorTiles": [
+            "brauche",
+            "Welcher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m04-einkaufen.l07-ich-moechte",
+      "title": "Ich möchte ...",
+      "order": 6,
+      "estMinutes": 14,
+      "objectives": [
+        "Use the modal verb möchten to express wishes",
+        "Politely order and ask for things",
+        "Combine möchten with accusative objects"
+      ],
+      "prereqs": [
+        "a1.m04-einkaufen.l06-kleidung-kaufen"
+      ],
+      "grammarNotes": [
+        "gn.modal-moechten"
+      ],
+      "introducesVocab": [
+        "a1.v.moechten"
+      ],
+      "reviewsVocab": [
+        "a1.v.kaufen",
+        "a1.v.brot",
+        "a1.v.apfel",
+        "a1.v.kaese",
+        "a1.v.kosten",
+        "a1.v.kein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e01",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I would like"
+          },
+          "verbRef": "a1.v.moechten",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.moechten"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) would like"
+          },
+          "verbRef": "a1.v.moechten",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.moechten"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I would like a coffee."
+          },
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.kaffee"
+          ],
+          "bank": [
+            "möchte",
+            "einen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "möchte"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "möchtest",
+                "möchten"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "einen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "eine",
+                "ein"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Kaffee."
+            }
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "We would like to buy bread.",
+          "audioText": "Wir möchten Brot kaufen.",
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.brot",
+            "a1.v.kaufen"
+          ],
+          "tiles": [
+            "Wir",
+            "möchten",
+            "Brot",
+            "kaufen"
+          ],
+          "accepted": [
+            [
+              "Wir",
+              "möchten",
+              "Brot",
+              "kaufen"
+            ]
+          ],
+          "distractorTiles": [
+            "möchte",
+            "kaufst"
+          ]
+        },
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Im Café sagt Lena: Ich möchte einen Tee und ein Stück Kuchen."
+          },
+          "prompt": {
+            "en": "What does Lena want?"
+          },
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.tee",
+            "a1.v.kuchen",
+            "a1.v.stueck"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "a tea and a piece of cake"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "a coffee and a roll"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "a juice and an apple"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m04-einkaufen.l07-ich-moechte.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.apfel"
+          ],
+          "audioText": "Ich möchte einen Apfel.",
+          "answers": [
+            "Ich möchte einen Apfel.",
+            "Ich möchte einen Apfel"
+          ]
+        }
+      ]
+    }
+  ]
+}

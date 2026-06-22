@@ -1,0 +1,1741 @@
+{
+  "id": "a1.m06-tagesablauf-zeit",
+  "level": "a1",
+  "title": "Tagesablauf & Zeit",
+  "order": 6,
+  "icon": "clock",
+  "estMinutes": 109,
+  "grammarTopics": [
+    "g.time",
+    "g.separable-verbs",
+    "g.modal-verbs",
+    "g.word-order"
+  ],
+  "vocabIds": [
+    "a1.v.uhr",
+    "a1.v.uhrzeit",
+    "a1.v.zeit",
+    "a1.v.stunde",
+    "a1.v.wie-spaet-ist-es",
+    "a1.v.es-ist",
+    "a1.v.minute",
+    "a1.v.halb",
+    "a1.v.viertel",
+    "a1.v.sekunde",
+    "a1.v.um-wie-viel-uhr",
+    "a1.v.um",
+    "a1.v.nach",
+    "a1.v.tag",
+    "a1.v.woche",
+    "a1.v.montag",
+    "a1.v.dienstag",
+    "a1.v.mittwoch",
+    "a1.v.donnerstag",
+    "a1.v.freitag",
+    "a1.v.samstag",
+    "a1.v.sonntag",
+    "a1.v.wochenende",
+    "a1.v.am",
+    "a1.v.frei",
+    "a1.v.arbeiten",
+    "a1.v.morgen-n",
+    "a1.v.vormittag",
+    "a1.v.mittag",
+    "a1.v.nachmittag",
+    "a1.v.abend",
+    "a1.v.nacht",
+    "a1.v.am-morgen",
+    "a1.v.frueh",
+    "a1.v.spaet",
+    "a1.v.trinken",
+    "a1.v.kaffee",
+    "a1.v.muede",
+    "a1.v.aufstehen",
+    "a1.v.aufwachen",
+    "a1.v.wecker",
+    "a1.v.tagesablauf",
+    "a1.v.einschlafen",
+    "a1.v.schlafen",
+    "a1.v.einkaufen",
+    "a1.v.fernsehen",
+    "a1.v.anrufen",
+    "a1.v.zuerst",
+    "a1.v.dann",
+    "a1.v.danach",
+    "a1.v.frueh­stuecken",
+    "a1.v.muessen",
+    "a1.v.koennen",
+    "a1.v.termin",
+    "a1.v.pause",
+    "a1.v.heute",
+    "a1.v.jeden-tag",
+    "a1.v.oft",
+    "a1.v.manchmal",
+    "a1.v.nie",
+    "a1.v.immer"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es",
+      "title": "Wie spät ist es?",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Die Uhrzeit erfragen und die volle Stunde sagen",
+        "Die Wörter Uhr, Zeit und Stunde verstehen"
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.time"
+      ],
+      "introducesVocab": [
+        "a1.v.uhr",
+        "a1.v.uhrzeit",
+        "a1.v.zeit",
+        "a1.v.stunde",
+        "a1.v.wie-spaet-ist-es",
+        "a1.v.es-ist"
+      ],
+      "reviewsVocab": [
+        "a1.v.sein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.uhr"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.uhr",
+            "a1.v.zeit",
+            "a1.v.stunde",
+            "a1.v.minute"
+          ],
+          "pairRefs": [
+            "a1.v.uhr",
+            "a1.v.zeit",
+            "a1.v.stunde",
+            "a1.v.minute"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "It is three o'clock."
+          },
+          "vocabRefs": [
+            "a1.v.es-ist",
+            "a1.v.uhr"
+          ],
+          "bank": [
+            "ist",
+            "drei",
+            "Uhr"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Es "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "ist"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "bin",
+                "bist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "drei"
+              ],
+              "caseInsensitive": true
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 3,
+              "answers": [
+                "Uhr"
+              ],
+              "caseInsensitive": false
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es.e04",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Wie spät ist es? Es ist acht Uhr."
+          },
+          "prompt": {
+            "en": "What time is it?"
+          },
+          "vocabRefs": [
+            "a1.v.wie-spaet-ist-es",
+            "a1.v.es-ist"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Eight o'clock"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Three o'clock"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Eleven o'clock"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.uhr",
+            "a1.v.es-ist"
+          ],
+          "audioText": "Es ist zehn Uhr.",
+          "answers": [
+            "Es ist zehn Uhr.",
+            "Es ist zehn Uhr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau",
+      "title": "Die Uhrzeit: halb und Viertel",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Halbe und Viertelstunden auf Deutsch sagen",
+        "Nach der genauen Uhrzeit fragen"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l00-wie-spaet-ist-es"
+      ],
+      "grammarNotes": [
+        "gn.time"
+      ],
+      "introducesVocab": [
+        "a1.v.halb",
+        "a1.v.viertel",
+        "a1.v.minute",
+        "a1.v.sekunde",
+        "a1.v.um-wie-viel-uhr",
+        "a1.v.um"
+      ],
+      "reviewsVocab": [
+        "a1.v.uhr",
+        "a1.v.es-ist"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.minute"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.halb",
+            "a1.v.viertel",
+            "a1.v.minute",
+            "a1.v.sekunde"
+          ],
+          "pairRefs": [
+            "a1.v.halb",
+            "a1.v.viertel",
+            "a1.v.minute",
+            "a1.v.sekunde"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "It is half past eight (eight thirty)."
+          },
+          "vocabRefs": [
+            "a1.v.halb",
+            "a1.v.es-ist"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Es ist "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "halb"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "Viertel",
+                "viertel"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " neun."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "At what time?",
+          "audioText": "Um wie viel Uhr?",
+          "vocabRefs": [
+            "a1.v.um-wie-viel-uhr",
+            "a1.v.um",
+            "a1.v.uhr"
+          ],
+          "tiles": [
+            "Um",
+            "wie",
+            "viel",
+            "Uhr"
+          ],
+          "accepted": [
+            [
+              "Um",
+              "wie",
+              "viel",
+              "Uhr"
+            ]
+          ],
+          "distractorTiles": [
+            "Wann",
+            "ist"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Es ist Viertel nach sieben."
+          },
+          "prompt": {
+            "en": "What time is it?"
+          },
+          "vocabRefs": [
+            "a1.v.viertel",
+            "a1.v.nach"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Quarter past seven (7:15)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Half past seven (7:30)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Quarter to seven (6:45)"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche",
+      "title": "Die Tage der Woche",
+      "order": 2,
+      "estMinutes": 13,
+      "objectives": [
+        "Die sieben Wochentage nennen",
+        "Sagen, an welchem Tag etwas passiert (am Montag)"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l01-uhrzeit-genau"
+      ],
+      "grammarNotes": [
+        "gn.time"
+      ],
+      "introducesVocab": [
+        "a1.v.tag",
+        "a1.v.woche",
+        "a1.v.montag",
+        "a1.v.dienstag",
+        "a1.v.mittwoch",
+        "a1.v.donnerstag",
+        "a1.v.freitag",
+        "a1.v.samstag",
+        "a1.v.sonntag",
+        "a1.v.wochenende",
+        "a1.v.am"
+      ],
+      "reviewsVocab": [
+        "a1.v.heute"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.tag"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.montag",
+            "a1.v.mittwoch",
+            "a1.v.freitag",
+            "a1.v.sonntag"
+          ],
+          "pairRefs": [
+            "a1.v.montag",
+            "a1.v.mittwoch",
+            "a1.v.freitag",
+            "a1.v.sonntag"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "On Saturday I have time."
+          },
+          "vocabRefs": [
+            "a1.v.am",
+            "a1.v.samstag",
+            "a1.v.zeit"
+          ],
+          "bank": [
+            "Am",
+            "Samstag",
+            "Zeit"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Am"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Um",
+                "In"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Samstag"
+              ],
+              "caseInsensitive": false
+            },
+            {
+              "kind": "text",
+              "value": " habe ich "
+            },
+            {
+              "kind": "blank",
+              "id": 3,
+              "answers": [
+                "Zeit"
+              ],
+              "caseInsensitive": false
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "On Sunday I am free.",
+          "audioText": "Am Sonntag bin ich frei.",
+          "vocabRefs": [
+            "a1.v.am",
+            "a1.v.sonntag",
+            "a1.v.frei"
+          ],
+          "tiles": [
+            "Am",
+            "Sonntag",
+            "bin",
+            "ich",
+            "frei"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Sonntag",
+              "bin",
+              "ich",
+              "frei"
+            ]
+          ],
+          "distractorTiles": [
+            "ist",
+            "Montag"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.wochenende"
+          ],
+          "audioText": "Das Wochenende ist frei.",
+          "answers": [
+            "Das Wochenende ist frei.",
+            "Das Wochenende ist frei"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l02-tage-der-woche.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Am Montag arbeite ich. Am Sonntag bin ich frei."
+          },
+          "prompt": {
+            "en": "On which day does the person work?"
+          },
+          "vocabRefs": [
+            "a1.v.montag",
+            "a1.v.arbeiten"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Monday"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Sunday"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Saturday"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten",
+      "title": "Tageszeiten: Morgen, Mittag, Abend",
+      "order": 3,
+      "estMinutes": 13,
+      "objectives": [
+        "Die Tageszeiten benennen (Morgen, Mittag, Nachmittag, Abend, Nacht)",
+        "Mit am sagen, wann am Tag etwas passiert"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l02-tage-der-woche"
+      ],
+      "grammarNotes": [
+        "gn.time"
+      ],
+      "introducesVocab": [
+        "a1.v.morgen-n",
+        "a1.v.vormittag",
+        "a1.v.mittag",
+        "a1.v.nachmittag",
+        "a1.v.abend",
+        "a1.v.nacht",
+        "a1.v.am-morgen",
+        "a1.v.frueh",
+        "a1.v.spaet"
+      ],
+      "reviewsVocab": [
+        "a1.v.am",
+        "a1.v.heute"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.abend"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.morgen-n",
+            "a1.v.mittag",
+            "a1.v.abend",
+            "a1.v.nacht"
+          ],
+          "pairRefs": [
+            "a1.v.morgen-n",
+            "a1.v.mittag",
+            "a1.v.abend",
+            "a1.v.nacht"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "In the morning I drink coffee."
+          },
+          "vocabRefs": [
+            "a1.v.am-morgen",
+            "a1.v.trinken",
+            "a1.v.kaffee"
+          ],
+          "bank": [
+            "Am",
+            "Morgen",
+            "trinke",
+            "Kaffee"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Am"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Um",
+                "In"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Morgen"
+              ],
+              "caseInsensitive": false
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 3,
+              "answers": [
+                "trinke"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "trinkst",
+                "trinkt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ich "
+            },
+            {
+              "kind": "blank",
+              "id": 4,
+              "answers": [
+                "Kaffee"
+              ],
+              "caseInsensitive": false
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "In the evening I am tired.",
+          "audioText": "Am Abend bin ich müde.",
+          "vocabRefs": [
+            "a1.v.abend",
+            "a1.v.muede"
+          ],
+          "tiles": [
+            "Am",
+            "Abend",
+            "bin",
+            "ich",
+            "müde"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Abend",
+              "bin",
+              "ich",
+              "müde"
+            ]
+          ],
+          "distractorTiles": [
+            "bist",
+            "wach"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l03-tageszeiten.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Am Morgen ist Lena früh wach. Am Abend ist sie müde."
+          },
+          "prompt": {
+            "en": "When is Lena tired?"
+          },
+          "vocabRefs": [
+            "a1.v.abend",
+            "a1.v.muede",
+            "a1.v.morgen-n"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "In the evening"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "In the morning"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "At noon"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar",
+      "title": "Aufstehen und aufwachen: trennbare Verben",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "Trennbare Verben im Präsens bilden (Vorsilbe ans Satzende)",
+        "Über das Aufstehen am Morgen sprechen"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l03-tageszeiten"
+      ],
+      "grammarNotes": [
+        "gn.separable-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.aufstehen",
+        "a1.v.aufwachen",
+        "a1.v.wecker",
+        "a1.v.tagesablauf",
+        "a1.v.einschlafen",
+        "a1.v.schlafen"
+      ],
+      "reviewsVocab": [
+        "a1.v.am-morgen",
+        "a1.v.frueh",
+        "a1.v.um"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.wecker"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.aufstehen",
+            "a1.v.aufwachen",
+            "a1.v.einschlafen",
+            "a1.v.schlafen"
+          ],
+          "pairRefs": [
+            "a1.v.aufstehen",
+            "a1.v.aufwachen",
+            "a1.v.einschlafen",
+            "a1.v.schlafen"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "to get up — you (informal)"
+          },
+          "verbRef": "a1.v.aufstehen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.aufstehen"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I get up at six o'clock."
+          },
+          "vocabRefs": [
+            "a1.v.aufstehen",
+            "a1.v.um"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "stehe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "stehst",
+                "steht",
+                "aufstehe"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " um sechs Uhr "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "auf"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "an",
+                "ein"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "In the morning the alarm clock rings, and I wake up.",
+          "audioText": "Am Morgen klingelt der Wecker, und ich wache auf.",
+          "vocabRefs": [
+            "a1.v.wecker",
+            "a1.v.aufwachen",
+            "a1.v.am-morgen"
+          ],
+          "tiles": [
+            "Am",
+            "Morgen",
+            "klingelt",
+            "der",
+            "Wecker",
+            "und",
+            "ich",
+            "wache",
+            "auf"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Morgen",
+              "klingelt",
+              "der",
+              "Wecker",
+              "und",
+              "ich",
+              "wache",
+              "auf"
+            ]
+          ],
+          "distractorTiles": [
+            "aufwache",
+            "ein"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tim steht früh auf. Um sieben Uhr ist er schon wach."
+          },
+          "prompt": {
+            "en": "What do we learn about Tim?"
+          },
+          "vocabRefs": [
+            "a1.v.aufstehen",
+            "a1.v.frueh"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "He gets up early."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "He sleeps late."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "He works at night."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l05-mein-tag",
+      "title": "Mein Tag: zuerst, dann, danach",
+      "order": 5,
+      "estMinutes": 14,
+      "objectives": [
+        "Einen Tagesablauf in Schritten beschreiben (zuerst, dann, danach)",
+        "Weitere trennbare Verben benutzen (einkaufen, fernsehen, anrufen)"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l04-aufstehen-trennbar"
+      ],
+      "grammarNotes": [
+        "gn.separable-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.einkaufen",
+        "a1.v.fernsehen",
+        "a1.v.anrufen",
+        "a1.v.zuerst",
+        "a1.v.dann",
+        "a1.v.danach",
+        "a1.v.frueh­stuecken"
+      ],
+      "reviewsVocab": [
+        "a1.v.aufstehen",
+        "a1.v.arbeiten",
+        "a1.v.essen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.einkaufen",
+            "a1.v.fernsehen",
+            "a1.v.anrufen",
+            "a1.v.frueh­stuecken"
+          ],
+          "pairRefs": [
+            "a1.v.einkaufen",
+            "a1.v.fernsehen",
+            "a1.v.anrufen",
+            "a1.v.frueh­stuecken"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "to call (phone) — I"
+          },
+          "verbRef": "a1.v.anrufen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.anrufen"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "First I have breakfast, then I go to work."
+          },
+          "vocabRefs": [
+            "a1.v.zuerst",
+            "a1.v.dann",
+            "a1.v.frueh­stuecken"
+          ],
+          "bank": [
+            "Zuerst",
+            "frühstücke",
+            "dann"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Zuerst"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Dann",
+                "Danach"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "frühstücke"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "frühstückst",
+                "frühstückt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ich, "
+            },
+            {
+              "kind": "blank",
+              "id": 3,
+              "answers": [
+                "dann"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "zuerst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " gehe ich zur Arbeit."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "In the evening I watch TV.",
+          "audioText": "Am Abend sehe ich fern.",
+          "vocabRefs": [
+            "a1.v.fernsehen",
+            "a1.v.abend"
+          ],
+          "tiles": [
+            "Am",
+            "Abend",
+            "sehe",
+            "ich",
+            "fern"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Abend",
+              "sehe",
+              "ich",
+              "fern"
+            ]
+          ],
+          "distractorTiles": [
+            "fernsehe",
+            "auf"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.einkaufen",
+            "a1.v.danach"
+          ],
+          "audioText": "Danach kaufe ich ein.",
+          "answers": [
+            "Danach kaufe ich ein.",
+            "Danach kaufe ich ein"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l05-mein-tag.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Zuerst frühstücke ich. Dann arbeite ich. Danach kaufe ich ein."
+          },
+          "prompt": {
+            "en": "What does the person do last?"
+          },
+          "vocabRefs": [
+            "a1.v.danach",
+            "a1.v.einkaufen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Go shopping"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Have breakfast"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Work"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine",
+      "title": "Ich muss arbeiten: müssen und Termine",
+      "order": 6,
+      "estMinutes": 15,
+      "objectives": [
+        "Das Modalverb müssen im Präsens benutzen",
+        "Den Infinitiv ans Satzende stellen (Satzklammer)",
+        "Über Termine und Pflichten sprechen"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l05-mein-tag"
+      ],
+      "grammarNotes": [
+        "gn.modal-verbs"
+      ],
+      "introducesVocab": [
+        "a1.v.muessen",
+        "a1.v.koennen",
+        "a1.v.termin",
+        "a1.v.pause",
+        "a1.v.frei"
+      ],
+      "reviewsVocab": [
+        "a1.v.arbeiten",
+        "a1.v.um",
+        "a1.v.aufstehen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.termin"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "must / have to — I"
+          },
+          "verbRef": "a1.v.muessen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.muessen"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "must / have to — you (informal)"
+          },
+          "verbRef": "a1.v.muessen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.muessen"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I have to work today."
+          },
+          "vocabRefs": [
+            "a1.v.muessen",
+            "a1.v.arbeiten",
+            "a1.v.heute"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "muss"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "musst",
+                "müssen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " heute "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "arbeiten"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "arbeite",
+                "arbeitet"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I have to get up early tomorrow.",
+          "audioText": "Ich muss morgen früh aufstehen.",
+          "vocabRefs": [
+            "a1.v.muessen",
+            "a1.v.aufstehen",
+            "a1.v.frueh"
+          ],
+          "tiles": [
+            "Ich",
+            "muss",
+            "morgen",
+            "früh",
+            "aufstehen"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "muss",
+              "morgen",
+              "früh",
+              "aufstehen"
+            ]
+          ],
+          "distractorTiles": [
+            "musst",
+            "stehe"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l06-muessen-termine.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Ich habe um neun Uhr einen Termin. Ich muss früh aufstehen."
+          },
+          "prompt": {
+            "en": "Why does the person have to get up early?"
+          },
+          "vocabRefs": [
+            "a1.v.termin",
+            "a1.v.muessen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Because of an appointment at nine."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Because it is the weekend."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Because the person is free."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit",
+      "title": "Wortstellung: Zeit zuerst",
+      "order": 7,
+      "estMinutes": 15,
+      "objectives": [
+        "Sätze mit Zeitangabe am Anfang bilden (Verb an Position 2)",
+        "Den ganzen Tagesablauf zusammenfassen"
+      ],
+      "prereqs": [
+        "a1.m06-tagesablauf-zeit.l06-muessen-termine"
+      ],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.jeden-tag",
+        "a1.v.oft",
+        "a1.v.manchmal",
+        "a1.v.nie",
+        "a1.v.immer"
+      ],
+      "reviewsVocab": [
+        "a1.v.aufstehen",
+        "a1.v.einkaufen",
+        "a1.v.muessen",
+        "a1.v.am",
+        "a1.v.um",
+        "a1.v.fernsehen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.immer",
+            "a1.v.oft",
+            "a1.v.manchmal",
+            "a1.v.nie"
+          ],
+          "pairRefs": [
+            "a1.v.immer",
+            "a1.v.oft",
+            "a1.v.manchmal",
+            "a1.v.nie"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Every day I get up at seven."
+          },
+          "vocabRefs": [
+            "a1.v.jeden-tag",
+            "a1.v.aufstehen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Jeden Tag "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "stehe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "stehst",
+                "steht",
+                "aufstehe"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ich um sieben "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "auf"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "an",
+                "ein"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e03",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "On Monday I always work.",
+          "audioText": "Am Montag arbeite ich immer.",
+          "vocabRefs": [
+            "a1.v.am",
+            "a1.v.montag",
+            "a1.v.arbeiten",
+            "a1.v.immer"
+          ],
+          "tiles": [
+            "Am",
+            "Montag",
+            "arbeite",
+            "ich",
+            "immer"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Montag",
+              "arbeite",
+              "ich",
+              "immer"
+            ]
+          ],
+          "distractorTiles": [
+            "arbeitest",
+            "ist"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "On Saturday I often go shopping.",
+          "audioText": "Am Samstag kaufe ich oft ein.",
+          "vocabRefs": [
+            "a1.v.samstag",
+            "a1.v.einkaufen",
+            "a1.v.oft",
+            "a1.v.am"
+          ],
+          "tiles": [
+            "Am",
+            "Samstag",
+            "kaufe",
+            "ich",
+            "oft",
+            "ein"
+          ],
+          "accepted": [
+            [
+              "Am",
+              "Samstag",
+              "kaufe",
+              "ich",
+              "oft",
+              "ein"
+            ]
+          ],
+          "distractorTiles": [
+            "kaufst",
+            "auf"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.abend",
+            "a1.v.fernsehen",
+            "a1.v.manchmal"
+          ],
+          "audioText": "Am Abend sehe ich manchmal fern.",
+          "answers": [
+            "Am Abend sehe ich manchmal fern.",
+            "Am Abend sehe ich manchmal fern"
+          ]
+        },
+        {
+          "id": "a1.m06-tagesablauf-zeit.l07-wortstellung-zeit.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 35,
+          "passage": {
+            "de": "Jeden Tag stehe ich um sechs Uhr auf. Am Vormittag arbeite ich. Am Abend sehe ich oft fern. Am Sonntag bin ich frei und kaufe nie ein."
+          },
+          "prompt": {
+            "en": "What does the person never do on Sunday?"
+          },
+          "vocabRefs": [
+            "a1.v.einkaufen",
+            "a1.v.nie",
+            "a1.v.sonntag"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Go shopping"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Get up"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Watch TV"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ]
+}

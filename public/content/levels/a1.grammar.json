@@ -6,24 +6,72 @@
     "title": "Present tense — regular verbs",
     "summary": "Drop the -en from the infinitive and add an ending that matches the subject.",
     "body": [
-      { "kind": "paragraph", "text": "German verbs change their ending depending on who does the action. For a regular verb like **wohnen** (to live), take the stem **wohn-** and add the ending." },
+      {
+        "kind": "paragraph",
+        "text": "German verbs change their ending depending on who does the action. For a regular verb like **wohnen** (to live), take the stem **wohn-** and add the ending."
+      },
       {
         "kind": "table",
-        "headers": ["person", "ending", "wohnen"],
+        "headers": [
+          "person",
+          "ending",
+          "wohnen"
+        ],
         "rows": [
-          ["ich", "-e", "wohne"],
-          ["du", "-st", "wohnst"],
-          ["er/sie/es", "-t", "wohnt"],
-          ["wir", "-en", "wohnen"],
-          ["ihr", "-t", "wohnt"],
-          ["sie/Sie", "-en", "wohnen"]
+          [
+            "ich",
+            "-e",
+            "wohne"
+          ],
+          [
+            "du",
+            "-st",
+            "wohnst"
+          ],
+          [
+            "er/sie/es",
+            "-t",
+            "wohnt"
+          ],
+          [
+            "wir",
+            "-en",
+            "wohnen"
+          ],
+          [
+            "ihr",
+            "-t",
+            "wohnt"
+          ],
+          [
+            "sie/Sie",
+            "-en",
+            "wohnen"
+          ]
         ]
       },
-      { "kind": "examples", "items": [{ "de": "Ich wohne in Berlin.", "en": "I live in Berlin." }] },
-      { "kind": "tip", "text": "heißen and kommen follow the same pattern: ich heiße, du kommst." }
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich wohne in Berlin.",
+            "en": "I live in Berlin."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "heißen and kommen follow the same pattern: ich heiße, du kommst."
+      }
     ],
-    "relatedNotes": ["gn.sein-present"],
-    "relatedVocab": ["a1.v.wohnen", "a1.v.kommen", "a1.v.heissen"]
+    "relatedNotes": [
+      "gn.sein-present"
+    ],
+    "relatedVocab": [
+      "a1.v.wohnen",
+      "a1.v.kommen",
+      "a1.v.heissen"
+    ]
   },
   {
     "id": "gn.sein-present",
@@ -34,18 +82,1378 @@
     "body": [
       {
         "kind": "table",
-        "headers": ["person", "sein"],
+        "headers": [
+          "person",
+          "sein"
+        ],
         "rows": [
-          ["ich", "bin"],
-          ["du", "bist"],
-          ["er/sie/es", "ist"],
-          ["wir", "sind"],
-          ["ihr", "seid"],
-          ["sie/Sie", "sind"]
+          [
+            "ich",
+            "bin"
+          ],
+          [
+            "du",
+            "bist"
+          ],
+          [
+            "er/sie/es",
+            "ist"
+          ],
+          [
+            "wir",
+            "sind"
+          ],
+          [
+            "ihr",
+            "seid"
+          ],
+          [
+            "sie/Sie",
+            "sind"
+          ]
         ]
       },
-      { "kind": "examples", "items": [{ "de": "Wer bist du? — Ich bin Anna.", "en": "Who are you? — I am Anna." }] }
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Wer bist du? — Ich bin Anna.",
+            "en": "Who are you? — I am Anna."
+          }
+        ]
+      }
     ],
-    "relatedVocab": ["a1.v.sein"]
+    "relatedVocab": [
+      "a1.v.sein"
+    ]
+  },
+  {
+    "id": "gn.sein",
+    "topic": "g.sein",
+    "level": "a1",
+    "title": "Das Verb \"sein\" (to be)",
+    "summary": "\"sein\" means \"to be\" and is irregular. You use it to say who or what someone or something is.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "\"sein\" means \"to be\". It is one of the most important German verbs and it is irregular, so you must learn its forms by heart."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Person",
+          "Form",
+          "English"
+        ],
+        "rows": [
+          [
+            "ich",
+            "bin",
+            "I am"
+          ],
+          [
+            "du",
+            "bist",
+            "you are (informal)"
+          ],
+          [
+            "er/sie/es",
+            "ist",
+            "he/she/it is"
+          ],
+          [
+            "wir",
+            "sind",
+            "we are"
+          ],
+          [
+            "ihr",
+            "seid",
+            "you are (plural)"
+          ],
+          [
+            "sie/Sie",
+            "sind",
+            "they are / you are (formal)"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich bin Anna.",
+            "en": "I am Anna."
+          },
+          {
+            "de": "Du bist mein Freund.",
+            "en": "You are my friend."
+          },
+          {
+            "de": "Wir sind aus Deutschland.",
+            "en": "We are from Germany."
+          },
+          {
+            "de": "Sie sind sehr nett.",
+            "en": "They are very nice. / You are very nice."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "\"sie\" (lowercase) means \"they\" and \"Sie\" (always capitalized) is the polite \"you\". Both use the form \"sind\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.haben",
+    "topic": "g.haben",
+    "level": "a1",
+    "title": "Das Verb \"haben\" (to have)",
+    "summary": "\"haben\" means \"to have\". It is irregular and very common, used to talk about what you own and your age.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "\"haben\" means \"to have\". Like \"sein\", it is irregular, so memorize the forms."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Person",
+          "Form",
+          "English"
+        ],
+        "rows": [
+          [
+            "ich",
+            "habe",
+            "I have"
+          ],
+          [
+            "du",
+            "hast",
+            "you have (informal)"
+          ],
+          [
+            "er/sie/es",
+            "hat",
+            "he/she/it has"
+          ],
+          [
+            "wir",
+            "haben",
+            "we have"
+          ],
+          [
+            "ihr",
+            "habt",
+            "you have (plural)"
+          ],
+          [
+            "sie/Sie",
+            "haben",
+            "they have / you have (formal)"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich habe einen Hund.",
+            "en": "I have a dog."
+          },
+          {
+            "de": "Du hast Zeit.",
+            "en": "You have time."
+          },
+          {
+            "de": "Sie hat eine Schwester.",
+            "en": "She has a sister."
+          },
+          {
+            "de": "Wir haben Hunger.",
+            "en": "We are hungry. (literally: We have hunger.)"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "In German you say your age with \"haben\": \"Ich bin 20 Jahre alt\" uses \"sein\", but for hunger and thirst you use \"haben\": \"Ich habe Hunger\", \"Ich habe Durst\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.questions",
+    "topic": "g.questions",
+    "level": "a1",
+    "title": "Fragen stellen (asking questions)",
+    "summary": "Yes/no questions put the verb first; W-questions start with a question word like wer, was, wo or wie.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "There are two main kinds of questions. In a yes/no question, the verb comes first: \"Kommst du aus Berlin?\". In a W-question, you start with a question word and the verb comes second."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Question word",
+          "English",
+          "Example"
+        ],
+        "rows": [
+          [
+            "wer",
+            "who",
+            "Wer ist das?"
+          ],
+          [
+            "was",
+            "what",
+            "Was ist das?"
+          ],
+          [
+            "wo",
+            "where",
+            "Wo wohnst du?"
+          ],
+          [
+            "wie",
+            "how",
+            "Wie heißt du?"
+          ],
+          [
+            "wann",
+            "when",
+            "Wann kommst du?"
+          ],
+          [
+            "warum",
+            "why",
+            "Warum lernst du Deutsch?"
+          ],
+          [
+            "woher",
+            "where from",
+            "Woher kommst du?"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Bist du müde?",
+            "en": "Are you tired?"
+          },
+          {
+            "de": "Hast du Zeit?",
+            "en": "Do you have time?"
+          },
+          {
+            "de": "Wie heißt du?",
+            "en": "What is your name?"
+          },
+          {
+            "de": "Woher kommst du?",
+            "en": "Where are you from?"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Don't translate English \"do/does\" into German. \"Do you have time?\" is simply \"Hast du Zeit?\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.possessives",
+    "topic": "g.possessives",
+    "level": "a1",
+    "title": "Possessivartikel (my, your, his ...)",
+    "summary": "Possessive articles like mein and dein show who something belongs to. They take endings that match the noun.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Possessive articles say who owns something: mein (my), dein (your), sein (his/its), ihr (her/their), unser (our), euer (your, plural), Ihr (your, formal)."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Owner",
+          "Base form",
+          "English"
+        ],
+        "rows": [
+          [
+            "ich",
+            "mein",
+            "my"
+          ],
+          [
+            "du",
+            "dein",
+            "your (informal)"
+          ],
+          [
+            "er/es",
+            "sein",
+            "his / its"
+          ],
+          [
+            "sie",
+            "ihr",
+            "her"
+          ],
+          [
+            "wir",
+            "unser",
+            "our"
+          ],
+          [
+            "ihr",
+            "euer",
+            "your (plural)"
+          ],
+          [
+            "sie / Sie",
+            "ihr / Ihr",
+            "their / your (formal)"
+          ]
+        ]
+      },
+      {
+        "kind": "paragraph",
+        "text": "The possessive article works like \"ein/eine\". With masculine and neuter nouns there is no ending in the nominative; with feminine and plural nouns you add -e."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Das ist mein Bruder.",
+            "en": "That is my brother. (masculine)"
+          },
+          {
+            "de": "Das ist meine Mutter.",
+            "en": "That is my mother. (feminine, +e)"
+          },
+          {
+            "de": "Das ist mein Auto.",
+            "en": "That is my car. (neuter)"
+          },
+          {
+            "de": "Das sind meine Eltern.",
+            "en": "Those are my parents. (plural, +e)"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Be careful: \"ihr\" can mean \"her\" or \"their\". Capitalized \"Ihr\" always means the formal \"your\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.articles-indef",
+    "topic": "g.articles-indef",
+    "level": "a1",
+    "title": "Unbestimmte Artikel (a/an: ein, eine)",
+    "summary": "The indefinite article ein/eine means \"a/an\". The form depends on the gender of the noun.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "The indefinite article means \"a\" or \"an\". You use it when you talk about something for the first time or in general. The form depends on the gender of the noun."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Gender",
+          "Indefinite article",
+          "Example"
+        ],
+        "rows": [
+          [
+            "masculine (der)",
+            "ein",
+            "ein Mann"
+          ],
+          [
+            "neuter (das)",
+            "ein",
+            "ein Kind"
+          ],
+          [
+            "feminine (die)",
+            "eine",
+            "eine Frau"
+          ],
+          [
+            "plural",
+            "(no article)",
+            "Männer / Frauen"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Das ist ein Apfel.",
+            "en": "That is an apple. (masculine)"
+          },
+          {
+            "de": "Ich habe eine Frage.",
+            "en": "I have a question. (feminine)"
+          },
+          {
+            "de": "Da ist ein Haus.",
+            "en": "There is a house. (neuter)"
+          },
+          {
+            "de": "Ich kaufe Äpfel.",
+            "en": "I buy apples. (plural, no article)"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Masculine and neuter share the same form \"ein\". Only feminine nouns get \"eine\". There is no plural form of \"ein\" - you simply use no article."
+      }
+    ]
+  },
+  {
+    "id": "gn.negation",
+    "topic": "g.negation",
+    "level": "a1",
+    "title": "Verneinung mit \"nicht\" und \"kein\"",
+    "summary": "Use \"kein\" to negate nouns with an indefinite article, and \"nicht\" to negate verbs, adjectives and everything else.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "German has two main ways to say \"not\". Use \"kein\" before a noun that would otherwise have \"ein\" or no article. Use \"nicht\" for verbs, adjectives, and nouns with a definite article."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Gender",
+          "kein-form",
+          "Example"
+        ],
+        "rows": [
+          [
+            "masculine",
+            "kein",
+            "Ich habe keinen Hund. (Akk.)"
+          ],
+          [
+            "neuter",
+            "kein",
+            "Das ist kein Auto."
+          ],
+          [
+            "feminine",
+            "keine",
+            "Ich habe keine Zeit."
+          ],
+          [
+            "plural",
+            "keine",
+            "Ich habe keine Kinder."
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich habe kein Geld.",
+            "en": "I have no money."
+          },
+          {
+            "de": "Das ist keine Frau, das ist ein Mann.",
+            "en": "That is not a woman, that is a man."
+          },
+          {
+            "de": "Ich komme nicht.",
+            "en": "I am not coming."
+          },
+          {
+            "de": "Das Buch ist nicht teuer.",
+            "en": "The book is not expensive."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Quick rule: if you can say \"a\" or nothing before the noun in English, use \"kein\". Otherwise use \"nicht\". \"nicht\" usually goes at the end of the sentence or right before the word it negates."
+      }
+    ]
+  },
+  {
+    "id": "gn.accusative",
+    "topic": "g.accusative",
+    "level": "a1",
+    "title": "Der Akkusativ (the accusative case)",
+    "summary": "The accusative is the case of the direct object. Only masculine articles change: der becomes den, ein becomes einen.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "The accusative case marks the direct object - the thing that receives the action. The good news: only masculine articles change. Feminine, neuter and plural stay the same as in the nominative."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Gender",
+          "Nominative",
+          "Accusative"
+        ],
+        "rows": [
+          [
+            "masculine",
+            "der / ein",
+            "den / einen"
+          ],
+          [
+            "feminine",
+            "die / eine",
+            "die / eine"
+          ],
+          [
+            "neuter",
+            "das / ein",
+            "das / ein"
+          ],
+          [
+            "plural",
+            "die",
+            "die"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich kaufe den Apfel.",
+            "en": "I buy the apple. (der -> den)"
+          },
+          {
+            "de": "Ich habe einen Bruder.",
+            "en": "I have a brother. (ein -> einen)"
+          },
+          {
+            "de": "Ich sehe die Frau.",
+            "en": "I see the woman. (no change)"
+          },
+          {
+            "de": "Ich esse das Brot.",
+            "en": "I eat the bread. (no change)"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Remember just one change: masculine \"der/ein\" turns into \"den/einen\" in the accusative. Everything else looks the same."
+      }
+    ]
+  },
+  {
+    "id": "gn.plurals",
+    "topic": "g.plurals",
+    "level": "a1",
+    "title": "Der Plural (plural of nouns)",
+    "summary": "German has several plural endings (-e, -en, -er, -s, umlaut). The plural article is always \"die\".",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "German nouns form their plural in different ways. There is no single rule, so it is best to learn each noun together with its plural. The article in the plural is always \"die\"."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Ending",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "-e",
+            "der Tag",
+            "die Tage"
+          ],
+          [
+            "-en / -n",
+            "die Frau",
+            "die Frauen"
+          ],
+          [
+            "-er (+ umlaut)",
+            "das Kind / das Buch",
+            "die Kinder / die Bücher"
+          ],
+          [
+            "-s",
+            "das Auto",
+            "die Autos"
+          ],
+          [
+            "umlaut only",
+            "der Apfel",
+            "die Äpfel"
+          ],
+          [
+            "no change",
+            "das Mädchen",
+            "die Mädchen"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "ein Tag - zwei Tage",
+            "en": "one day - two days"
+          },
+          {
+            "de": "eine Frau - viele Frauen",
+            "en": "one woman - many women"
+          },
+          {
+            "de": "ein Kind - drei Kinder",
+            "en": "one child - three children"
+          },
+          {
+            "de": "ein Auto - zwei Autos",
+            "en": "one car - two cars"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Always learn nouns with their article and plural together, for example \"das Buch, die Bücher\". The ending -s is common with foreign words."
+      }
+    ]
+  },
+  {
+    "id": "gn.preferences-gern",
+    "topic": "g.preferences-gern",
+    "level": "a1",
+    "title": "Vorlieben mit \"gern\" ausdrücken",
+    "summary": "Add \"gern\" after the verb to say you like doing something. \"nicht gern\" means you don't like it.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "To say that you like doing an activity, add the little word \"gern\" (also written \"gerne\") after the verb. To say you dislike it, use \"nicht gern\"."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich trinke gern Kaffee.",
+            "en": "I like drinking coffee."
+          },
+          {
+            "de": "Ich spiele gern Fußball.",
+            "en": "I like playing football."
+          },
+          {
+            "de": "Ich esse nicht gern Fisch.",
+            "en": "I don't like eating fish."
+          },
+          {
+            "de": "Lernst du gern Deutsch?",
+            "en": "Do you like learning German?"
+          }
+        ]
+      },
+      {
+        "kind": "paragraph",
+        "text": "You can compare with \"lieber\" (prefer) and \"am liebsten\" (like most)."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich trinke gern Tee, aber lieber Kaffee.",
+            "en": "I like tea, but I prefer coffee."
+          },
+          {
+            "de": "Am liebsten trinke ich Wasser.",
+            "en": "Most of all I like to drink water."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "\"gern\" is not a verb. It is an adverb that you add to a normal verb. Don't confuse it with \"mögen\" (to like a thing): \"Ich mag Kaffee\" vs. \"Ich trinke gern Kaffee\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.accusative-verbs",
+    "topic": "g.accusative-verbs",
+    "level": "a1",
+    "title": "Verben mit Akkusativ",
+    "summary": "Many common verbs take a direct object in the accusative, for example haben, kaufen, essen, trinken and sehen.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Many everyday verbs need a direct object in the accusative case. After these verbs, masculine \"der/ein\" changes to \"den/einen\"."
+      },
+      {
+        "kind": "list",
+        "items": [
+          "haben - to have",
+          "kaufen - to buy",
+          "essen - to eat",
+          "trinken - to drink",
+          "sehen - to see",
+          "brauchen - to need",
+          "möchten - would like",
+          "nehmen - to take"
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich habe einen Bruder.",
+            "en": "I have a brother."
+          },
+          {
+            "de": "Ich kaufe einen Apfel.",
+            "en": "I buy an apple."
+          },
+          {
+            "de": "Ich brauche einen Stuhl.",
+            "en": "I need a chair."
+          },
+          {
+            "de": "Sie nimmt den Bus.",
+            "en": "She takes the bus."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "When you learn a new verb that has an object, ask yourself \"what?\" or \"whom?\". The answer is usually in the accusative."
+      }
+    ]
+  },
+  {
+    "id": "gn.modal-moechten",
+    "topic": "g.modal-moechten",
+    "level": "a1",
+    "title": "\"möchten\" (would like)",
+    "summary": "\"möchten\" means \"would like\" and is very useful for polite requests. The second verb goes to the end as an infinitive.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "\"möchten\" means \"would like\" and is the polite way to order food, ask for things or say what you want."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Person",
+          "Form"
+        ],
+        "rows": [
+          [
+            "ich",
+            "möchte"
+          ],
+          [
+            "du",
+            "möchtest"
+          ],
+          [
+            "er/sie/es",
+            "möchte"
+          ],
+          [
+            "wir",
+            "möchten"
+          ],
+          [
+            "ihr",
+            "möchtet"
+          ],
+          [
+            "sie/Sie",
+            "möchten"
+          ]
+        ]
+      },
+      {
+        "kind": "paragraph",
+        "text": "You can use \"möchten\" alone with a noun, or together with another verb. The second verb is an infinitive and goes to the end of the sentence."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich möchte einen Kaffee, bitte.",
+            "en": "I would like a coffee, please."
+          },
+          {
+            "de": "Möchtest du Wasser?",
+            "en": "Would you like water?"
+          },
+          {
+            "de": "Wir möchten essen.",
+            "en": "We would like to eat."
+          },
+          {
+            "de": "Ich möchte nach Hause gehen.",
+            "en": "I would like to go home."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "\"ich möchte\" and \"er möchte\" have the same form - no ending. This is typical for modal-style verbs."
+      }
+    ]
+  },
+  {
+    "id": "gn.prepositions",
+    "topic": "g.prepositions",
+    "level": "a1",
+    "title": "Präpositionen (prepositions)",
+    "summary": "Prepositions like in, auf, mit and aus describe place, direction and more. At A1 learn them in fixed phrases.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Prepositions are small words that show place, direction, time or relation, such as in, auf, an, mit, aus, zu, nach, bei. At A1 it is best to learn them in useful fixed phrases."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Preposition",
+          "English",
+          "Example"
+        ],
+        "rows": [
+          [
+            "in",
+            "in",
+            "Ich wohne in Berlin."
+          ],
+          [
+            "aus",
+            "from (origin)",
+            "Ich komme aus Spanien."
+          ],
+          [
+            "mit",
+            "with",
+            "Ich fahre mit dem Bus."
+          ],
+          [
+            "nach",
+            "to (cities/countries)",
+            "Ich fahre nach Italien."
+          ],
+          [
+            "zu",
+            "to (people/places)",
+            "Ich gehe zum Arzt."
+          ],
+          [
+            "bei",
+            "at / near",
+            "Ich bin bei Anna."
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich komme aus Deutschland.",
+            "en": "I come from Germany."
+          },
+          {
+            "de": "Das Buch ist auf dem Tisch.",
+            "en": "The book is on the table."
+          },
+          {
+            "de": "Ich fahre nach Hause.",
+            "en": "I am going home."
+          },
+          {
+            "de": "Ich wohne bei meiner Familie.",
+            "en": "I live with my family."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Use \"nach\" with cities and most countries (nach Berlin, nach Italien), but \"in die\" with countries that have an article (in die Schweiz, in die Türkei)."
+      }
+    ]
+  },
+  {
+    "id": "gn.separable-verbs",
+    "topic": "g.separable-verbs",
+    "level": "a1",
+    "title": "Trennbare Verben (separable verbs)",
+    "summary": "Separable verbs have a prefix that breaks off and jumps to the end of the sentence in the present tense.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Some verbs have a prefix that separates from the verb in a normal sentence. The conjugated part stays in position 2 and the prefix goes to the very end. Common examples: aufstehen, einkaufen, anrufen, fernsehen, mitkommen."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Infinitive",
+          "English",
+          "Example"
+        ],
+        "rows": [
+          [
+            "aufstehen",
+            "to get up",
+            "Ich stehe um 7 Uhr auf."
+          ],
+          [
+            "einkaufen",
+            "to shop",
+            "Ich kaufe im Supermarkt ein."
+          ],
+          [
+            "anrufen",
+            "to call",
+            "Ich rufe meine Mutter an."
+          ],
+          [
+            "fernsehen",
+            "to watch TV",
+            "Ich sehe am Abend fern."
+          ],
+          [
+            "mitkommen",
+            "to come along",
+            "Kommst du mit?"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich stehe früh auf.",
+            "en": "I get up early."
+          },
+          {
+            "de": "Wir kaufen am Samstag ein.",
+            "en": "We go shopping on Saturday."
+          },
+          {
+            "de": "Rufst du mich an?",
+            "en": "Are you calling me?"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "In the dictionary the verb is written together (aufstehen). The stress is on the prefix: AUF-stehen. In a sentence the prefix jumps to the end."
+      }
+    ]
+  },
+  {
+    "id": "gn.word-order",
+    "topic": "g.word-order",
+    "level": "a1",
+    "title": "Satzstellung (word order)",
+    "summary": "In a German statement the conjugated verb is always in second position. Many things can come first.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "The most important rule of German word order: in a normal statement, the conjugated verb is always in the second position. Position 1 can be the subject, a time word, or a place - but the verb stays in position 2."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Position 1",
+          "Position 2 (verb)",
+          "Rest"
+        ],
+        "rows": [
+          [
+            "Ich",
+            "gehe",
+            "heute ins Kino."
+          ],
+          [
+            "Heute",
+            "gehe",
+            "ich ins Kino."
+          ],
+          [
+            "Ins Kino",
+            "gehe",
+            "ich heute."
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich lerne am Abend Deutsch.",
+            "en": "I learn German in the evening."
+          },
+          {
+            "de": "Am Abend lerne ich Deutsch.",
+            "en": "In the evening I learn German."
+          },
+          {
+            "de": "Heute kommt mein Freund.",
+            "en": "My friend is coming today."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "If you start with something other than the subject (for example a time word), the subject moves to right after the verb. The verb never moves from position 2."
+      }
+    ]
+  },
+  {
+    "id": "gn.time",
+    "topic": "g.time",
+    "level": "a1",
+    "title": "Zeitangaben (telling the time and dates)",
+    "summary": "Learn how to ask and tell the time, and how to talk about days, parts of the day and dates.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "To ask the time you say \"Wie spät ist es?\" or \"Wie viel Uhr ist es?\". In everyday speech Germans often use the 12-hour clock, and for schedules the 24-hour clock."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Time",
+          "Spoken (informal)",
+          "English"
+        ],
+        "rows": [
+          [
+            "8:00",
+            "Es ist acht Uhr.",
+            "It is eight o'clock."
+          ],
+          [
+            "8:15",
+            "Es ist Viertel nach acht.",
+            "quarter past eight"
+          ],
+          [
+            "8:30",
+            "Es ist halb neun.",
+            "half past eight"
+          ],
+          [
+            "8:45",
+            "Es ist Viertel vor neun.",
+            "quarter to nine"
+          ]
+        ]
+      },
+      {
+        "kind": "paragraph",
+        "text": "For times of day and days you use the preposition \"am\": am Morgen, am Abend, am Montag. For clock times you use \"um\": um acht Uhr."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Der Kurs beginnt um neun Uhr.",
+            "en": "The course starts at nine o'clock."
+          },
+          {
+            "de": "Am Montag arbeite ich.",
+            "en": "On Monday I work."
+          },
+          {
+            "de": "Am Abend sehe ich fern.",
+            "en": "In the evening I watch TV."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Watch out for \"halb\": \"halb neun\" means half an hour BEFORE nine, that is 8:30 - not 9:30."
+      }
+    ]
+  },
+  {
+    "id": "gn.modal-verbs",
+    "topic": "g.modal-verbs",
+    "level": "a1",
+    "title": "Modalverben (modal verbs)",
+    "summary": "Modal verbs like können, müssen, wollen and dürfen change the meaning of the main verb, which goes to the end.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Modal verbs express ability, necessity, permission or wish. The modal verb is conjugated in position 2, and the main verb stays as an infinitive at the end of the sentence."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Modal verb",
+          "Meaning",
+          "ich-form"
+        ],
+        "rows": [
+          [
+            "können",
+            "can / be able to",
+            "ich kann"
+          ],
+          [
+            "müssen",
+            "must / have to",
+            "ich muss"
+          ],
+          [
+            "wollen",
+            "want to",
+            "ich will"
+          ],
+          [
+            "dürfen",
+            "be allowed to",
+            "ich darf"
+          ],
+          [
+            "sollen",
+            "should",
+            "ich soll"
+          ],
+          [
+            "mögen",
+            "to like",
+            "ich mag"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich kann gut schwimmen.",
+            "en": "I can swim well."
+          },
+          {
+            "de": "Du musst jetzt schlafen.",
+            "en": "You have to sleep now."
+          },
+          {
+            "de": "Wir wollen nach Berlin fahren.",
+            "en": "We want to go to Berlin."
+          },
+          {
+            "de": "Darf ich hier rauchen?",
+            "en": "May I smoke here?"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Modal verbs are irregular in the singular: \"ich kann, du kannst, er kann\" - notice there is no ending in the ich- and er-forms."
+      }
+    ]
+  },
+  {
+    "id": "gn.conjunctions",
+    "topic": "g.conjunctions",
+    "level": "a1",
+    "title": "Konjunktionen (connecting words)",
+    "summary": "Conjunctions like und, oder, aber and denn join two main clauses without changing the word order.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "Conjunctions connect words or sentences. At A1 the most important ones are und, oder, aber and denn. They do not change the normal word order: the verb still comes after the subject in each part."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Conjunction",
+          "English"
+        ],
+        "rows": [
+          [
+            "und",
+            "and"
+          ],
+          [
+            "oder",
+            "or"
+          ],
+          [
+            "aber",
+            "but"
+          ],
+          [
+            "denn",
+            "because"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich trinke Kaffee und ich esse Brot.",
+            "en": "I drink coffee and I eat bread."
+          },
+          {
+            "de": "Möchtest du Tee oder Kaffee?",
+            "en": "Would you like tea or coffee?"
+          },
+          {
+            "de": "Ich lerne Deutsch, aber es ist schwer.",
+            "en": "I learn German, but it is difficult."
+          },
+          {
+            "de": "Ich bleibe zu Hause, denn ich bin krank.",
+            "en": "I stay at home because I am sick."
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "These four conjunctions (und, oder, aber, denn) keep the normal word order - the verb stays in position 2 of each clause. Put a comma before \"aber\" and \"denn\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.imperative",
+    "topic": "g.imperative",
+    "level": "a1",
+    "title": "Der Imperativ (commands and requests)",
+    "summary": "The imperative gives commands or makes requests. There are forms for du, ihr and the formal Sie.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "The imperative is used for commands, instructions and requests. There are three forms: informal singular (du), informal plural (ihr) and formal (Sie)."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Form",
+          "How to build it",
+          "Example (kommen)"
+        ],
+        "rows": [
+          [
+            "du",
+            "verb stem (often + e), no \"du\"",
+            "Komm! / Komme!"
+          ],
+          [
+            "ihr",
+            "like the ihr-form, no \"ihr\"",
+            "Kommt!"
+          ],
+          [
+            "Sie",
+            "infinitive + Sie",
+            "Kommen Sie!"
+          ]
+        ]
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Komm bitte her!",
+            "en": "Please come here! (du)"
+          },
+          {
+            "de": "Macht die Tür zu!",
+            "en": "Close the door! (ihr)"
+          },
+          {
+            "de": "Nehmen Sie Platz!",
+            "en": "Take a seat! (Sie)"
+          },
+          {
+            "de": "Sei ruhig!",
+            "en": "Be quiet! (irregular: sein)"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "The du-form usually drops the -st ending: \"du kommst\" becomes \"Komm!\". Add \"bitte\" to make a command sound polite: \"Komm bitte!\"."
+      }
+    ]
+  },
+  {
+    "id": "gn.perfekt-intro",
+    "topic": "g.perfekt-intro",
+    "level": "a1",
+    "title": "Das Perfekt (talking about the past)",
+    "summary": "The Perfekt is the main past tense in spoken German. It uses haben or sein plus a past participle.",
+    "body": [
+      {
+        "kind": "paragraph",
+        "text": "To talk about the past in everyday German, you use the Perfekt. It has two parts: a helping verb (haben or sein) in position 2, and a past participle (Partizip II) at the end of the sentence."
+      },
+      {
+        "kind": "table",
+        "headers": [
+          "Auxiliary",
+          "Used for",
+          "Example"
+        ],
+        "rows": [
+          [
+            "haben",
+            "most verbs",
+            "Ich habe Pizza gegessen."
+          ],
+          [
+            "sein",
+            "movement / change of state",
+            "Ich bin nach Berlin gefahren."
+          ]
+        ]
+      },
+      {
+        "kind": "paragraph",
+        "text": "Regular verbs form the participle with ge- + stem + -t (machen -> gemacht). Many common verbs are irregular and use -en (gehen -> gegangen)."
+      },
+      {
+        "kind": "examples",
+        "items": [
+          {
+            "de": "Ich habe Deutsch gelernt.",
+            "en": "I learned German."
+          },
+          {
+            "de": "Wir haben einen Film gesehen.",
+            "en": "We watched a film."
+          },
+          {
+            "de": "Sie ist nach Hause gegangen.",
+            "en": "She went home."
+          },
+          {
+            "de": "Bist du gestern gekommen?",
+            "en": "Did you come yesterday?"
+          }
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Verbs of movement (gehen, fahren, kommen) and change of state (aufstehen) use \"sein\". Most other verbs use \"haben\". Always learn the participle together with the verb."
+      }
+    ]
   }
 ]

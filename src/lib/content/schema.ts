@@ -23,7 +23,7 @@ const presentForms = z.object({
 const imperativeForms = z.object({ du: z.string(), ihr: z.string(), Sie: z.string() });
 
 export const verbMetaSchema = z.object({
-  type: z.enum(['regular', 'irregular', 'mixed']).optional(),
+  type: z.string().optional(), // descriptive only (regular/irregular/mixed/modal/…)
   separable: z.boolean().optional(),
   auxiliary: z.enum(['haben', 'sein']).optional(),
   present: presentForms,
@@ -34,7 +34,7 @@ export const verbMetaSchema = z.object({
 export const vocabEntrySchema = z.object({
   id: z.string(),
   lemma: z.string(),
-  pos: z.enum(['noun', 'verb', 'adj', 'adv', 'prep', 'pron', 'num', 'phrase', 'other']),
+  pos: z.string(),
   gender: z.enum(['m', 'f', 'n']).optional(),
   article: article.optional(),
   plural: z.string().optional(),
@@ -120,7 +120,7 @@ export const exerciseSchema = z.discriminatedUnion('type', [
   z.object({
     ...exerciseBase,
     type: z.literal('mcq'),
-    subtype: z.enum(['reading', 'translation', 'listening', 'truefalse']).optional(),
+    subtype: z.string().optional(),
     passage: loc.optional(),
     audioText: z.string().optional(),
     choices: z.array(z.object({ id: z.string(), text: loc })).min(2),

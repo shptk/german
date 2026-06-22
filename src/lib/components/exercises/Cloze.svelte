@@ -23,6 +23,11 @@
     inputs[i] = v;
     onResponse({ inputs: [...inputs] });
   }
+  // pick mode: a chip fills the first empty blank; tapping a filled blank clears it
+  function placeChip(opt: string) {
+    const idx = inputs.findIndex((x) => !x.trim());
+    if (idx >= 0) set(idx, opt);
+  }
 </script>
 
 <p class="sentence">
@@ -40,7 +45,13 @@
           size="7"
         />
       {:else}
-        <span class="blank-pick" class:filled={!!inputs[segBlank[si]]}>{inputs[segBlank[si]] || '_____'}</span>
+        <button
+          type="button"
+          class="blank-pick"
+          class:filled={!!inputs[segBlank[si]]}
+          disabled={locked}
+          onclick={() => set(segBlank[si], '')}
+        >{inputs[segBlank[si]] || '_____'}</button>
       {/if}
     {/if}
   {/each}
@@ -50,7 +61,7 @@
   {#if exercise.inputMode === 'pick'}
     <div class="bank">
       {#each exercise.bank ?? [] as opt (opt)}
-        <button type="button" class="chip lang-de" onclick={() => set(focused, opt)}>{opt}</button>
+        <button type="button" class="chip lang-de" onclick={() => placeChip(opt)}>{opt}</button>
       {/each}
     </div>
   {:else}
@@ -85,9 +96,13 @@
     background: color-mix(in srgb, var(--warn) 14%, transparent);
   }
   .blank-pick {
+    background: transparent;
+    border: none;
     border-bottom: 2px solid var(--accent);
     padding: 0 var(--s-2);
     color: var(--text-muted);
+    font: inherit;
+    cursor: pointer;
   }
   .blank-pick.filled {
     color: var(--text);

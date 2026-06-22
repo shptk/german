@@ -1,0 +1,1308 @@
+{
+  "id": "a1.m08-unterwegs",
+  "level": "a1",
+  "title": "Unterwegs",
+  "order": 8,
+  "icon": "bus",
+  "estMinutes": 95,
+  "grammarTopics": [
+    "g.praepositionen",
+    "g.imperativ"
+  ],
+  "vocabIds": [
+    "a1.v.bus",
+    "a1.v.zug",
+    "a1.v.auto",
+    "a1.v.taxi",
+    "a1.v.fahrrad",
+    "a1.v.flugzeug",
+    "a1.v.neu",
+    "a1.v.bahn",
+    "a1.v.u-bahn",
+    "a1.v.s-bahn",
+    "a1.v.strassenbahn",
+    "a1.v.haltestelle",
+    "a1.v.einsteigen",
+    "a1.v.aussteigen",
+    "a1.v.fahren",
+    "a1.v.mit",
+    "a1.v.bahnhof",
+    "a1.v.gleis",
+    "a1.v.fahrplan",
+    "a1.v.abfahrt",
+    "a1.v.ankunft",
+    "a1.v.umsteigen",
+    "a1.v.verspaetung",
+    "a1.v.flughafen",
+    "a1.v.koffer",
+    "a1.v.fliegen",
+    "a1.v.ankommen",
+    "a1.v.abfahren",
+    "a1.v.tasche",
+    "a1.v.nach",
+    "a1.v.spanien",
+    "a1.v.fahrkarte",
+    "a1.v.ticket",
+    "a1.v.automat",
+    "a1.v.platz",
+    "a1.v.einfach",
+    "a1.v.fahrt",
+    "a1.v.kosten",
+    "a1.v.nehmen",
+    "a1.v.euro",
+    "a1.v.bank",
+    "a1.v.post",
+    "a1.v.hotel",
+    "a1.v.kirche",
+    "a1.v.zentrum",
+    "a1.v.parkplatz",
+    "a1.v.neben",
+    "a1.v.es-gibt",
+    "a1.v.in",
+    "a1.v.stadt",
+    "a1.v.park",
+    "a1.v.weg",
+    "a1.v.ecke",
+    "a1.v.ampel",
+    "a1.v.kreuzung",
+    "a1.v.abbiegen",
+    "a1.v.geradeaus",
+    "a1.v.richtung",
+    "a1.v.gehen",
+    "a1.v.links",
+    "a1.v.rechts"
+  ],
+  "lessons": [
+    {
+      "id": "a1.m08-unterwegs.l01-verkehrsmittel",
+      "title": "Verkehrsmittel",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Name common means of transport",
+        "Use the correct article for transport nouns"
+      ],
+      "prereqs": [],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.bus",
+        "a1.v.zug",
+        "a1.v.auto",
+        "a1.v.taxi",
+        "a1.v.fahrrad",
+        "a1.v.flugzeug"
+      ],
+      "reviewsVocab": [],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l01-verkehrsmittel.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bus"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l01-verkehrsmittel.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.auto"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l01-verkehrsmittel.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.bus",
+            "a1.v.zug",
+            "a1.v.auto",
+            "a1.v.fahrrad"
+          ],
+          "pairRefs": [
+            "a1.v.bus",
+            "a1.v.zug",
+            "a1.v.auto",
+            "a1.v.fahrrad"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l01-verkehrsmittel.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "The car is new."
+          },
+          "vocabRefs": [
+            "a1.v.auto",
+            "a1.v.neu"
+          ],
+          "bank": [
+            "Auto",
+            "Bus"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Das "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Auto"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Bus",
+                "Zug"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ist neu."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l01-verkehrsmittel.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom fährt mit dem Fahrrad zur Schule."
+          },
+          "prompt": {
+            "en": "How does Tom get to school?"
+          },
+          "vocabRefs": [
+            "a1.v.fahrrad"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "by bicycle"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "by car"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "by train"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l02-mit-dem-bus",
+      "title": "Mit dem Bus",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Talk about traveling by bus and tram",
+        "Use fahren and the preposition mit",
+        "Get on and off a vehicle"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l01-verkehrsmittel"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.bahn",
+        "a1.v.u-bahn",
+        "a1.v.s-bahn",
+        "a1.v.strassenbahn",
+        "a1.v.haltestelle",
+        "a1.v.einsteigen",
+        "a1.v.aussteigen"
+      ],
+      "reviewsVocab": [
+        "a1.v.bus",
+        "a1.v.fahren"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.haltestelle"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.u-bahn",
+            "a1.v.strassenbahn",
+            "a1.v.haltestelle",
+            "a1.v.einsteigen",
+            "a1.v.aussteigen"
+          ],
+          "pairRefs": [
+            "a1.v.u-bahn",
+            "a1.v.strassenbahn",
+            "a1.v.haltestelle",
+            "a1.v.einsteigen",
+            "a1.v.aussteigen"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) go/travel (by vehicle)"
+          },
+          "verbRef": "a1.v.fahren",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.fahren"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I go by bus."
+          },
+          "vocabRefs": [
+            "a1.v.fahren",
+            "a1.v.mit",
+            "a1.v.bus"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich fahre "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "mit"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "in",
+                "nach",
+                "zu"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " dem Bus."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "We get on the tram.",
+          "audioText": "Wir steigen in die Straßenbahn ein.",
+          "vocabRefs": [
+            "a1.v.einsteigen",
+            "a1.v.strassenbahn"
+          ],
+          "tiles": [
+            "Wir",
+            "steigen",
+            "in",
+            "die",
+            "Straßenbahn",
+            "ein"
+          ],
+          "accepted": [
+            [
+              "Wir",
+              "steigen",
+              "in",
+              "die",
+              "Straßenbahn",
+              "ein"
+            ]
+          ],
+          "distractorTiles": [
+            "aus",
+            "auf"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l02-mit-dem-bus.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.aussteigen",
+            "a1.v.haltestelle"
+          ],
+          "audioText": "Ich steige an der Haltestelle aus.",
+          "answers": [
+            "Ich steige an der Haltestelle aus.",
+            "Ich steige an der Haltestelle aus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l03-am-bahnhof",
+      "title": "Am Bahnhof",
+      "order": 2,
+      "estMinutes": 14,
+      "objectives": [
+        "Understand station vocabulary",
+        "Read a timetable for departure and arrival",
+        "Talk about changing trains"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l02-mit-dem-bus"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.bahnhof",
+        "a1.v.gleis",
+        "a1.v.fahrplan",
+        "a1.v.abfahrt",
+        "a1.v.ankunft",
+        "a1.v.umsteigen",
+        "a1.v.verspaetung"
+      ],
+      "reviewsVocab": [
+        "a1.v.zug",
+        "a1.v.bahn"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bahnhof"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.gleis"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.bahnhof",
+            "a1.v.fahrplan",
+            "a1.v.abfahrt",
+            "a1.v.ankunft",
+            "a1.v.verspaetung"
+          ],
+          "pairRefs": [
+            "a1.v.bahnhof",
+            "a1.v.fahrplan",
+            "a1.v.abfahrt",
+            "a1.v.ankunft",
+            "a1.v.verspaetung"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "The train departs from platform two."
+          },
+          "vocabRefs": [
+            "a1.v.zug",
+            "a1.v.gleis"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Der Zug fährt von "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Gleis"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Bahnhof",
+                "Bus"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " zwei ab."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e05",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "we change (trains)"
+          },
+          "verbRef": "a1.v.umsteigen",
+          "tense": "praesens",
+          "person": "wir",
+          "vocabRefs": [
+            "a1.v.umsteigen"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l03-am-bahnhof.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Der Zug nach Berlin hat zehn Minuten Verspätung."
+          },
+          "prompt": {
+            "en": "What is true about the train to Berlin?"
+          },
+          "vocabRefs": [
+            "a1.v.zug",
+            "a1.v.verspaetung"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "It is ten minutes late."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It is on time."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "It is cancelled."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l04-am-flughafen",
+      "title": "Am Flughafen",
+      "order": 3,
+      "estMinutes": 13,
+      "objectives": [
+        "Use airport and flight vocabulary",
+        "Talk about flying, arriving and departing",
+        "Conjugate fliegen and ankommen"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l03-am-bahnhof"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.flughafen",
+        "a1.v.koffer",
+        "a1.v.fliegen",
+        "a1.v.ankommen",
+        "a1.v.abfahren",
+        "a1.v.tasche"
+      ],
+      "reviewsVocab": [
+        "a1.v.flugzeug",
+        "a1.v.ankunft",
+        "a1.v.abfahrt"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.flughafen"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.flughafen",
+            "a1.v.flugzeug",
+            "a1.v.koffer",
+            "a1.v.tasche"
+          ],
+          "pairRefs": [
+            "a1.v.flughafen",
+            "a1.v.flugzeug",
+            "a1.v.koffer",
+            "a1.v.tasche"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I fly"
+          },
+          "verbRef": "a1.v.fliegen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.fliegen"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "The plane arrives at three o'clock."
+          },
+          "vocabRefs": [
+            "a1.v.flugzeug",
+            "a1.v.ankommen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Das Flugzeug "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "kommt"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "komme",
+                "kommst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " um drei Uhr "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "an"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "aus",
+                "ab"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I fly to Spain.",
+          "audioText": "Ich fliege nach Spanien.",
+          "vocabRefs": [
+            "a1.v.fliegen",
+            "a1.v.nach",
+            "a1.v.spanien"
+          ],
+          "tiles": [
+            "Ich",
+            "fliege",
+            "nach",
+            "Spanien"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "fliege",
+              "nach",
+              "Spanien"
+            ]
+          ],
+          "distractorTiles": [
+            "in",
+            "zu"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l04-am-flughafen.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.koffer",
+            "a1.v.flughafen"
+          ],
+          "audioText": "Mein Koffer ist am Flughafen.",
+          "answers": [
+            "Mein Koffer ist am Flughafen.",
+            "Mein Koffer ist am Flughafen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen",
+      "title": "Eine Fahrkarte kaufen",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "Buy a ticket at a machine",
+        "Ask about prices and seats",
+        "Use kosten and nehmen"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l04-am-flughafen"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.fahrkarte",
+        "a1.v.ticket",
+        "a1.v.automat",
+        "a1.v.platz",
+        "a1.v.einfach",
+        "a1.v.fahrt"
+      ],
+      "reviewsVocab": [
+        "a1.v.kosten",
+        "a1.v.nehmen",
+        "a1.v.preis",
+        "a1.v.euro"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.fahrkarte"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.automat"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.fahrkarte",
+            "a1.v.automat",
+            "a1.v.platz",
+            "a1.v.fahrt"
+          ],
+          "pairRefs": [
+            "a1.v.fahrkarte",
+            "a1.v.automat",
+            "a1.v.platz",
+            "a1.v.fahrt"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e04",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "it costs"
+          },
+          "verbRef": "a1.v.kosten",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.kosten"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e05",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I take a one-way ticket."
+          },
+          "vocabRefs": [
+            "a1.v.nehmen",
+            "a1.v.einfach",
+            "a1.v.fahrkarte"
+          ],
+          "bank": [
+            "nehme",
+            "einfache"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "nehme"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "nimmst",
+                "nimmt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " eine "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "einfache"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "einfach",
+                "einfachen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Fahrkarte."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l05-fahrkarte-kaufen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Die Fahrkarte nach Hamburg kostet vierzig Euro."
+          },
+          "prompt": {
+            "en": "How much does the ticket to Hamburg cost?"
+          },
+          "vocabRefs": [
+            "a1.v.fahrkarte",
+            "a1.v.euro"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "40 euros"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "14 euros"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "4 euros"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l06-in-der-stadt",
+      "title": "In der Stadt",
+      "order": 5,
+      "estMinutes": 14,
+      "objectives": [
+        "Name important places in the city",
+        "Say where things are with prepositions",
+        "Use es gibt to describe the city"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l05-fahrkarte-kaufen"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.bank",
+        "a1.v.post",
+        "a1.v.hotel",
+        "a1.v.kirche",
+        "a1.v.zentrum",
+        "a1.v.parkplatz"
+      ],
+      "reviewsVocab": [
+        "a1.v.stadt",
+        "a1.v.park",
+        "a1.v.es-gibt",
+        "a1.v.neben",
+        "a1.v.in"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.kirche"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.zentrum"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.bank",
+            "a1.v.post",
+            "a1.v.hotel",
+            "a1.v.kirche",
+            "a1.v.parkplatz"
+          ],
+          "pairRefs": [
+            "a1.v.bank",
+            "a1.v.post",
+            "a1.v.hotel",
+            "a1.v.kirche",
+            "a1.v.parkplatz"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "The bank is next to the post office."
+          },
+          "vocabRefs": [
+            "a1.v.bank",
+            "a1.v.neben",
+            "a1.v.post"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Die Bank ist "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "neben"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "in",
+                "auf",
+                "zwischen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " der Post."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "There is a hotel in the city.",
+          "audioText": "Es gibt ein Hotel in der Stadt.",
+          "vocabRefs": [
+            "a1.v.es-gibt",
+            "a1.v.hotel",
+            "a1.v.in",
+            "a1.v.stadt"
+          ],
+          "tiles": [
+            "Es",
+            "gibt",
+            "ein",
+            "Hotel",
+            "in",
+            "der",
+            "Stadt"
+          ],
+          "accepted": [
+            [
+              "Es",
+              "gibt",
+              "ein",
+              "Hotel",
+              "in",
+              "der",
+              "Stadt"
+            ]
+          ],
+          "distractorTiles": [
+            "das",
+            "auf"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l06-in-der-stadt.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.park",
+            "a1.v.zentrum"
+          ],
+          "audioText": "Der Park ist im Zentrum.",
+          "answers": [
+            "Der Park ist im Zentrum.",
+            "Der Park ist im Zentrum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m08-unterwegs.l07-den-weg-finden",
+      "title": "Den Weg finden",
+      "order": 6,
+      "estMinutes": 15,
+      "objectives": [
+        "Ask for and give directions",
+        "Use the imperative for instructions",
+        "Understand left, right and straight ahead"
+      ],
+      "prereqs": [
+        "a1.m08-unterwegs.l06-in-der-stadt"
+      ],
+      "grammarNotes": [],
+      "introducesVocab": [
+        "a1.v.weg",
+        "a1.v.ecke",
+        "a1.v.ampel",
+        "a1.v.kreuzung",
+        "a1.v.abbiegen",
+        "a1.v.geradeaus",
+        "a1.v.richtung"
+      ],
+      "reviewsVocab": [
+        "a1.v.links",
+        "a1.v.rechts",
+        "a1.v.gehen",
+        "a1.v.zeigen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.ampel"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.weg",
+            "a1.v.ecke",
+            "a1.v.ampel",
+            "a1.v.kreuzung",
+            "a1.v.richtung"
+          ],
+          "pairRefs": [
+            "a1.v.weg",
+            "a1.v.ecke",
+            "a1.v.ampel",
+            "a1.v.kreuzung",
+            "a1.v.richtung"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Go! (informal, command)"
+          },
+          "verbRef": "a1.v.gehen",
+          "tense": "imperativ",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.gehen"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Go straight ahead and then turn left."
+          },
+          "vocabRefs": [
+            "a1.v.gehen",
+            "a1.v.geradeaus",
+            "a1.v.links"
+          ],
+          "bank": [
+            "geradeaus",
+            "links"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Gehen Sie "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "geradeaus"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "links",
+                "rechts"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " und dann nach "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "links"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "rechts",
+                "geradeaus"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "Turn right at the traffic light.",
+          "audioText": "Biegen Sie an der Ampel rechts ab.",
+          "vocabRefs": [
+            "a1.v.abbiegen",
+            "a1.v.ampel",
+            "a1.v.rechts"
+          ],
+          "tiles": [
+            "Biegen",
+            "Sie",
+            "an",
+            "der",
+            "Ampel",
+            "rechts",
+            "ab"
+          ],
+          "accepted": [
+            [
+              "Biegen",
+              "Sie",
+              "an",
+              "der",
+              "Ampel",
+              "rechts",
+              "ab"
+            ]
+          ],
+          "distractorTiles": [
+            "links",
+            "auf"
+          ]
+        },
+        {
+          "id": "a1.m08-unterwegs.l07-den-weg-finden.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Gehen Sie geradeaus. An der Kreuzung biegen Sie links ab. Die Post ist an der Ecke."
+          },
+          "prompt": {
+            "en": "Where is the post office?"
+          },
+          "vocabRefs": [
+            "a1.v.kreuzung",
+            "a1.v.ecke",
+            "a1.v.post"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "on the corner"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "at the train station"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "next to the church"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ]
+}

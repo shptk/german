@@ -1,0 +1,1409 @@
+{
+  "id": "a1.m01-ich-du",
+  "level": "a1",
+  "title": "Ich & du",
+  "order": 1,
+  "lessons": [
+    {
+      "id": "a1.m01-ich-du.l01-ich-bin",
+      "title": "Ich bin ...",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Personalpronomen ich, du, er, sie, wir benutzen",
+        "Das Verb sein im Singular konjugieren",
+        "Sich kurz vorstellen: Ich bin ..."
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.sein"
+      ],
+      "introducesVocab": [
+        "a1.v.ich",
+        "a1.v.du",
+        "a1.v.er",
+        "a1.v.sie-sg",
+        "a1.v.wir",
+        "a1.v.person"
+      ],
+      "reviewsVocab": [
+        "a1.v.hallo",
+        "a1.v.name",
+        "a1.v.heissen",
+        "a1.v.sein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l01-ich-bin.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.ich",
+            "a1.v.du",
+            "a1.v.er",
+            "a1.v.wir"
+          ],
+          "pairRefs": [
+            "a1.v.ich",
+            "a1.v.du",
+            "a1.v.er",
+            "a1.v.wir"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l01-ich-bin.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I ___ (to be)"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l01-ich-bin.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) ___ (to be)"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l01-ich-bin.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Hello, I am Anna."
+          },
+          "vocabRefs": [
+            "a1.v.ich",
+            "a1.v.sein"
+          ],
+          "bank": [
+            "bin",
+            "bist",
+            "ist"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Hallo, ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "bist",
+                "ist",
+                "sein"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Anna."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l01-ich-bin.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "He is nice.",
+          "audioText": "Er ist nett.",
+          "vocabRefs": [
+            "a1.v.er",
+            "a1.v.sein",
+            "a1.v.nett"
+          ],
+          "tiles": [
+            "Er",
+            "ist",
+            "nett"
+          ],
+          "accepted": [
+            [
+              "Er",
+              "ist",
+              "nett"
+            ]
+          ],
+          "distractorTiles": [
+            "bist",
+            "bin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l02-ihr-und-sie",
+      "title": "Ihr, sie und Sie",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Pronomen es, ihr, sie (Plural) und Sie (formal) unterscheiden",
+        "Das Verb sein im Plural konjugieren",
+        "Formell und informell ansprechen"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l01-ich-bin"
+      ],
+      "grammarNotes": [
+        "gn.sein"
+      ],
+      "introducesVocab": [
+        "a1.v.es",
+        "a1.v.ihr",
+        "a1.v.sie-pl",
+        "a1.v.Sie",
+        "a1.v.leute",
+        "a1.v.herr",
+        "a1.v.frau"
+      ],
+      "reviewsVocab": [
+        "a1.v.ich",
+        "a1.v.du",
+        "a1.v.sein",
+        "a1.v.nett"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.es",
+            "a1.v.ihr",
+            "a1.v.sie-pl",
+            "a1.v.Sie"
+          ],
+          "pairRefs": [
+            "a1.v.es",
+            "a1.v.ihr",
+            "a1.v.sie-pl",
+            "a1.v.Sie"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "we ___ (to be)"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "wir",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (plural, informal) ___ (to be)"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "ihr",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Mr. Müller, are you (formal) from Berlin?"
+          },
+          "vocabRefs": [
+            "a1.v.Sie",
+            "a1.v.sein",
+            "a1.v.herr"
+          ],
+          "bank": [
+            "sind",
+            "seid",
+            "ist"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Herr Müller, "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "sind"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "seid",
+                "ist",
+                "bist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Sie aus Berlin?"
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Anna und Tom sind aus Berlin. Sie sind nett."
+          },
+          "prompt": {
+            "en": "Which pronoun replaces 'Anna und Tom'?"
+          },
+          "vocabRefs": [
+            "a1.v.sie-pl",
+            "a1.v.leute"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "sie (they)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "ihr (you plural)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "wir (we)"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m01-ich-du.l02-ihr-und-sie.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "We are friendly.",
+          "audioText": "Wir sind freundlich.",
+          "vocabRefs": [
+            "a1.v.wir",
+            "a1.v.sein",
+            "a1.v.freundlich"
+          ],
+          "tiles": [
+            "Wir",
+            "sind",
+            "freundlich"
+          ],
+          "accepted": [
+            [
+              "Wir",
+              "sind",
+              "freundlich"
+            ]
+          ],
+          "distractorTiles": [
+            "seid",
+            "bin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l03-woher-kommst-du",
+      "title": "Woher kommst du?",
+      "order": 2,
+      "estMinutes": 14,
+      "objectives": [
+        "Nach der Herkunft fragen: Woher kommst du?",
+        "Über Land und Nationalität sprechen",
+        "Das Verb kommen mit aus benutzen"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l02-ihr-und-sie"
+      ],
+      "grammarNotes": [
+        "gn.questions"
+      ],
+      "introducesVocab": [
+        "a1.v.woher",
+        "a1.v.wo",
+        "a1.v.aus",
+        "a1.v.nationalitaet",
+        "a1.v.stadt",
+        "a1.v.oesterreich"
+      ],
+      "reviewsVocab": [
+        "a1.v.kommen",
+        "a1.v.wohnen",
+        "a1.v.land",
+        "a1.v.deutschland",
+        "a1.v.sein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.woher",
+            "a1.v.wo",
+            "a1.v.aus",
+            "a1.v.stadt"
+          ],
+          "pairRefs": [
+            "a1.v.woher",
+            "a1.v.wo",
+            "a1.v.aus",
+            "a1.v.stadt"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.stadt"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) ___ (to come)"
+          },
+          "verbRef": "a1.v.kommen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.kommen"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Where do you come from? I come from Austria."
+          },
+          "vocabRefs": [
+            "a1.v.woher",
+            "a1.v.kommen",
+            "a1.v.aus",
+            "a1.v.oesterreich"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Woher kommst du? Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "komme"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kommt",
+                "kommst",
+                "kommen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "aus"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "in",
+                "von",
+                "nach"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Österreich."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Lena kommt aus Wien. Wien ist in Österreich."
+          },
+          "prompt": {
+            "en": "Where does Lena come from?"
+          },
+          "vocabRefs": [
+            "a1.v.kommen",
+            "a1.v.oesterreich",
+            "a1.v.stadt"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "From Austria"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "From Germany"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "From Switzerland"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m01-ich-du.l03-woher-kommst-du.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I come from Germany.",
+          "audioText": "Ich komme aus Deutschland.",
+          "vocabRefs": [
+            "a1.v.ich",
+            "a1.v.kommen",
+            "a1.v.aus",
+            "a1.v.deutschland"
+          ],
+          "tiles": [
+            "Ich",
+            "komme",
+            "aus",
+            "Deutschland"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "komme",
+              "aus",
+              "Deutschland"
+            ]
+          ],
+          "distractorTiles": [
+            "in",
+            "kommst"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l04-zahlen-alter",
+      "title": "Zahlen und Alter",
+      "order": 3,
+      "estMinutes": 14,
+      "objectives": [
+        "Zahlen von null bis zwanzig benutzen",
+        "Nach dem Alter fragen: Wie alt bist du?",
+        "Das Alter mit Jahren angeben"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l03-woher-kommst-du"
+      ],
+      "grammarNotes": [
+        "gn.questions"
+      ],
+      "introducesVocab": [
+        "a1.v.null",
+        "a1.v.eins",
+        "a1.v.zwei",
+        "a1.v.zehn",
+        "a1.v.zwanzig",
+        "a1.v.alter",
+        "a1.v.jahr",
+        "a1.v.wie-alt",
+        "a1.v.zahl"
+      ],
+      "reviewsVocab": [
+        "a1.v.sein",
+        "a1.v.wie",
+        "a1.v.ich",
+        "a1.v.du"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l04-zahlen-alter.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.null",
+            "a1.v.eins",
+            "a1.v.zwei",
+            "a1.v.zehn",
+            "a1.v.zwanzig"
+          ],
+          "pairRefs": [
+            "a1.v.null",
+            "a1.v.eins",
+            "a1.v.zwei",
+            "a1.v.zehn",
+            "a1.v.zwanzig"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l04-zahlen-alter.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.jahr"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l04-zahlen-alter.e03",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.zwei",
+            "a1.v.zehn"
+          ],
+          "audioText": "zwei, zehn, zwanzig",
+          "answers": [
+            "zwei, zehn, zwanzig",
+            "zwei zehn zwanzig"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l04-zahlen-alter.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "How old are you? I am twenty years old."
+          },
+          "vocabRefs": [
+            "a1.v.wie-alt",
+            "a1.v.sein",
+            "a1.v.zwanzig",
+            "a1.v.jahr"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Wie alt bist du? Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "bist",
+                "ist",
+                "sind"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " zwanzig Jahre alt."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l04-zahlen-alter.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom ist zehn Jahre alt. Anna ist zwei Jahre alt."
+          },
+          "prompt": {
+            "en": "How old is Tom?"
+          },
+          "vocabRefs": [
+            "a1.v.zehn",
+            "a1.v.jahr",
+            "a1.v.alter"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Ten"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Two"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Twenty"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l05-ich-habe",
+      "title": "Ich habe ...",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "Das Verb haben konjugieren",
+        "Über Familie sprechen: Ich habe einen Bruder",
+        "Mit haben das Alter ausdrücken"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l04-zahlen-alter"
+      ],
+      "grammarNotes": [
+        "gn.haben"
+      ],
+      "introducesVocab": [
+        "a1.v.haben",
+        "a1.v.familie",
+        "a1.v.bruder",
+        "a1.v.schwester",
+        "a1.v.kind",
+        "a1.v.freund"
+      ],
+      "reviewsVocab": [
+        "a1.v.ich",
+        "a1.v.du",
+        "a1.v.jahr",
+        "a1.v.zwei",
+        "a1.v.nett"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.familie",
+            "a1.v.bruder",
+            "a1.v.schwester",
+            "a1.v.kind"
+          ],
+          "pairRefs": [
+            "a1.v.familie",
+            "a1.v.bruder",
+            "a1.v.schwester",
+            "a1.v.kind"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.bruder"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) ___ (to have)"
+          },
+          "verbRef": "a1.v.haben",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.haben"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I have a sister and a brother."
+          },
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.schwester",
+            "a1.v.bruder"
+          ],
+          "bank": [
+            "habe",
+            "hast",
+            "hat"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hast",
+                "hat",
+                "haben"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " eine Schwester und einen Bruder."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.kind"
+          ],
+          "audioText": "Wir haben zwei Kinder.",
+          "answers": [
+            "Wir haben zwei Kinder.",
+            "Wir haben zwei Kinder"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l05-ich-habe.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I have a brother.",
+          "audioText": "Ich habe einen Bruder.",
+          "vocabRefs": [
+            "a1.v.ich",
+            "a1.v.haben",
+            "a1.v.bruder"
+          ],
+          "tiles": [
+            "Ich",
+            "habe",
+            "einen",
+            "Bruder"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "habe",
+              "einen",
+              "Bruder"
+            ]
+          ],
+          "distractorTiles": [
+            "hast",
+            "eine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf",
+      "title": "Was bist du von Beruf?",
+      "order": 5,
+      "estMinutes": 15,
+      "objectives": [
+        "Über den Beruf sprechen: Ich bin Lehrer.",
+        "Männliche und weibliche Berufsbezeichnungen unterscheiden",
+        "Das Verb arbeiten benutzen"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l05-ich-habe"
+      ],
+      "grammarNotes": [
+        "gn.sein"
+      ],
+      "introducesVocab": [
+        "a1.v.beruf",
+        "a1.v.arbeit",
+        "a1.v.lehrer",
+        "a1.v.lehrerin",
+        "a1.v.student",
+        "a1.v.studentin",
+        "a1.v.arzt"
+      ],
+      "reviewsVocab": [
+        "a1.v.sein",
+        "a1.v.arbeiten",
+        "a1.v.was",
+        "a1.v.ich",
+        "a1.v.bei"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.lehrer",
+            "a1.v.student",
+            "a1.v.arzt",
+            "a1.v.beruf"
+          ],
+          "pairRefs": [
+            "a1.v.lehrer",
+            "a1.v.student",
+            "a1.v.arzt",
+            "a1.v.beruf"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.beruf"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I ___ (to work)"
+          },
+          "verbRef": "a1.v.arbeiten",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.arbeiten"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "What is your profession? I am a teacher (male)."
+          },
+          "vocabRefs": [
+            "a1.v.beruf",
+            "a1.v.sein",
+            "a1.v.lehrer"
+          ],
+          "bank": [
+            "bin",
+            "Lehrer"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Was bist du von Beruf? Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "bist",
+                "ist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Lehrer"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Lehrerin",
+                "lehrer"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Maria ist Ärztin. Sie arbeitet in Berlin."
+          },
+          "prompt": {
+            "en": "What is Maria's profession?"
+          },
+          "vocabRefs": [
+            "a1.v.arzt",
+            "a1.v.arbeiten",
+            "a1.v.beruf"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Doctor"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Teacher"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Student"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m01-ich-du.l06-was-bist-du-von-beruf.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "She is a student.",
+          "audioText": "Sie ist Studentin.",
+          "vocabRefs": [
+            "a1.v.sie-sg",
+            "a1.v.sein",
+            "a1.v.studentin"
+          ],
+          "tiles": [
+            "Sie",
+            "ist",
+            "Studentin"
+          ],
+          "accepted": [
+            [
+              "Sie",
+              "ist",
+              "Studentin"
+            ]
+          ],
+          "distractorTiles": [
+            "bist",
+            "Student"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m01-ich-du.l07-fragen-stellen",
+      "title": "Fragen stellen",
+      "order": 6,
+      "estMinutes": 16,
+      "objectives": [
+        "W-Fragen mit wer, was, wo, wie bilden",
+        "Ja/Nein-Fragen mit sein und haben bilden",
+        "Eine andere Person vorstellen"
+      ],
+      "prereqs": [
+        "a1.m01-ich-du.l06-was-bist-du-von-beruf"
+      ],
+      "grammarNotes": [
+        "gn.questions",
+        "gn.sein",
+        "gn.haben"
+      ],
+      "introducesVocab": [
+        "a1.v.wer",
+        "a1.v.was",
+        "a1.v.wie",
+        "a1.v.fragen",
+        "a1.v.kennen",
+        "a1.v.mein",
+        "a1.v.dein"
+      ],
+      "reviewsVocab": [
+        "a1.v.sein",
+        "a1.v.haben",
+        "a1.v.woher",
+        "a1.v.kommen",
+        "a1.v.beruf",
+        "a1.v.freund"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.wer",
+            "a1.v.was",
+            "a1.v.wie",
+            "a1.v.woher"
+          ],
+          "pairRefs": [
+            "a1.v.wer",
+            "a1.v.was",
+            "a1.v.wie",
+            "a1.v.woher"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "you (informal) ___ (to ask)"
+          },
+          "verbRef": "a1.v.fragen",
+          "tense": "praesens",
+          "person": "du",
+          "vocabRefs": [
+            "a1.v.fragen"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Who is that? That is my friend (male)."
+          },
+          "vocabRefs": [
+            "a1.v.wer",
+            "a1.v.sein",
+            "a1.v.mein",
+            "a1.v.freund"
+          ],
+          "bank": [
+            "Wer",
+            "mein"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Wer"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Was",
+                "Wie",
+                "wer"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ist das? Das ist "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "mein"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "dein",
+                "meine"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Freund."
+            }
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e04",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Das ist Paul. Er kommt aus der Schweiz und ist Koch von Beruf."
+          },
+          "prompt": {
+            "en": "What is Paul's profession?"
+          },
+          "vocabRefs": [
+            "a1.v.kommen",
+            "a1.v.beruf",
+            "a1.v.koch"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Cook"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Teacher"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Doctor"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.kind"
+          ],
+          "audioText": "Hast du Kinder?",
+          "answers": [
+            "Hast du Kinder?",
+            "Hast du Kinder"
+          ]
+        },
+        {
+          "id": "a1.m01-ich-du.l07-fragen-stellen.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "Where do you come from?",
+          "audioText": "Woher kommst du?",
+          "vocabRefs": [
+            "a1.v.woher",
+            "a1.v.kommen",
+            "a1.v.du"
+          ],
+          "tiles": [
+            "Woher",
+            "kommst",
+            "du"
+          ],
+          "accepted": [
+            [
+              "Woher",
+              "kommst",
+              "du"
+            ]
+          ],
+          "distractorTiles": [
+            "komme",
+            "Wer"
+          ]
+        }
+      ]
+    }
+  ],
+  "icon": "person",
+  "grammarTopics": [],
+  "vocabIds": [
+    "a1.v.ich",
+    "a1.v.du",
+    "a1.v.er",
+    "a1.v.sie-sg",
+    "a1.v.wir",
+    "a1.v.person",
+    "a1.v.sein",
+    "a1.v.nett",
+    "a1.v.es",
+    "a1.v.ihr",
+    "a1.v.sie-pl",
+    "a1.v.Sie",
+    "a1.v.leute",
+    "a1.v.herr",
+    "a1.v.frau",
+    "a1.v.freundlich",
+    "a1.v.woher",
+    "a1.v.wo",
+    "a1.v.aus",
+    "a1.v.nationalitaet",
+    "a1.v.stadt",
+    "a1.v.oesterreich",
+    "a1.v.kommen",
+    "a1.v.deutschland",
+    "a1.v.null",
+    "a1.v.eins",
+    "a1.v.zwei",
+    "a1.v.zehn",
+    "a1.v.zwanzig",
+    "a1.v.alter",
+    "a1.v.jahr",
+    "a1.v.wie-alt",
+    "a1.v.zahl",
+    "a1.v.haben",
+    "a1.v.familie",
+    "a1.v.bruder",
+    "a1.v.schwester",
+    "a1.v.kind",
+    "a1.v.freund",
+    "a1.v.beruf",
+    "a1.v.arbeit",
+    "a1.v.lehrer",
+    "a1.v.lehrerin",
+    "a1.v.student",
+    "a1.v.studentin",
+    "a1.v.arzt",
+    "a1.v.arbeiten",
+    "a1.v.wer",
+    "a1.v.was",
+    "a1.v.wie",
+    "a1.v.fragen",
+    "a1.v.kennen",
+    "a1.v.mein",
+    "a1.v.dein",
+    "a1.v.koch"
+  ],
+  "estMinutes": 98
+}

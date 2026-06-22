@@ -1,0 +1,1539 @@
+{
+  "id": "a1.m09-arbeit-gesundheit-alltag",
+  "level": "a1",
+  "title": "Arbeit, Gesundheit & Alltag",
+  "order": 9,
+  "lessons": [
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero",
+      "title": "Im Büro",
+      "order": 0,
+      "estMinutes": 13,
+      "objectives": [
+        "Talk about your workplace and colleagues",
+        "Name common workplace things (Büro, Computer, Telefon)",
+        "Use the verb arbeiten in the present tense"
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.buero",
+        "a1.v.firma",
+        "a1.v.chef",
+        "a1.v.chefin",
+        "a1.v.kollege",
+        "a1.v.kollegin",
+        "a1.v.computer",
+        "a1.v.telefon",
+        "a1.v.email"
+      ],
+      "reviewsVocab": [
+        "a1.v.arbeiten",
+        "a1.v.arbeit"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.buero"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.chef",
+            "a1.v.kollege",
+            "a1.v.computer",
+            "a1.v.telefon"
+          ],
+          "pairRefs": [
+            "a1.v.chef",
+            "a1.v.kollege",
+            "a1.v.computer",
+            "a1.v.telefon"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I work (ich, to work)"
+          },
+          "verbRef": "a1.v.arbeiten",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.arbeiten"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I work in an office."
+          },
+          "vocabRefs": [
+            "a1.v.arbeiten",
+            "a1.v.buero"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "arbeite"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "arbeitet",
+                "arbeitest"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " im Büro."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My colleague is nice.",
+          "audioText": "Meine Kollegin ist nett.",
+          "vocabRefs": [
+            "a1.v.kollegin",
+            "a1.v.nett"
+          ],
+          "tiles": [
+            "Meine",
+            "Kollegin",
+            "ist",
+            "nett"
+          ],
+          "accepted": [
+            [
+              "Meine",
+              "Kollegin",
+              "ist",
+              "nett"
+            ]
+          ],
+          "distractorTiles": [
+            "bist"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l00-im-buero.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Anna arbeitet bei einer Firma. Ihre Chefin ist sehr freundlich."
+          },
+          "prompt": {
+            "en": "How is Anna's boss?"
+          },
+          "vocabRefs": [
+            "a1.v.chefin",
+            "a1.v.firma",
+            "a1.v.freundlich"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Very friendly"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Very old"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Very tired"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag",
+      "title": "Der Arbeitsalltag",
+      "order": 1,
+      "estMinutes": 14,
+      "objectives": [
+        "Describe what you do at work",
+        "Use the modal verb müssen",
+        "Talk about breaks and emails"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l00-im-buero"
+      ],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.pause",
+        "a1.v.nachbarin"
+      ],
+      "reviewsVocab": [
+        "a1.v.muessen",
+        "a1.v.email",
+        "a1.v.computer",
+        "a1.v.arbeiten",
+        "a1.v.machen",
+        "a1.v.kollege"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.pause"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I must / I have to (ich, must)"
+          },
+          "verbRef": "a1.v.muessen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.muessen"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I have to work today."
+          },
+          "vocabRefs": [
+            "a1.v.muessen",
+            "a1.v.arbeiten",
+            "a1.v.heute"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "muss"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "musst",
+                "müssen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " heute "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "arbeiten"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "arbeite",
+                "arbeitet"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I write an email now.",
+          "audioText": "Ich schreibe jetzt eine E-Mail.",
+          "vocabRefs": [
+            "a1.v.email",
+            "a1.v.jetzt"
+          ],
+          "tiles": [
+            "Ich",
+            "schreibe",
+            "jetzt",
+            "eine",
+            "E-Mail"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "schreibe",
+              "jetzt",
+              "eine",
+              "E-Mail"
+            ]
+          ],
+          "distractorTiles": [
+            "schreibst"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom macht um zwölf Uhr eine Pause. Dann isst er mit den Kollegen."
+          },
+          "prompt": {
+            "en": "What does Tom do at twelve o'clock?"
+          },
+          "vocabRefs": [
+            "a1.v.pause",
+            "a1.v.kollege",
+            "a1.v.essen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "He takes a break"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "He goes home"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "He writes an email"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper",
+      "title": "Der Körper",
+      "order": 2,
+      "estMinutes": 13,
+      "objectives": [
+        "Name the main parts of the body",
+        "Recognize articles for body-part nouns",
+        "Build simple sentences about the body"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l01-arbeitsalltag"
+      ],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.koerper",
+        "a1.v.kopf",
+        "a1.v.auge",
+        "a1.v.ohr",
+        "a1.v.nase",
+        "a1.v.mund",
+        "a1.v.hand",
+        "a1.v.arm",
+        "a1.v.bein",
+        "a1.v.fuss"
+      ],
+      "reviewsVocab": [
+        "a1.v.haben",
+        "a1.v.gross",
+        "a1.v.klein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.kopf"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.hand"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.auge",
+            "a1.v.ohr",
+            "a1.v.nase",
+            "a1.v.mund"
+          ],
+          "pairRefs": [
+            "a1.v.auge",
+            "a1.v.ohr",
+            "a1.v.nase",
+            "a1.v.mund"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "The child has small hands."
+          },
+          "vocabRefs": [
+            "a1.v.kind",
+            "a1.v.hand",
+            "a1.v.klein"
+          ],
+          "bank": [
+            "Hände",
+            "Füße",
+            "Augen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Das Kind hat kleine "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Hände"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Hand",
+                "Füße"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "The man has two arms.",
+          "audioText": "Der Mann hat zwei Arme.",
+          "vocabRefs": [
+            "a1.v.mann",
+            "a1.v.arm",
+            "a1.v.zwei"
+          ],
+          "tiles": [
+            "Der",
+            "Mann",
+            "hat",
+            "zwei",
+            "Arme"
+          ],
+          "accepted": [
+            [
+              "Der",
+              "Mann",
+              "hat",
+              "zwei",
+              "Arme"
+            ]
+          ],
+          "distractorTiles": [
+            "ist"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.koerper",
+            "a1.v.fuss"
+          ],
+          "audioText": "Mein Fuß ist klein.",
+          "answers": [
+            "Mein Fuß ist klein.",
+            "Mein Fuß ist klein",
+            "Mein Fuss ist klein.",
+            "Mein Fuss ist klein"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt",
+      "title": "Beim Arzt",
+      "order": 3,
+      "estMinutes": 14,
+      "objectives": [
+        "Say that you are sick and where it hurts",
+        "Use wehtun to describe pain",
+        "Talk about fever, cough and a cold"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l02-der-koerper"
+      ],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.arzt",
+        "a1.v.aerztin",
+        "a1.v.krank",
+        "a1.v.gesundheit",
+        "a1.v.schmerz",
+        "a1.v.fieber",
+        "a1.v.husten",
+        "a1.v.schnupfen",
+        "a1.v.weh-tun",
+        "a1.v.fuehlen"
+      ],
+      "reviewsVocab": [
+        "a1.v.kopf",
+        "a1.v.bauch",
+        "a1.v.haben",
+        "a1.v.sein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.fieber"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.arzt",
+            "a1.v.husten",
+            "a1.v.schnupfen",
+            "a1.v.fieber"
+          ],
+          "pairRefs": [
+            "a1.v.arzt",
+            "a1.v.husten",
+            "a1.v.schnupfen",
+            "a1.v.fieber"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I am sick today."
+          },
+          "vocabRefs": [
+            "a1.v.krank",
+            "a1.v.heute",
+            "a1.v.sein"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "ist",
+                "bist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " heute "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "krank"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "gesund",
+                "müde"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My head hurts.",
+          "audioText": "Mein Kopf tut weh.",
+          "vocabRefs": [
+            "a1.v.kopf",
+            "a1.v.weh-tun"
+          ],
+          "tiles": [
+            "Mein",
+            "Kopf",
+            "tut",
+            "weh"
+          ],
+          "accepted": [
+            [
+              "Mein",
+              "Kopf",
+              "tut",
+              "weh"
+            ]
+          ],
+          "distractorTiles": [
+            "ist"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.fieber",
+            "a1.v.haben"
+          ],
+          "audioText": "Ich habe Fieber.",
+          "answers": [
+            "Ich habe Fieber.",
+            "Ich habe Fieber"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Lena fühlt sich nicht gut. Sie hat Husten und Fieber. Sie geht zum Arzt."
+          },
+          "prompt": {
+            "en": "Why does Lena go to the doctor?"
+          },
+          "vocabRefs": [
+            "a1.v.husten",
+            "a1.v.fieber",
+            "a1.v.arzt",
+            "a1.v.fuehlen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "She has a cough and a fever"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "She is hungry"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "She wants to work"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis",
+      "title": "In der Praxis",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "Make and talk about a doctor's appointment",
+        "Use vocabulary for the waiting room and pharmacy",
+        "Talk about medication and tablets"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l03-beim-arzt"
+      ],
+      "grammarNotes": [
+        "gn.word-order"
+      ],
+      "introducesVocab": [
+        "a1.v.praxis",
+        "a1.v.termin",
+        "a1.v.wartezimmer",
+        "a1.v.apotheke",
+        "a1.v.medikament",
+        "a1.v.tablette",
+        "a1.v.krankenhaus",
+        "a1.v.erkaeltung",
+        "a1.v.krankmeldung",
+        "a1.v.helfen"
+      ],
+      "reviewsVocab": [
+        "a1.v.arzt",
+        "a1.v.brauchen",
+        "a1.v.haben",
+        "a1.v.muessen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.termin"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.apotheke",
+            "a1.v.medikament",
+            "a1.v.tablette",
+            "a1.v.wartezimmer"
+          ],
+          "pairRefs": [
+            "a1.v.apotheke",
+            "a1.v.medikament",
+            "a1.v.tablette",
+            "a1.v.wartezimmer"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I need (ich, to need)"
+          },
+          "verbRef": "a1.v.brauchen",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.brauchen"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I need a doctor's appointment."
+          },
+          "vocabRefs": [
+            "a1.v.brauchen",
+            "a1.v.termin"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "brauche"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "braucht",
+                "brauchst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " einen "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Termin"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "termin",
+                "Tablette"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "The tablets help me.",
+          "audioText": "Die Tabletten helfen mir.",
+          "vocabRefs": [
+            "a1.v.tablette",
+            "a1.v.helfen"
+          ],
+          "tiles": [
+            "Die",
+            "Tabletten",
+            "helfen",
+            "mir"
+          ],
+          "accepted": [
+            [
+              "Die",
+              "Tabletten",
+              "helfen",
+              "mir"
+            ]
+          ],
+          "distractorTiles": [
+            "hilft"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Herr Bauer ist krank. Er hat eine Erkältung. Der Arzt gibt ihm eine Krankmeldung."
+          },
+          "prompt": {
+            "en": "What does the doctor give Mr. Bauer?"
+          },
+          "vocabRefs": [
+            "a1.v.erkaeltung",
+            "a1.v.arzt",
+            "a1.v.krankmeldung"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A sick note"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A menu"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "A ticket"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben",
+      "title": "Perfekt mit haben",
+      "order": 5,
+      "estMinutes": 15,
+      "objectives": [
+        "Form the Perfekt with haben plus Partizip II",
+        "Talk about what you did yesterday",
+        "Use regular Partizip II forms (gearbeitet, gemacht, gekauft)"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l04-in-der-praxis"
+      ],
+      "grammarNotes": [
+        "gn.perfekt-intro",
+        "gn.word-order"
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [
+        "a1.v.haben",
+        "a1.v.arbeiten",
+        "a1.v.machen",
+        "a1.v.kaufen",
+        "a1.v.gestern",
+        "a1.v.lernen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e01",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I have (ich, to have) — the helper verb for Perfekt"
+          },
+          "verbRef": "a1.v.haben",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.haben"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Yesterday I worked."
+          },
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.arbeiten",
+            "a1.v.gestern"
+          ],
+          "bank": [
+            "habe",
+            "gearbeitet",
+            "bin"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Gestern "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hat",
+                "bin"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ich "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "gearbeitet"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "arbeiten",
+                "gegangen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I bought bread."
+          },
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.kaufen",
+            "a1.v.brot"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hat",
+                "bin"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Brot "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "gekauft"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kaufen",
+                "gekaufen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "I learned German.",
+          "audioText": "Ich habe Deutsch gelernt.",
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.lernen",
+            "a1.v.deutsch"
+          ],
+          "tiles": [
+            "Ich",
+            "habe",
+            "Deutsch",
+            "gelernt"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "habe",
+              "Deutsch",
+              "gelernt"
+            ]
+          ],
+          "distractorTiles": [
+            "bin"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.haben",
+            "a1.v.machen"
+          ],
+          "audioText": "Ich habe das gemacht.",
+          "answers": [
+            "Ich habe das gemacht.",
+            "Ich habe das gemacht"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Gestern hat Maria viel gearbeitet. Dann hat sie zu Hause gekocht."
+          },
+          "prompt": {
+            "en": "What did Maria do yesterday?"
+          },
+          "vocabRefs": [
+            "a1.v.arbeiten",
+            "a1.v.kochen",
+            "a1.v.gestern"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "She worked a lot and cooked at home"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "She slept all day"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "She went to the doctor"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein",
+      "title": "Perfekt mit sein",
+      "order": 6,
+      "estMinutes": 15,
+      "objectives": [
+        "Form the Perfekt with sein plus Partizip II",
+        "Use sein with verbs of movement (gehen, fahren, kommen)",
+        "Tell a short story about yesterday"
+      ],
+      "prereqs": [
+        "a1.m09-arbeit-gesundheit-alltag.l05-perfekt-mit-haben"
+      ],
+      "grammarNotes": [
+        "gn.perfekt-intro",
+        "gn.word-order"
+      ],
+      "introducesVocab": [],
+      "reviewsVocab": [
+        "a1.v.sein",
+        "a1.v.gehen",
+        "a1.v.fahren",
+        "a1.v.kommen",
+        "a1.v.gestern",
+        "a1.v.bleiben"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e01",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I am (ich, to be) — the helper verb for movement in Perfekt"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I went home."
+          },
+          "vocabRefs": [
+            "a1.v.sein",
+            "a1.v.gehen",
+            "a1.v.zu-hause"
+          ],
+          "bank": [
+            "bin",
+            "gegangen",
+            "habe"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "habe",
+                "ist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " nach Hause "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "gegangen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "gehen",
+                "gegehen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Yesterday I drove to Berlin."
+          },
+          "vocabRefs": [
+            "a1.v.sein",
+            "a1.v.fahren",
+            "a1.v.gestern"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Gestern "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "habe",
+                "ist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ich nach Berlin "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "gefahren"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "fahren",
+                "gefahrt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "Anna came to the party.",
+          "audioText": "Anna ist zur Party gekommen.",
+          "vocabRefs": [
+            "a1.v.sein",
+            "a1.v.kommen",
+            "a1.v.party"
+          ],
+          "tiles": [
+            "Anna",
+            "ist",
+            "zur",
+            "Party",
+            "gekommen"
+          ],
+          "accepted": [
+            [
+              "Anna",
+              "ist",
+              "zur",
+              "Party",
+              "gekommen"
+            ]
+          ],
+          "distractorTiles": [
+            "hat"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.sein",
+            "a1.v.bleiben",
+            "a1.v.zu-hause"
+          ],
+          "audioText": "Ich bin zu Hause geblieben.",
+          "answers": [
+            "Ich bin zu Hause geblieben.",
+            "Ich bin zu Hause geblieben",
+            "Ich bin zuhause geblieben.",
+            "Ich bin zuhause geblieben"
+          ]
+        },
+        {
+          "id": "a1.m09-arbeit-gesundheit-alltag.l06-perfekt-mit-sein.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 35,
+          "passage": {
+            "de": "Gestern war Paul krank. Er ist nicht zur Arbeit gegangen. Er ist zu Hause geblieben."
+          },
+          "prompt": {
+            "en": "Why did Paul stay home?"
+          },
+          "vocabRefs": [
+            "a1.v.krank",
+            "a1.v.arbeit",
+            "a1.v.bleiben",
+            "a1.v.gehen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "He was sick"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "He had a party"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "He was on holiday"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ],
+  "icon": "health",
+  "grammarTopics": [],
+  "vocabIds": [
+    "a1.v.buero",
+    "a1.v.firma",
+    "a1.v.chef",
+    "a1.v.chefin",
+    "a1.v.kollege",
+    "a1.v.kollegin",
+    "a1.v.computer",
+    "a1.v.telefon",
+    "a1.v.email",
+    "a1.v.arbeiten",
+    "a1.v.nett",
+    "a1.v.freundlich",
+    "a1.v.pause",
+    "a1.v.nachbarin",
+    "a1.v.muessen",
+    "a1.v.heute",
+    "a1.v.jetzt",
+    "a1.v.essen",
+    "a1.v.koerper",
+    "a1.v.kopf",
+    "a1.v.auge",
+    "a1.v.ohr",
+    "a1.v.nase",
+    "a1.v.mund",
+    "a1.v.hand",
+    "a1.v.arm",
+    "a1.v.bein",
+    "a1.v.fuss",
+    "a1.v.kind",
+    "a1.v.klein",
+    "a1.v.mann",
+    "a1.v.zwei",
+    "a1.v.arzt",
+    "a1.v.aerztin",
+    "a1.v.krank",
+    "a1.v.gesundheit",
+    "a1.v.schmerz",
+    "a1.v.fieber",
+    "a1.v.husten",
+    "a1.v.schnupfen",
+    "a1.v.weh-tun",
+    "a1.v.fuehlen",
+    "a1.v.sein",
+    "a1.v.haben",
+    "a1.v.praxis",
+    "a1.v.termin",
+    "a1.v.wartezimmer",
+    "a1.v.apotheke",
+    "a1.v.medikament",
+    "a1.v.tablette",
+    "a1.v.krankenhaus",
+    "a1.v.erkaeltung",
+    "a1.v.krankmeldung",
+    "a1.v.helfen",
+    "a1.v.brauchen",
+    "a1.v.gestern",
+    "a1.v.kaufen",
+    "a1.v.brot",
+    "a1.v.lernen",
+    "a1.v.deutsch",
+    "a1.v.machen",
+    "a1.v.kochen",
+    "a1.v.gehen",
+    "a1.v.zu-hause",
+    "a1.v.fahren",
+    "a1.v.kommen",
+    "a1.v.party",
+    "a1.v.bleiben",
+    "a1.v.arbeit"
+  ],
+  "estMinutes": 98
+}

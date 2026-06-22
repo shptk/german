@@ -1,0 +1,1207 @@
+{
+  "id": "a1.m02-familie",
+  "level": "a1",
+  "title": "Familie & Freunde",
+  "order": 2,
+  "lessons": [
+    {
+      "id": "a1.m02-familie.l00-meine-familie",
+      "title": "Meine Familie",
+      "order": 0,
+      "estMinutes": 12,
+      "objectives": [
+        "Kernwörter der Familie verstehen: Familie, Vater, Mutter, Bruder, Schwester",
+        "Das Possessivwort \"mein\" mit Familienwörtern benutzen"
+      ],
+      "prereqs": [],
+      "grammarNotes": [
+        "gn.possessives"
+      ],
+      "introducesVocab": [
+        "a1.v.familie",
+        "a1.v.vater",
+        "a1.v.mutter",
+        "a1.v.bruder",
+        "a1.v.schwester",
+        "a1.v.eltern"
+      ],
+      "reviewsVocab": [
+        "a1.v.mein",
+        "a1.v.sein"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l00-meine-familie.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.familie"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l00-meine-familie.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.vater"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l00-meine-familie.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.vater",
+            "a1.v.mutter",
+            "a1.v.bruder",
+            "a1.v.schwester"
+          ],
+          "pairRefs": [
+            "a1.v.vater",
+            "a1.v.mutter",
+            "a1.v.bruder",
+            "a1.v.schwester"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l00-meine-familie.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "My mother is nice."
+          },
+          "vocabRefs": [
+            "a1.v.mutter"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Meine "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Mutter"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "mutter",
+                "Vater"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " ist nett."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l00-meine-familie.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My family is big.",
+          "audioText": "Meine Familie ist groß.",
+          "vocabRefs": [
+            "a1.v.familie",
+            "a1.v.gross"
+          ],
+          "tiles": [
+            "Meine",
+            "Familie",
+            "ist",
+            "groß"
+          ],
+          "accepted": [
+            [
+              "Meine",
+              "Familie",
+              "ist",
+              "groß"
+            ]
+          ],
+          "distractorTiles": [
+            "bist",
+            "klein"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m02-familie.l01-mama-papa-geschwister",
+      "title": "Mama, Papa und Geschwister",
+      "order": 1,
+      "estMinutes": 13,
+      "objectives": [
+        "Familienwörter der Umgangssprache lernen: Papa, Mama, Sohn, Tochter",
+        "Über Geschwister und Kinder sprechen"
+      ],
+      "prereqs": [
+        "a1.m02-familie.l00-meine-familie"
+      ],
+      "grammarNotes": [
+        "gn.possessives",
+        "gn.articles-indef"
+      ],
+      "introducesVocab": [
+        "a1.v.papa",
+        "a1.v.mama",
+        "a1.v.geschwister",
+        "a1.v.sohn",
+        "a1.v.tochter",
+        "a1.v.baby"
+      ],
+      "reviewsVocab": [
+        "a1.v.kind",
+        "a1.v.haben"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.sohn"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e02",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.papa",
+            "a1.v.mama",
+            "a1.v.sohn",
+            "a1.v.tochter"
+          ],
+          "pairRefs": [
+            "a1.v.papa",
+            "a1.v.mama",
+            "a1.v.sohn",
+            "a1.v.tochter"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e03",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I have (form of \"haben\")"
+          },
+          "verbRef": "a1.v.haben",
+          "tense": "praesens",
+          "person": "ich",
+          "vocabRefs": [
+            "a1.v.haben"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I have two siblings."
+          },
+          "vocabRefs": [
+            "a1.v.geschwister",
+            "a1.v.haben"
+          ],
+          "bank": [
+            "habe",
+            "Geschwister"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hast",
+                "hat"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " zwei "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Geschwister"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "geschwister"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My daughter is small.",
+          "audioText": "Meine Tochter ist klein.",
+          "vocabRefs": [
+            "a1.v.tochter",
+            "a1.v.klein"
+          ],
+          "tiles": [
+            "Meine",
+            "Tochter",
+            "ist",
+            "klein"
+          ],
+          "accepted": [
+            [
+              "Meine",
+              "Tochter",
+              "ist",
+              "klein"
+            ]
+          ],
+          "distractorTiles": [
+            "groß",
+            "sind"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l01-mama-papa-geschwister.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Anna hat einen Sohn und eine Tochter."
+          },
+          "prompt": {
+            "en": "How many children does Anna have?"
+          },
+          "vocabRefs": [
+            "a1.v.sohn",
+            "a1.v.tochter",
+            "a1.v.kind"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Two children"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "One child"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Three children"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "a1.m02-familie.l02-grosseltern-verwandte",
+      "title": "Großeltern und Verwandte",
+      "order": 2,
+      "estMinutes": 13,
+      "objectives": [
+        "Die erweiterte Familie benennen: Oma, Opa, Onkel, Tante",
+        "Cousin und Cousine unterscheiden"
+      ],
+      "prereqs": [
+        "a1.m02-familie.l01-mama-papa-geschwister"
+      ],
+      "grammarNotes": [
+        "gn.possessives"
+      ],
+      "introducesVocab": [
+        "a1.v.oma",
+        "a1.v.opa",
+        "a1.v.grosseltern",
+        "a1.v.onkel",
+        "a1.v.tante",
+        "a1.v.cousin",
+        "a1.v.cousine"
+      ],
+      "reviewsVocab": [
+        "a1.v.besuchen"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e01",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.onkel"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e02",
+          "type": "gender-tap",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 20,
+          "vocabRefs": [
+            "a1.v.tante"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e03",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.oma",
+            "a1.v.opa",
+            "a1.v.onkel",
+            "a1.v.tante"
+          ],
+          "pairRefs": [
+            "a1.v.oma",
+            "a1.v.opa",
+            "a1.v.onkel",
+            "a1.v.tante"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e04",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "we visit (form of \"besuchen\")"
+          },
+          "verbRef": "a1.v.besuchen",
+          "tense": "praesens",
+          "person": "wir",
+          "vocabRefs": [
+            "a1.v.besuchen"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e05",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "We visit grandma and grandpa."
+          },
+          "vocabRefs": [
+            "a1.v.oma",
+            "a1.v.opa",
+            "a1.v.besuchen"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Wir "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "besuchen"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "besucht",
+                "besuche"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Oma und Opa."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l02-grosseltern-verwandte.e06",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My grandparents are old.",
+          "audioText": "Meine Großeltern sind alt.",
+          "vocabRefs": [
+            "a1.v.grosseltern",
+            "a1.v.alt"
+          ],
+          "tiles": [
+            "Meine",
+            "Großeltern",
+            "sind",
+            "alt"
+          ],
+          "accepted": [
+            [
+              "Meine",
+              "Großeltern",
+              "sind",
+              "alt"
+            ]
+          ],
+          "distractorTiles": [
+            "ist",
+            "jung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m02-familie.l03-possessivartikel",
+      "title": "Mein, dein, unser: Possessivartikel",
+      "order": 3,
+      "estMinutes": 14,
+      "objectives": [
+        "Die Possessivwörter mein, dein, unser, euer verstehen",
+        "Possessivwörter zu Familienwörtern passend benutzen"
+      ],
+      "prereqs": [
+        "a1.m02-familie.l02-grosseltern-verwandte"
+      ],
+      "grammarNotes": [
+        "gn.possessives"
+      ],
+      "introducesVocab": [
+        "a1.v.mein",
+        "a1.v.dein",
+        "a1.v.unser",
+        "a1.v.euer"
+      ],
+      "reviewsVocab": [
+        "a1.v.vater",
+        "a1.v.mutter",
+        "a1.v.bruder",
+        "a1.v.schwester"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.mein",
+            "a1.v.dein",
+            "a1.v.unser",
+            "a1.v.euer"
+          ],
+          "pairRefs": [
+            "a1.v.mein",
+            "a1.v.dein",
+            "a1.v.unser",
+            "a1.v.euer"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "My father comes from Germany."
+          },
+          "vocabRefs": [
+            "a1.v.mein",
+            "a1.v.vater"
+          ],
+          "bank": [
+            "Mein",
+            "Dein",
+            "Unser"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Mein"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Meine",
+                "Meinen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Vater kommt aus Deutschland."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "Your (informal) mother is friendly."
+          },
+          "vocabRefs": [
+            "a1.v.dein",
+            "a1.v.mutter"
+          ],
+          "bank": [
+            "Deine",
+            "Meine",
+            "Unsere"
+          ],
+          "segments": [
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Deine"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "Dein",
+                "Deinen"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Mutter ist freundlich."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "Our brother is nice.",
+          "audioText": "Unser Bruder ist nett.",
+          "vocabRefs": [
+            "a1.v.unser",
+            "a1.v.bruder",
+            "a1.v.nett"
+          ],
+          "tiles": [
+            "Unser",
+            "Bruder",
+            "ist",
+            "nett"
+          ],
+          "accepted": [
+            [
+              "Unser",
+              "Bruder",
+              "ist",
+              "nett"
+            ]
+          ],
+          "distractorTiles": [
+            "Unsere",
+            "sind"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Das ist meine Schwester. Sie heißt Lena und ist sehr nett."
+          },
+          "prompt": {
+            "en": "Who is Lena?"
+          },
+          "vocabRefs": [
+            "a1.v.schwester",
+            "a1.v.nett"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "His sister"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "My sister"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "My mother"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "a1.m02-familie.l03-possessivartikel.e06",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.bruder",
+            "a1.v.gross"
+          ],
+          "audioText": "Mein Bruder ist groß.",
+          "answers": [
+            "Mein Bruder ist groß.",
+            "Mein Bruder ist groß",
+            "Mein Bruder ist gross."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.m02-familie.l04-familienstand",
+      "title": "Familienstand",
+      "order": 4,
+      "estMinutes": 14,
+      "objectives": [
+        "Den Familienstand angeben: verheiratet, ledig, geschieden, verlobt",
+        "Mit \"kein\" verneinen und über Ehemann, Ehefrau und Partner sprechen"
+      ],
+      "prereqs": [
+        "a1.m02-familie.l03-possessivartikel"
+      ],
+      "grammarNotes": [
+        "gn.negation",
+        "gn.articles-indef"
+      ],
+      "introducesVocab": [
+        "a1.v.verheiratet",
+        "a1.v.ledig",
+        "a1.v.geschieden",
+        "a1.v.verlobt",
+        "a1.v.ehemann",
+        "a1.v.ehefrau"
+      ],
+      "reviewsVocab": [
+        "a1.v.sein",
+        "a1.v.kein",
+        "a1.v.haben"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l04-familienstand.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.verheiratet",
+            "a1.v.ledig",
+            "a1.v.geschieden",
+            "a1.v.verlobt"
+          ],
+          "pairRefs": [
+            "a1.v.verheiratet",
+            "a1.v.ledig",
+            "a1.v.geschieden",
+            "a1.v.verlobt"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l04-familienstand.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "he is (form of \"sein\")"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l04-familienstand.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "I am married."
+          },
+          "vocabRefs": [
+            "a1.v.verheiratet",
+            "a1.v.sein"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "bin"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "ist",
+                "bist"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " verheiratet."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l04-familienstand.e04",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "pick",
+          "prompt": {
+            "en": "I have no children. (negation with kein)"
+          },
+          "vocabRefs": [
+            "a1.v.kein",
+            "a1.v.kind",
+            "a1.v.haben"
+          ],
+          "bank": [
+            "habe",
+            "keine"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "habe"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "hat",
+                "hast"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "keine"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kein",
+                "nicht"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " Kinder."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l04-familienstand.e05",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My husband is not single.",
+          "audioText": "Mein Ehemann ist nicht ledig.",
+          "vocabRefs": [
+            "a1.v.ehemann",
+            "a1.v.ledig"
+          ],
+          "tiles": [
+            "Mein",
+            "Ehemann",
+            "ist",
+            "nicht",
+            "ledig"
+          ],
+          "accepted": [
+            [
+              "Mein",
+              "Ehemann",
+              "ist",
+              "nicht",
+              "ledig"
+            ]
+          ],
+          "distractorTiles": [
+            "kein",
+            "Ehefrau"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l04-familienstand.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Tom ist nicht verheiratet. Er hat keine Frau und keine Kinder. Er ist ledig."
+          },
+          "prompt": {
+            "en": "What is Tom's marital status?"
+          },
+          "vocabRefs": [
+            "a1.v.ledig",
+            "a1.v.verheiratet",
+            "a1.v.kein"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Married"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Divorced"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Single"
+              }
+            }
+          ],
+          "correctChoiceId": "c"
+        }
+      ]
+    },
+    {
+      "id": "a1.m02-familie.l05-menschen-beschreiben",
+      "title": "Menschen beschreiben",
+      "order": 5,
+      "estMinutes": 14,
+      "objectives": [
+        "Personen mit Adjektiven beschreiben: nett, freundlich, lustig, sympathisch",
+        "Aussagen über Freunde und Familie verneinen"
+      ],
+      "prereqs": [
+        "a1.m02-familie.l04-familienstand"
+      ],
+      "grammarNotes": [
+        "gn.negation"
+      ],
+      "introducesVocab": [
+        "a1.v.nett",
+        "a1.v.freundlich",
+        "a1.v.lustig",
+        "a1.v.sympathisch",
+        "a1.v.jung"
+      ],
+      "reviewsVocab": [
+        "a1.v.freund",
+        "a1.v.freundin",
+        "a1.v.alt",
+        "a1.v.sein",
+        "a1.v.finden"
+      ],
+      "exercises": [
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e01",
+          "type": "match",
+          "source": "auto",
+          "skill": "reading",
+          "estSeconds": 40,
+          "left": "word-de",
+          "right": "gloss",
+          "vocabRefs": [
+            "a1.v.nett",
+            "a1.v.freundlich",
+            "a1.v.lustig",
+            "a1.v.jung"
+          ],
+          "pairRefs": [
+            "a1.v.nett",
+            "a1.v.freundlich",
+            "a1.v.lustig",
+            "a1.v.jung"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e02",
+          "type": "conjugate",
+          "source": "auto",
+          "skill": "output",
+          "estSeconds": 15,
+          "inputMode": "type",
+          "prompt": {
+            "en": "he/she/it is (form of \"sein\")"
+          },
+          "verbRef": "a1.v.sein",
+          "tense": "praesens",
+          "person": "er",
+          "vocabRefs": [
+            "a1.v.sein"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e03",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 25,
+          "inputMode": "type",
+          "prompt": {
+            "en": "My girlfriend is funny."
+          },
+          "vocabRefs": [
+            "a1.v.freundin",
+            "a1.v.lustig"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Meine Freundin ist "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "lustig"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "nett",
+                "alt"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 30,
+          "translationEn": "My friend is not boring.",
+          "audioText": "Mein Freund ist nicht langweilig.",
+          "vocabRefs": [
+            "a1.v.freund",
+            "a1.v.langweilig"
+          ],
+          "tiles": [
+            "Mein",
+            "Freund",
+            "ist",
+            "nicht",
+            "langweilig"
+          ],
+          "accepted": [
+            [
+              "Mein",
+              "Freund",
+              "ist",
+              "nicht",
+              "langweilig"
+            ]
+          ],
+          "distractorTiles": [
+            "kein",
+            "sind"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e05",
+          "type": "dictation",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 45,
+          "vocabRefs": [
+            "a1.v.schwester",
+            "a1.v.sympathisch"
+          ],
+          "audioText": "Meine Schwester ist sehr sympathisch.",
+          "answers": [
+            "Meine Schwester ist sehr sympathisch.",
+            "Meine Schwester ist sehr sympathisch"
+          ]
+        },
+        {
+          "id": "a1.m02-familie.l05-menschen-beschreiben.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 30,
+          "passage": {
+            "de": "Meine Oma ist alt, aber sehr lustig und freundlich. Ich finde sie sympathisch."
+          },
+          "prompt": {
+            "en": "How does the speaker describe their grandma?"
+          },
+          "vocabRefs": [
+            "a1.v.oma",
+            "a1.v.lustig",
+            "a1.v.freundlich",
+            "a1.v.sympathisch"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Old but funny and friendly"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Young and boring"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Nice but unfriendly"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    }
+  ],
+  "icon": "family",
+  "grammarTopics": [],
+  "vocabIds": [
+    "a1.v.familie",
+    "a1.v.vater",
+    "a1.v.mutter",
+    "a1.v.bruder",
+    "a1.v.schwester",
+    "a1.v.eltern",
+    "a1.v.gross",
+    "a1.v.papa",
+    "a1.v.mama",
+    "a1.v.geschwister",
+    "a1.v.sohn",
+    "a1.v.tochter",
+    "a1.v.baby",
+    "a1.v.haben",
+    "a1.v.klein",
+    "a1.v.kind",
+    "a1.v.oma",
+    "a1.v.opa",
+    "a1.v.grosseltern",
+    "a1.v.onkel",
+    "a1.v.tante",
+    "a1.v.cousin",
+    "a1.v.cousine",
+    "a1.v.besuchen",
+    "a1.v.alt",
+    "a1.v.mein",
+    "a1.v.dein",
+    "a1.v.unser",
+    "a1.v.euer",
+    "a1.v.nett",
+    "a1.v.verheiratet",
+    "a1.v.ledig",
+    "a1.v.geschieden",
+    "a1.v.verlobt",
+    "a1.v.ehemann",
+    "a1.v.ehefrau",
+    "a1.v.sein",
+    "a1.v.kein",
+    "a1.v.freundlich",
+    "a1.v.lustig",
+    "a1.v.sympathisch",
+    "a1.v.jung",
+    "a1.v.freundin",
+    "a1.v.freund",
+    "a1.v.langweilig"
+  ],
+  "estMinutes": 80
+}

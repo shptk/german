@@ -1,0 +1,682 @@
+{
+  "id": "a1.mock",
+  "level": "a1",
+  "title": "Start Deutsch 1 — Modelltest",
+  "passPct": 60,
+  "sections": [
+    {
+      "id": "hoeren",
+      "title": "Hören",
+      "skill": "hoeren",
+      "graded": true,
+      "items": [
+        {
+          "id": "exam.hoeren.e01",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Guten Tag. Mein Name ist Anna Berger. Ich komme aus Österreich und wohne jetzt in Hamburg.",
+          "prompt": {
+            "en": "Where does Anna live now?"
+          },
+          "vocabRefs": [
+            "a1.v.stadt"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Hamburg"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Vienna"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Berlin"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "exam.hoeren.e02",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Meine Telefonnummer ist null sechs eins, zwei drei vier fünf.",
+          "prompt": {
+            "en": "What is the phone number?"
+          },
+          "vocabRefs": [
+            "a1.v.telefonnummer"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "061 / 234 45"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "061 / 23 45"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "016 / 23 45"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "exam.hoeren.e03",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Der Zug nach München fährt heute von Gleis vier ab. Bitte einsteigen.",
+          "prompt": {
+            "en": "From which platform does the train to Munich depart?"
+          },
+          "vocabRefs": [
+            "a1.v.gleis",
+            "a1.v.zug"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Platform 4"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Platform 14"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Platform 40"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "exam.hoeren.e04",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Ich hätte gern einen Kaffee und ein Stück Kuchen, bitte.",
+          "prompt": {
+            "en": "What does the customer order?"
+          },
+          "vocabRefs": [
+            "a1.v.kaffee",
+            "a1.v.kuchen"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Tea and bread"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Coffee and cake"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Coffee and a pretzel"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "exam.hoeren.e05",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Heute ist das Wetter schön. Die Sonne scheint und es ist warm, zweiundzwanzig Grad.",
+          "prompt": {
+            "en": "How is the weather today?"
+          },
+          "vocabRefs": [
+            "a1.v.wetter",
+            "a1.v.sonne"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "It is raining and cold."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "It is snowing."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "It is sunny and warm."
+              }
+            }
+          ],
+          "correctChoiceId": "c"
+        },
+        {
+          "id": "exam.hoeren.e06",
+          "type": "mcq",
+          "subtype": "listening",
+          "source": "hand",
+          "skill": "listening",
+          "estSeconds": 40,
+          "playCount": 2,
+          "audioText": "Der Termin beim Arzt ist am Montag um halb neun.",
+          "prompt": {
+            "en": "When is the doctor's appointment?"
+          },
+          "vocabRefs": [
+            "a1.v.termin",
+            "a1.v.arzt"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Monday at 8:30"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Monday at 9:30"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Tuesday at 8:30"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "lesen",
+      "title": "Lesen",
+      "skill": "lesen",
+      "graded": true,
+      "items": [
+        {
+          "id": "exam.lesen.e01",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "Hallo, ich bin Tom. Ich bin 25 Jahre alt und komme aus Italien. Ich wohne in Berlin und arbeite als Koch in einem Restaurant."
+          },
+          "prompt": {
+            "en": "What is Tom's profession?"
+          },
+          "vocabRefs": [
+            "a1.v.koch",
+            "a1.v.restaurant"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Teacher"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Cook"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Doctor"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "exam.lesen.e02",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "Schild am Geschäft: Öffnungszeiten Montag bis Freitag von 9 bis 18 Uhr. Samstag und Sonntag geschlossen."
+          },
+          "prompt": {
+            "en": "Richtig oder falsch? The shop is open on Sunday."
+          },
+          "vocabRefs": [
+            "a1.v.geschaeft",
+            "a1.v.sonntag"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Richtig (true)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Falsch (false)"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "exam.lesen.e03",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "E-Mail von Lisa: Hallo Maria, am Samstag ist meine Party. Sie beginnt um 19 Uhr bei mir zu Hause. Bitte komm! Liebe Grüße, Lisa."
+          },
+          "prompt": {
+            "en": "At what time does the party start?"
+          },
+          "vocabRefs": [
+            "a1.v.party",
+            "a1.v.email"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "At 7 p.m."
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "At 9 p.m."
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "At 5 p.m."
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "exam.lesen.e04",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "Schild im Supermarkt: Heute im Angebot! Äpfel, 1 Kilo nur 1,50 Euro. Frisch vom Markt."
+          },
+          "prompt": {
+            "en": "How much does one kilo of apples cost?"
+          },
+          "vocabRefs": [
+            "a1.v.apfel",
+            "a1.v.supermarkt"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "1.15 euros"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "1.50 euros"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "5.00 euros"
+              }
+            }
+          ],
+          "correctChoiceId": "b"
+        },
+        {
+          "id": "exam.lesen.e05",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "Notiz: Lieber Max, ich bin im Supermarkt. Bitte kauf Brot und Milch. Ich komme um 18 Uhr nach Hause. Papa"
+          },
+          "prompt": {
+            "en": "Richtig oder falsch? Max should buy bread and milk."
+          },
+          "vocabRefs": [
+            "a1.v.brot",
+            "a1.v.milch"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Richtig (true)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Falsch (false)"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        },
+        {
+          "id": "exam.lesen.e06",
+          "type": "mcq",
+          "subtype": "reading",
+          "source": "hand",
+          "skill": "reading",
+          "estSeconds": 40,
+          "passage": {
+            "de": "Anzeige: Wohnung in München zu vermieten. 2 Zimmer, Küche, Bad. Die Miete ist 800 Euro pro Monat. Tel: 089 123456."
+          },
+          "prompt": {
+            "en": "How many rooms does the apartment have?"
+          },
+          "vocabRefs": [
+            "a1.v.wohnung",
+            "a1.v.zimmer",
+            "a1.v.miete"
+          ],
+          "choices": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Two rooms"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Eight rooms"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "One room"
+              }
+            }
+          ],
+          "correctChoiceId": "a"
+        }
+      ]
+    },
+    {
+      "id": "schreiben",
+      "title": "Schreiben",
+      "skill": "schreiben",
+      "graded": true,
+      "items": [
+        {
+          "id": "exam.schreiben.e01",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 30,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Fill in the form: My name is Müller and I come from Turkey."
+          },
+          "vocabRefs": [
+            "a1.v.tuerkei"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Familienname: Müller. Ich "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "komme"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "kommt",
+                "kommst"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " aus der "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "Türkei"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "turkei",
+                "Turkei"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "exam.schreiben.e02",
+          "type": "cloze",
+          "source": "template",
+          "skill": "output",
+          "estSeconds": 30,
+          "inputMode": "type",
+          "prompt": {
+            "en": "Form: I am 30 years old and I am married."
+          },
+          "vocabRefs": [
+            "a1.v.jahr",
+            "a1.v.verheiratet"
+          ],
+          "segments": [
+            {
+              "kind": "text",
+              "value": "Ich bin 30 "
+            },
+            {
+              "kind": "blank",
+              "id": 1,
+              "answers": [
+                "Jahre"
+              ],
+              "caseInsensitive": false,
+              "reject": [
+                "jahre",
+                "Jahr"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": " alt und ich bin "
+            },
+            {
+              "kind": "blank",
+              "id": 2,
+              "answers": [
+                "verheiratet"
+              ],
+              "caseInsensitive": true,
+              "reject": [
+                "ledig",
+                "geschieden"
+              ]
+            },
+            {
+              "kind": "text",
+              "value": "."
+            }
+          ]
+        },
+        {
+          "id": "exam.schreiben.e03",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "I would like a coffee, please.",
+          "audioText": "Ich möchte einen Kaffee, bitte.",
+          "vocabRefs": [
+            "a1.v.moechten",
+            "a1.v.kaffee"
+          ],
+          "tiles": [
+            "Ich",
+            "möchte",
+            "einen",
+            "Kaffee",
+            "bitte"
+          ],
+          "accepted": [
+            [
+              "Ich",
+              "möchte",
+              "einen",
+              "Kaffee",
+              "bitte"
+            ]
+          ],
+          "distractorTiles": [
+            "möchten",
+            "der",
+            "trinke"
+          ]
+        },
+        {
+          "id": "exam.schreiben.e04",
+          "type": "drag-tile",
+          "source": "hand",
+          "skill": "output",
+          "estSeconds": 35,
+          "translationEn": "Where is the train station, please?",
+          "audioText": "Wo ist der Bahnhof, bitte?",
+          "vocabRefs": [
+            "a1.v.wo",
+            "a1.v.bahnhof"
+          ],
+          "tiles": [
+            "Wo",
+            "ist",
+            "der",
+            "Bahnhof",
+            "bitte"
+          ],
+          "accepted": [
+            [
+              "Wo",
+              "ist",
+              "der",
+              "Bahnhof",
+              "bitte"
+            ]
+          ],
+          "distractorTiles": [
+            "das",
+            "die",
+            "wohnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprechen",
+      "title": "Sprechen",
+      "skill": "sprechen",
+      "graded": false,
+      "speakingTasks": [
+        {
+          "cue": "Introduce yourself: say your name, where you come from, and where you live.",
+          "modelDe": "Ich heiße Sara. Ich komme aus Spanien und ich wohne in Köln."
+        },
+        {
+          "cue": "Ask a classmate for their phone number.",
+          "modelDe": "Wie ist deine Telefonnummer?"
+        },
+        {
+          "cue": "Order a drink and something to eat in a café.",
+          "modelDe": "Ich hätte gern einen Tee und ein Brötchen, bitte."
+        },
+        {
+          "cue": "Talk about your family: name one family member and say something about them.",
+          "modelDe": "Das ist meine Schwester. Sie ist sehr nett und 20 Jahre alt."
+        },
+        {
+          "cue": "Ask the way to the station.",
+          "modelDe": "Entschuldigung, wo ist der Bahnhof?"
+        }
+      ]
+    }
+  ]
+}

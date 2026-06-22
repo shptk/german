@@ -9,7 +9,7 @@ export type ImperativePerson = 'du' | 'ihr' | 'Sie';
 export type Article = 'der' | 'die' | 'das';
 
 export interface VerbMeta {
-  type?: 'regular' | 'irregular' | 'mixed';
+  type?: string; // descriptive: regular | irregular | mixed | modal | …
   separable?: boolean;
   auxiliary?: 'haben' | 'sein';
   present: Record<Person, string>;
@@ -21,7 +21,7 @@ export interface VerbMeta {
 export interface VocabEntry {
   id: string;
   lemma: string;
-  pos: 'noun' | 'verb' | 'adj' | 'adv' | 'prep' | 'pron' | 'num' | 'phrase' | 'other';
+  pos: string; // noun | verb | adj | adv | prep | pron | num | phrase | other
   gender?: 'm' | 'f' | 'n';
   article?: Article;
   plural?: string;
@@ -122,7 +122,7 @@ export interface McqChoice {
 }
 export interface Mcq extends ExerciseBase {
   type: 'mcq';
-  subtype?: 'reading' | 'translation' | 'listening' | 'truefalse';
+  subtype?: string;
   passage?: { de?: string; en?: string };
   audioText?: string; // listening items: spoken, not shown
   choices: McqChoice[];
