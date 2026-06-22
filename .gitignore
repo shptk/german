@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+# vite-plugin-pwa generated assets (regenerated from public/logo.svg on build)
+dev-dist

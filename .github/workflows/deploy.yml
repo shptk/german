@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deploy; let in-progress finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check:boundaries
+      - run: npm test
+      - run: npm run build
+      - name: Stage site — app under /german, CNAME + redirect at host root
+        run: |
+          mkdir -p _site/german
+          cp -r dist/. _site/german/
+          echo 'learn.pathak.uk' > _site/CNAME
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <meta charset="utf-8" />
+          <title>learn.pathak.uk</title>
+          <meta http-equiv="refresh" content="0; url=/german/" />
+          <link rel="canonical" href="/german/" />
+          <p>Redirecting to <a href="/german/">/german/</a>…</p>
+          EOF
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
