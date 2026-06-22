@@ -2,6 +2,7 @@
   import { route, segment } from '$lib/router/router.svelte';
   import { app } from '$lib/stores/store.svelte';
   import Tabbar from '$lib/components/ui/Tabbar.svelte';
+  import ThemeToggle from '$lib/components/ui/ThemeToggle.svelte';
   import UpdateToast from '$lib/components/ui/UpdateToast.svelte';
   import Today from './routes/Today.svelte';
   import MapView from './routes/Map.svelte';
@@ -65,6 +66,7 @@
     </main>
     {#if showTabbar}<Tabbar />{/if}
   </div>
+  {#if showTabbar}<ThemeToggle />{/if}
   <UpdateToast />
 {/if}
 
