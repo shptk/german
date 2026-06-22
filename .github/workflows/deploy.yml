@@ -28,23 +28,13 @@ jobs:
       - run: npm run check:boundaries
       - run: npm test
       - run: npm run build
-      - name: Stage site — app under /german, CNAME + redirect at host root
-        run: |
-          mkdir -p _site/german
-          cp -r dist/. _site/german/
-          echo 'learn.pathak.uk' > _site/CNAME
-          cat > _site/index.html <<'EOF'
-          <!doctype html>
-          <meta charset="utf-8" />
-          <title>learn.pathak.uk</title>
-          <meta http-equiv="refresh" content="0; url=/german/" />
-          <link rel="canonical" href="/german/" />
-          <p>Redirecting to <a href="/german/">/german/</a>…</p>
-          EOF
+      # Repo is named `german`, so the project site serves at <umbrella>/german/
+      # (e.g. pathak.uk/german/), matching base:'/german/'. The Cloudflare Worker
+      # at learn.pathak.uk channels /german -> this origin (like vim/tmux).
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist
 
   deploy:
     needs: build

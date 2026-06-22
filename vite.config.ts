@@ -6,9 +6,9 @@ import { fileURLToPath } from 'node:url';
 const r = (p: string) => fileURLToPath(new URL(p, import.meta.url));
 
 export default defineConfig({
-  // Served at https://learn.pathak.uk/german/ — the host is the custom domain,
-  // the app lives under the /german/ subpath. base must match that subpath so
-  // every asset/SW/manifest URL resolves correctly.
+  // Repo `german` → project site serves at <umbrella>/german/ (e.g. pathak.uk/german/);
+  // the Cloudflare Worker at learn.pathak.uk channels /german to it (path-preserved).
+  // base must match the /german/ public path so assets/SW/manifest URLs resolve.
   base: '/german/',
 
   resolve: {

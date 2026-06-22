@@ -28,22 +28,20 @@ npm run check:boundaries   # enforce engine purity + storage confinement
 
 `npm run check:boundaries` (also run in CI) fails the build if either rule is broken.
 
-## Deploy (GitHub Pages → https://learn.pathak.uk/german/)
+## Deploy (GitHub Pages, via the learn.pathak.uk hub)
 
-The app is served at **`learn.pathak.uk/german/`**: this repo owns the host
-`learn.pathak.uk`, and the app lives under the `/german/` subpath (`base: '/german/'`).
+Served at **`learn.pathak.uk/german/`** through the same pattern as `vim`/`tmux`:
+the repo is named **`german`** (no per-repo custom domain), so its project site is
+published at the account umbrella **`pathak.uk/german/`** (and `shptk.github.io/german/`),
+matching `base: '/german/'`. The **Cloudflare Worker** at `learn.pathak.uk` channels
+`/german` to that origin (path-preserved).
 
-1. Push to a **public** GitHub repo on the `main` branch.
-2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. **Settings → Pages → Custom domain:** set `learn.pathak.uk`. At your DNS provider,
-   add a `CNAME` record `learn` → `<user>.github.io`.
-4. The workflow (`.github/workflows/deploy.yml`) builds, then stages the artifact so the
-   app sits under `german/`, writes the `CNAME` (host-only — paths aren't allowed in it)
-   and a root redirect (`learn.pathak.uk/` → `/german/`) at the site root, and deploys.
+1. Repo on `main`; **Settings → Pages → Source: GitHub Actions** (no custom domain).
+2. `.github/workflows/deploy.yml` builds and uploads `dist/` directly.
+3. Add `/german` to the Cloudflare Worker (channel `learn.pathak.uk/german/*` →
+   `pathak.uk/german/*`), mirroring the existing `vim`/`tmux` routes.
 
-> A Pages custom domain maps a **hostname only**; the `/german` path comes from `base`
-> + the staged folder, not the `CNAME`. Local `npm run dev`/`preview` serve at
-> `http://localhost:<port>/german/` accordingly.
+> Local `npm run dev`/`preview` serve at `http://localhost:<port>/german/`.
 
 ## Cross-device sync (optional, off by default)
 
