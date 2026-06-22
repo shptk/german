@@ -65,6 +65,7 @@ export async function boot(): Promise<void> {
     app.state = state;
     app.content = content;
     app.syncStatus = persistence.getSyncStatus();
+    persistence.onSyncStatusChange((s) => (app.syncStatus = s));
     warmVoices();
     app.ready = true;
   } catch (e) {
@@ -110,6 +111,23 @@ export async function resumePlan(): Promise<void> {
 }
 export async function reschedule(intent: PaceIntent): Promise<void> {
   await setPlan(intent);
+}
+
+/** Whether the active store supports cloud sync (true only when Drive sync is enabled). */
+export function cloudAvailable(): boolean {
+  return typeof persistence.connectCloud === 'function';
+}
+export async function connectCloud(): Promise<void> {
+  await persistence.connectCloud?.();
+  app.syncStatus = persistence.getSyncStatus();
+}
+export async function disconnectCloud(): Promise<void> {
+  await persistence.disconnectCloud?.();
+  app.syncStatus = persistence.getSyncStatus();
+}
+export async function syncNow(): Promise<void> {
+  await persistence.sync();
+  app.syncStatus = persistence.getSyncStatus();
 }
 
 export async function exportBackup() {

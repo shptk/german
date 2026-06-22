@@ -2,11 +2,15 @@
   import type { PresetId } from '$engine/index';
   import {
     app,
+    cloudAvailable,
+    connectCloud,
+    disconnectCloud,
     exportBackup,
     importBackup,
     pausePlan,
     resumePlan,
     setPlan,
+    syncNow,
     updateSettings,
   } from '$lib/stores/store.svelte';
   import { germanVoices, speak } from '$lib/audio/tts';
@@ -51,6 +55,18 @@
   function onVoice(e: Event) {
     void updateSettings({ ttsVoiceURI: (e.currentTarget as HTMLSelectElement).value || null });
   }
+
+  const canCloud = cloudAvailable();
+  const syncStatus = $derived(app.syncStatus);
+  const SYNC_LABEL: Record<string, string> = {
+    'local-only': 'On this device',
+    idle: 'Synced to your Google Drive',
+    syncing: 'Syncing…',
+    offline: 'Offline — will sync when back online',
+    conflict: 'Needs attention',
+    error: 'Sync error',
+  };
+  const connected = $derived(syncStatus.kind !== 'local-only');
 </script>
 
 <header>
@@ -103,6 +119,27 @@
     </button>
   {:else}
     <p class="muted">No German voice found on this device.</p>
+  {/if}
+</section>
+
+<section class="card">
+  <p class="eyebrow">Sync</p>
+  {#if canCloud}
+    <p class="muted">Status: {SYNC_LABEL[syncStatus.kind] ?? syncStatus.kind}</p>
+    <div class="actions">
+      {#if connected}
+        <button class="btn" onclick={syncNow}>Sync now</button>
+        <button class="btn ghost" onclick={disconnectCloud}>Disconnect</button>
+      {:else}
+        <button class="btn" onclick={connectCloud}>Sign in with Google</button>
+      {/if}
+    </div>
+    <p class="msg">
+      Syncs your progress to a hidden folder in your own Google Drive. On first sign-in Google may show
+      an “unverified app” screen — that's expected for this minimal hidden-folder access; choose Advanced → continue.
+    </p>
+  {:else}
+    <p class="muted">Saved on this device. Cross-device sync via Google can be turned on in a build configured with a Google client id.</p>
   {/if}
 </section>
 

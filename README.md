@@ -44,3 +44,21 @@ The app is served at **`learn.pathak.uk/german/`**: this repo owns the host
 > A Pages custom domain maps a **hostname only**; the `/german` path comes from `base`
 > + the staged folder, not the `CNAME`. Local `npm run dev`/`preview` serve at
 > `http://localhost:<port>/german/` accordingly.
+
+## Cross-device sync (optional, off by default)
+
+The app is **local-first**: progress lives in IndexedDB with export/import backup, and
+the default build ships **no** cloud code (the Drive layer is tree-shaken out). To enable
+opt-in Google Drive sync (progress in the user's own hidden `appDataFolder`, no backend):
+
+1. In Google Cloud Console, create an **OAuth 2.0 Client ID** (type: Web app) with the
+   `https://www.googleapis.com/auth/drive.appdata` scope and **Authorized JavaScript origins**
+   `https://learn.pathak.uk` (+ `http://localhost:5173` for dev).
+2. Build with the env vars set:
+   ```
+   VITE_DRIVE_SYNC=on
+   VITE_GOOGLE_CLIENT_ID=<your-public-client-id>.apps.googleusercontent.com
+   ```
+3. Users then get a "Sign in with Google" option under **You → Sync**. Until Google verifies
+   the app, the consent screen shows an "unverified app" notice (expected for this minimal
+   hidden-folder scope; testing mode allows up to 100 users). Verification is free.
