@@ -95,6 +95,9 @@
   function check() {
     attempts += 1;
     verdict = checkExercise(exercise, response, db);
+    if (verdict.correct && typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(10); // light haptic on correct only
+    }
   }
   function tryAgain() {
     verdict = null;

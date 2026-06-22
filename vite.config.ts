@@ -49,8 +49,10 @@ export default defineConfig({
       },
 
       workbox: {
-        // Precache the app shell. Content JSON gets a runtime cache in a later milestone.
-        globPatterns: ['**/*.{js,css,html,svg,woff2,png,ico}'],
+        // Precache the app shell AND all content JSON so the whole course works
+        // offline after install. cleanupOutdatedCaches removes prior precache
+        // versions on activate (no stale-cache bloat).
+        globPatterns: ['**/*.{js,css,html,svg,woff2,png,ico,json}'],
         navigateFallback: '/german/index.html',
         cleanupOutdatedCaches: true,
         clientsClaim: true,

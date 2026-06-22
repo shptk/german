@@ -52,7 +52,7 @@
   <div class="app-frame">
     <main class="app-main">
       {#key route.path}
-        <Current />
+        <div class="route"><Current /></div>
       {/key}
     </main>
     {#if showTabbar}<Tabbar />{/if}
@@ -87,6 +87,22 @@
   @media (prefers-reduced-motion: reduce) {
     .spinner {
       animation: none;
+    }
+  }
+
+  /* Shared-axis-ish route transition; collapses to instant under reduced-motion
+     (--dur-base becomes 0ms via tokens). */
+  .route {
+    animation: routeIn var(--dur-base) var(--ease);
+  }
+  @keyframes routeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 </style>
